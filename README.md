@@ -261,3 +261,7 @@ neo-tvos/
 <div align="center">
   <b>Elevate your living room. Fast. Clean. Powerful.</b>
 </div>
+
+<div align="center">
+  <b>Made by Sutirtha with ❤️‍🔥</b>
+</div>
