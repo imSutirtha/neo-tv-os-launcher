@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.143Z" hostname="DIVA" time="0.002">
+  <properties/>
+  <testcase name="veryWidePictureIsRefused" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.001"/>
+  <testcase name="widePictureIsScaledByItsHeight" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="aPhoneSizedPhotoIsAcceptedOnceSampledDown" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="smallPictureIsNotScaled" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="fourKOn1080pSamplesByTwo" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="unreadablePictureIsRefused" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="fourKPictureIsAccepted" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.0"/>
+  <testcase name="photoBetweenSampleSizesIsScaledToTheScreen" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperSizeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

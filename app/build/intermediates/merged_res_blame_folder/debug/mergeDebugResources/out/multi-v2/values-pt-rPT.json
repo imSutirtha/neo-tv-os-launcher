@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.gathin.tvhome.app-mergeDebugResources-8:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.darkgod.devtools.neo_tvos.app-mergeDebugResources-1:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DarkGoD\\Downloads\\CleanYourTV\\tcl-custom-launcher\\app\\src\\main\\res\\values-pt-rPT\\strings.xml",
+                    "source": "C:\\Users\\DarkGoD\\.gradle\\caches\\9.6.0\\transforms\\5183e23ab51afc823352a9f22b7164e5\\transformed\\core-1.13.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,560,666,787",
+                        "endColumns": "96,101,98,99,106,105,120,100",
+                        "endOffsets": "147,249,348,448,555,661,782,883"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,16",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,560,666,1347",
+                        "endColumns": "96,101,98,99,106,105,120,100",
+                        "endOffsets": "147,249,348,448,555,661,782,1443"
+                    }
+                },
+                {
+                    "source": "C:\\MyFiles\\Developments\\tv-custom-launcher\\app\\src\\main\\res\\values-pt-rPT\\strings.xml",
                     "from": {
                         "startLines": "4,6,7,10,12,11,5,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -13,28 +30,11 @@
                         "endOffsets": "265,424,550,807,909,861,315,612,686"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,10,11",
+                        "startLines": "9,10,11,12,13,14,15,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,107,216,342,463,511,565,716,778",
+                        "startOffsets": "787,839,948,1074,1195,1243,1297,1448,1510",
                         "endColumns": "51,108,125,120,47,53,49,61,73",
-                        "endOffsets": "102,211,337,458,506,560,610,773,847"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\DarkGoD\\.gradle\\caches\\9.6.0\\transforms\\7de9c922a25d21037d3de0c64a1cc93b\\transformed\\core-1.7.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "615",
-                        "endColumns": "100",
-                        "endOffsets": "711"
+                        "endOffsets": "834,943,1069,1190,1238,1292,1342,1505,1579"
                     }
                 }
             ]

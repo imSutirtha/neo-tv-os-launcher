@@ -1,7 +1,7 @@
 <variant
     name="debug"
-    package="com.gathin.tvhome"
-    minSdkVersion="26"
+    package="com.darkgod.devtools.darkgod_tvos"
+    minSdkVersion="28"
     targetSdkVersion="34"
     debuggable="true"
     mergedManifest="build\intermediates\merged_manifest\debug\processDebugMainManifest\AndroidManifest.xml"
@@ -23,8 +23,7 @@
   </testFixturesSourceProviders>
   <artifact
       type="INSTRUMENTATION_TEST"
-      applicationId="com.darkgod.tclhome.test"
-      generatedResourceFolders="build\generated\res\resValues\androidTest\debug"
-      desugaredMethodsFiles="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\42ce788144032a4f6bbd7d90940c1f7e\transformed\D8BackportedDesugaredMethods.txt">
+      applicationId="com.darkgod.devtools.darkgod_tvos.test"
+      desugaredMethodsFiles="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\dd0e2d7f6cabf41e3ed3b76007691202\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

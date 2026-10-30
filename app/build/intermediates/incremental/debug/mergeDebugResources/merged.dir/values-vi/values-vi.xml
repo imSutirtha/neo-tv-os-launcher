@@ -17,6 +17,13 @@
     <string name="animations_state">Hiệu ứng: %1$s</string>
     <string name="app_library">Thư viện ứng dụng</string>
     <string name="app_name">Màn hình chính</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Trả lời"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Từ chối"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Kết thúc"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Cuộc gọi đến"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Cuộc gọi đang thực hiện"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Đang sàng lọc cuộc gọi đến"</string>
     <string name="cant_open">Không mở được %1$s</string>
     <string name="card_app_name">Ứng dụng: %1$s</string>
     <string name="card_keep_hidden">Vẫn ẩn</string>

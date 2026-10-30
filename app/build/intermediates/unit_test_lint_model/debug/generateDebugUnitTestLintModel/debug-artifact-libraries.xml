@@ -3,6 +3,10 @@
       name=":@@:app::debug"
       project=":app"/>
   <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:2.2.10@jar"
+      jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:2.2.10"/>
+  <library
       name="androidx.recyclerview:recyclerview:1.3.2@aar"
       jars="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\066eef09b8ddb9c9e07f650c58675b45\transformed\recyclerview-1.3.2\jars\classes.jar"
       resolved="androidx.recyclerview:recyclerview:1.3.2"
@@ -36,6 +40,10 @@
       name="org.hamcrest:hamcrest-core:1.3@jar"
       jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
       resolved="org.hamcrest:hamcrest-core:1.3"/>
+  <library
+      name="org.jetbrains:annotations:13.0@jar"
+      jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
+      resolved="org.jetbrains:annotations:13.0"/>
   <library
       name="androidx.customview:customview:1.0.0@aar"
       jars="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\ec55b79d291d76591b19487600432843\transformed\customview-1.0.0\jars\classes.jar"
@@ -265,19 +273,7 @@
       jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\androidx.concurrent\concurrent-futures\1.0.0\c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1\concurrent-futures-1.0.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.21@jar"
-      jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.6.21\11ef67f1900634fd951bad28c53ec957fabbe5b8\kotlin-stdlib-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.21"/>
-  <library
       name="com.google.guava:listenablefuture:1.0@jar"
       jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"
       resolved="com.google.guava:listenablefuture:1.0"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21@jar"
-      jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.6.21\5e5b55c26dbc80372a920aef60eb774b714559b8\kotlin-stdlib-common-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21"/>
-  <library
-      name="org.jetbrains:annotations:13.0@jar"
-      jars="C:\Users\DarkGoD\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
-      resolved="org.jetbrains:annotations:13.0"/>
 </libraries>

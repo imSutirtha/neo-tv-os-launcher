@@ -12,6 +12,13 @@
     <string name="animations_state">Animacje: %1$s</string>
     <string name="app_library">Biblioteka aplikacji</string>
     <string name="app_name">Ekran główny</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Odbierz"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Wideo"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Odrzuć"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Rozłącz"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Połączenie przychodzące"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Trwa połączenie"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filtruję połączenie przychodzące"</string>
     <string name="cant_open">Nie można otworzyć: %1$s</string>
     <string name="card_app_name">Aplikacja: %1$s</string>
     <string name="card_keep_hidden">Zostaw ukrytą</string>

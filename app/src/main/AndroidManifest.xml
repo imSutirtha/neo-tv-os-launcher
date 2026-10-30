@@ -55,7 +55,7 @@
         </intent>
         <intent>
             <action android:name="android.intent.action.MAIN" />
-            <category android:name="com.gathin.tvhome.category.DOCK_CARD" />
+            <category android:name="com.darkgod.devtools.neo_tvos.category.DOCK_CARD" />
         </intent>
         <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
         <intent>
@@ -81,7 +81,7 @@
         android:localeConfig="@xml/locales_config">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:stateNotNeeded="true"
@@ -105,13 +105,24 @@
             </intent-filter>
         </activity>
 
+        <activity-alias
+            android:name=".MainActivity"
+            android:targetActivity=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity-alias>
+
         <activity
-            android:name=".LauncherSettingsActivity"
-            android:exported="false"
+            android:name=".ui.LauncherSettingsActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:launchMode="singleTop"
             android:excludeFromRecents="true"
-            android:screenOrientation="landscape" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".SetupActivity"
+            android:name=".ui.SetupActivity"
             android:exported="false"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" />
@@ -121,7 +132,7 @@
              launcher was the only handler of the action (Hisense huangshan, Android TV 10): kept off, a TV with
              its own input picker never sees a second candidate and a chooser. -->
         <activity
-            android:name=".InputsRequestActivity"
+            android:name=".ui.InputsRequestActivity"
             android:exported="true"
             android:enabled="false"
             android:excludeFromRecents="true"
@@ -136,7 +147,7 @@
              No screenOrientation: a translucent activity may not request one on Android 8.0 (API 26),
              which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway. -->
         <activity
-            android:name=".QuickSettingsActivity"
+            android:name=".ui.QuickSettingsActivity"
             android:exported="false"
             android:taskAffinity=""
             android:launchMode="singleTop"
@@ -144,7 +155,7 @@
             android:noHistory="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".HomeSettingsActivity"
+            android:name=".ui.HomeSettingsActivity"
             android:exported="false"
             android:taskAffinity=""
             android:excludeFromRecents="true"
@@ -152,7 +163,7 @@
         <!-- Home button for remotes that send KEYCODE_ALL_APPS (Xiaomi). Opt-in: HOME_KEY_SERVICE=1
              build-and-install.sh; see HomeKeyService. -->
         <service
-            android:name=".HomeKeyService"
+            android:name=".service.HomeKeyService"
             android:label="@string/home_key_name"
             android:directBootAware="true"
             android:exported="true"
@@ -168,7 +179,7 @@
         <!-- market://launch?id=<package>: package-name app launches from the Android TV Remote service
              (Home Assistant android_tv_remote), normally served by the stock launcher. -->
         <activity
-            android:name=".AppLaunchActivity"
+            android:name=".ui.AppLaunchActivity"
             android:exported="true"
             android:excludeFromRecents="true"
             android:noHistory="true"
@@ -183,7 +194,7 @@
 
         <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
         <activity
-            android:name=".ClockActivity"
+            android:name=".ui.ClockActivity"
             android:exported="false"
             android:excludeFromRecents="true"
             android:noHistory="true"
@@ -192,7 +203,7 @@
         <!-- stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
              it sends a window event when it closes (HomeKeyService.probeAtBoot). -->
         <activity
-            android:name=".ProbeActivity"
+            android:name=".ui.ProbeActivity"
             android:exported="false"
             android:excludeFromRecents="true"
             android:noHistory="true"
@@ -200,9 +211,9 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <!-- Screensaver: pick it in Settings, or `settings put secure screensaver_components
-             com.gathin.tvhome/.ClockDream` over adb. -->
+             com.darkgod.devtools.neo_tvos/.service.ClockDream` over adb. -->
         <service
-            android:name=".ClockDream"
+            android:name=".service.ClockDream"
             android:label="@string/dream_name"
             android:exported="true"
             android:permission="android.permission.BIND_DREAM_SERVICE">
@@ -215,7 +226,7 @@
         <!-- tools/theme.sh writes the theme through this where the shell can't reach Android/data;
              see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't. -->
         <provider
-            android:name=".ThemeProvider"
+            android:name=".theme.ThemeProvider"
             android:authorities="${applicationId}.theme"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
@@ -224,9 +235,9 @@
          app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService. -->
         <!-- Bound again by the system after a force stop, which restarts Home on firmware that kills
              third-party apps (TCL tc8000_ay30a2). It reads no notification.
-             cmd notification allow_listener com.gathin.tvhome/.GuardRevival -->
+             cmd notification allow_listener com.darkgod.devtools.neo_tvos/.service.GuardRevival -->
         <service
-            android:name=".GuardRevival"
+            android:name=".service.GuardRevival"
             android:directBootAware="true"
             android:exported="true"
             android:label="@string/home_key_name"
@@ -236,16 +247,16 @@
             </intent-filter>
         </service>
         <receiver
-            android:name=".GuardConfig"
+            android:name=".service.GuardConfig"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS">
             <intent-filter>
-                <action android:name="com.gathin.tvhome.GUARD" />
+                <action android:name="com.darkgod.devtools.neo_tvos.GUARD" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".InputKeyService"
+            android:name=".service.InputKeyService"
             android:exported="false"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
@@ -256,5 +267,19 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/input_key_service" />
         </service>
+
+        <receiver
+            android:name=".receiver.NeoAdminReceiver"
+            android:label="@string/app_name"
+            android:description="@string/admin_description"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

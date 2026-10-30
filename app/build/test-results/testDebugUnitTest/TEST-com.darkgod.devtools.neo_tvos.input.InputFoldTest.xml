@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.input.InputFoldTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.067Z" hostname="DIVA" time="0.002">
+  <properties/>
+  <testcase name="anEmptyPortReportingStandbyFolds" classname="com.darkgod.devtools.neo_tvos.input.InputFoldTest" time="0.001"/>
+  <testcase name="aConnectedHdmiPortStays" classname="com.darkgod.devtools.neo_tvos.input.InputFoldTest" time="0.0"/>
+  <testcase name="anAvJackAlwaysFolds" classname="com.darkgod.devtools.neo_tvos.input.InputFoldTest" time="0.0"/>
+  <testcase name="anHdmiRowWithNoStateStays" classname="com.darkgod.devtools.neo_tvos.input.InputFoldTest" time="0.0"/>
+  <testcase name="aDisconnectedPortFolds" classname="com.darkgod.devtools.neo_tvos.input.InputFoldTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.002Z" hostname="DIVA" time="0.003">
+  <properties/>
+  <testcase name="aFullDockNeedsNoEmptySlot" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.001"/>
+  <testcase name="anAppCarriedIntoTheDockStaysThere" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.001"/>
+  <testcase name="threeDockAppsInFourColumnsLeaveOneSlotEmpty" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="fillDockKeepsTheOldBehaviour" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="noInstalledDockAppFillsTheFirstRow" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="fewerTilesThanDockSlotsStillPutTheDockFirst" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="focusOnAnEmptySlotGoesToTheLastDockApp" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="aSlidInGridAppAheadOfADockAppMovesBehindTheDock" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="aDockAppPushedPastTheDockLeavesIt" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="aGridAppThatOnlySlidIntoAFreeSlotGoesBackToTheGrid" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="nothingAfterTheDockNeedsNoEmptySlot" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <testcase name="focusOnATileStaysPut" classname="com.darkgod.devtools.neo_tvos.data.app.DockSlotsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

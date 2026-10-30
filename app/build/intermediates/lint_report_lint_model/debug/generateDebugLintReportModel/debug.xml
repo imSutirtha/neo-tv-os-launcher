@@ -1,7 +1,7 @@
 <variant
     name="debug"
-    package="com.gathin.tvhome"
-    minSdkVersion="26"
+    package="com.darkgod.devtools.darkgod_tvos"
+    minSdkVersion="28"
     targetSdkVersion="34"
     debuggable="true"
     mergedManifest="build\intermediates\merged_manifest\debug\processDebugMainManifest\AndroidManifest.xml"
@@ -22,11 +22,10 @@
   <testFixturesSourceProviders>
   </testFixturesSourceProviders>
   <artifact
-      classOutputs="build\intermediates\javac\debug\compileDebugJavaWithJavac\classes;build\intermediates\compile_and_runtime_r_class_jar\debug\processDebugResources\R.jar"
+      classOutputs="build\intermediates\javac\debug\compileDebugJavaWithJavac\classes;build\intermediates\built_in_kotlinc\debug\compileDebugKotlin\classes;build\intermediates\compile_r_class_jar\debug\generateDebugRFile\R.jar"
       type="MAIN"
-      applicationId="com.darkgod.tclhome"
+      applicationId="com.darkgod.devtools.darkgod_tvos"
       generatedSourceFolders="build\generated\ap_generated_sources\debug\out"
-      generatedResourceFolders="build\generated\res\resValues\debug"
-      desugaredMethodsFiles="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\42ce788144032a4f6bbd7d90940c1f7e\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\dd0e2d7f6cabf41e3ed3b76007691202\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

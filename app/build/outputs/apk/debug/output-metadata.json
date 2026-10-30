@@ -4,18 +4,18 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.darkgod.devtools.darkgod_tvos",
+  "applicationId": "com.darkgod.devtools.neo_tvos",
   "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "0.1.0",
+      "versionCode": 280010000,
+      "versionName": "1.0.0-BETA",
       "outputFile": "app-debug.apk"
     }
   ],
   "elementType": "File",
-  "minSdkVersionForDexing": 26
+  "minSdkVersionForDexing": 28
 }

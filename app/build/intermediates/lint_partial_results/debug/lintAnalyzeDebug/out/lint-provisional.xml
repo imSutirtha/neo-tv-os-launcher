@@ -9,64 +9,34 @@
             description="Show https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"
             url="https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"/>
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="1684"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="1685"
             column="17"
-            startOffset="84747"
-            endLine="1684"
+            startOffset="84832"
+            endLine="1685"
             endColumn="30"
-            endOffset="84760"/>
-    </incident>
-
-    <incident
-        id="InlinedApi"
-        severity="warning"
-        message="">
-        <fix-data minSdk="26-∞" requiresApi="28-∞"/>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/RemoteKeys.java"
-            line="334"
-            column="46"
-            startOffset="16224"
-            endLine="334"
-            endColumn="92"
-            endOffset="16270"/>
-        <map>
-            <entry
-                name="message"
-                string="Field requires API level 28 (current min is %1$s): `android.accessibilityservice.AccessibilityService#GLOBAL_ACTION_LOCK_SCREEN`"/>
-            <api-levels id="minSdk"
-                value="26-∞"/>
-            <entry
-                name="name"
-                string="GLOBAL_ACTION_LOCK_SCREEN"/>
-            <entry
-                name="owner"
-                string="android.accessibilityservice.AccessibilityService"/>
-            <api-levels id="requiresApi"
-                value="28-∞"/>
-        </map>
+            endOffset="84845"/>
     </incident>
 
     <incident
         id="UnusedAttribute"
         severity="warning"
         message="">
-        <fix-data minSdk="26-∞" requiresApi="33-∞"/>
+        <fix-data minSdk="28-∞" requiresApi="33-∞"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
             line="81"
             column="9"
-            startOffset="4548"
+            startOffset="4564"
             endLine="81"
             endColumn="51"
-            endOffset="4590"/>
+            endOffset="4606"/>
         <map>
             <entry
                 name="message"
                 string="Attribute `localeConfig` is only used in API level 33 and higher (current min is %1$s)"/>
             <api-levels id="minSdk"
-                value="26-∞"/>
+                value="28-∞"/>
             <api-levels id="requiresApi"
                 value="33-∞"/>
         </map>
@@ -77,13 +47,13 @@
         severity="warning"
         message="The application should not provide its own launch screen">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLaunchActivity.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLaunchActivity.java"
             line="11"
             column="14"
-            startOffset="406"
+            startOffset="422"
             endLine="11"
             endColumn="31"
-            endOffset="423"/>
+            endOffset="439"/>
         <map>
             <condition targetGE="31"/>
         </map>
@@ -94,13 +64,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppAdapter.java"
             line="291"
             column="38"
-            startOffset="14961"
+            startOffset="14977"
             endLine="291"
             endColumn="59"
-            endOffset="14982"/>
+            endOffset="14998"/>
         <map>
             <entry
                 name="queryAll"
@@ -113,13 +83,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLibraryDialog.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLibraryDialog.java"
             line="233"
             column="44"
-            startOffset="9495"
+            startOffset="9511"
             endLine="233"
             endColumn="65"
-            endOffset="9516"/>
+            endOffset="9532"/>
         <map>
             <entry
                 name="queryAll"
@@ -132,13 +102,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/Cards.java"
-            line="193"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/Cards.java"
+            line="192"
             column="27"
-            startOffset="7885"
-            endLine="193"
+            startOffset="7908"
+            endLine="192"
             endColumn="48"
-            endOffset="7906"/>
+            endOffset="7929"/>
         <map>
             <entry
                 name="queryAll"
@@ -151,13 +121,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/HomeKeyService.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/HomeKeyService.java"
             line="206"
             column="55"
-            startOffset="10119"
+            startOffset="10151"
             endLine="206"
             endColumn="76"
-            endOffset="10140"/>
+            endOffset="10172"/>
         <map>
             <entry
                 name="queryAll"
@@ -170,13 +140,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/LauncherSettingsActivity.java"
-            line="211"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/LauncherSettingsActivity.java"
+            line="230"
             column="33"
-            startOffset="9844"
-            endLine="211"
+            startOffset="10717"
+            endLine="230"
             endColumn="54"
-            endOffset="9865"/>
+            endOffset="10738"/>
         <map>
             <entry
                 name="queryAll"
@@ -189,13 +159,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="1202"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="1200"
             column="64"
-            startOffset="62903"
-            endLine="1202"
+            startOffset="62934"
+            endLine="1200"
             endColumn="85"
-            endOffset="62924"/>
+            endOffset="62955"/>
         <map>
             <entry
                 name="queryAll"
@@ -208,13 +178,13 @@
         severity="warning"
         message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="3409"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="3402"
             column="43"
-            startOffset="174249"
-            endLine="3409"
+            startOffset="174009"
+            endLine="3402"
             endColumn="58"
-            endOffset="174264"/>
+            endOffset="174024"/>
         <map>
             <entry
                 name="queryAll"
@@ -359,13 +329,13 @@
         severity="warning"
         message="Use &quot;`Gravity.END`&quot; instead of &quot;`Gravity.RIGHT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLibraryDialog.java"
-            line="361"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLibraryDialog.java"
+            line="366"
             column="67"
-            startOffset="15559"
-            endLine="361"
+            startOffset="15843"
+            endLine="366"
             endColumn="72"
-            endOffset="15564"/>
+            endOffset="15848"/>
         <map>
             <entry
                 name="applies"
@@ -378,13 +348,13 @@
         severity="warning"
         message="Use &quot;`Gravity.START`&quot; instead of &quot;`Gravity.LEFT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLibraryDialog.java"
-            line="361"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLibraryDialog.java"
+            line="366"
             column="83"
-            startOffset="15575"
-            endLine="361"
+            startOffset="15859"
+            endLine="366"
             endColumn="87"
-            endOffset="15579"/>
+            endOffset="15863"/>
         <map>
             <entry
                 name="applies"
@@ -397,13 +367,13 @@
         severity="warning"
         message="Use &quot;`Gravity.END`&quot; instead of &quot;`Gravity.RIGHT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLibraryDialog.java"
-            line="599"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLibraryDialog.java"
+            line="604"
             column="39"
-            startOffset="28199"
-            endLine="599"
+            startOffset="28483"
+            endLine="604"
             endColumn="44"
-            endOffset="28204"/>
+            endOffset="28488"/>
         <map>
             <entry
                 name="applies"
@@ -416,13 +386,13 @@
         severity="warning"
         message="Use &quot;`Gravity.START`&quot; instead of &quot;`Gravity.LEFT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppLibraryDialog.java"
-            line="599"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppLibraryDialog.java"
+            line="604"
             column="55"
-            startOffset="28215"
-            endLine="599"
+            startOffset="28499"
+            endLine="604"
             endColumn="59"
-            endOffset="28219"/>
+            endOffset="28503"/>
         <map>
             <entry
                 name="applies"
@@ -435,13 +405,13 @@
         severity="warning"
         message="Use &quot;`Gravity.END`&quot; instead of &quot;`Gravity.RIGHT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="2412"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="2411"
             column="34"
-            startOffset="118662"
-            endLine="2412"
+            startOffset="118703"
+            endLine="2411"
             endColumn="39"
-            endOffset="118667"/>
+            endOffset="118708"/>
         <map>
             <entry
                 name="applies"
@@ -454,13 +424,13 @@
         severity="warning"
         message="Use &quot;`Gravity.END`&quot; instead of &quot;`Gravity.RIGHT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="2413"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="2412"
             column="88"
-            startOffset="118756"
-            endLine="2413"
+            startOffset="118797"
+            endLine="2412"
             endColumn="93"
-            endOffset="118761"/>
+            endOffset="118802"/>
         <map>
             <entry
                 name="applies"
@@ -473,13 +443,13 @@
         severity="warning"
         message="Use &quot;`Gravity.START`&quot; instead of &quot;`Gravity.LEFT`&quot; to ensure correct behavior in right-to-left locales">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/QuickSettingsActivity.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/QuickSettingsActivity.java"
             line="37"
             column="80"
-            startOffset="1468"
+            startOffset="1484"
             endLine="37"
             endColumn="84"
-            endOffset="1472"/>
+            endOffset="1488"/>
         <map>
             <entry
                 name="applies"
@@ -495,10 +465,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="40"
             column="33"
-            startOffset="1754"
+            startOffset="1770"
             endLine="40"
             endColumn="42"
-            endOffset="1763"/>
+            endOffset="1779"/>
         <map>
             <entry
                 name="applies"
@@ -514,10 +484,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="40"
             column="33"
-            startOffset="1724"
+            startOffset="1740"
             endLine="40"
             endColumn="41"
-            endOffset="1732"/>
+            endOffset="1748"/>
         <map>
             <entry
                 name="applies"
@@ -533,10 +503,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="43"
             column="26"
-            startOffset="1871"
+            startOffset="1887"
             endLine="43"
             endColumn="31"
-            endOffset="1876"/>
+            endOffset="1892"/>
         <map>
             <entry
                 name="applies"
@@ -552,10 +522,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="122"
             column="33"
-            startOffset="4940"
+            startOffset="4956"
             endLine="122"
             endColumn="38"
-            endOffset="4945"/>
+            endOffset="4961"/>
         <map>
             <entry
                 name="applies"
@@ -571,10 +541,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="123"
             column="26"
-            startOffset="4972"
+            startOffset="4988"
             endLine="123"
             endColumn="31"
-            endOffset="4977"/>
+            endOffset="4993"/>
         <map>
             <entry
                 name="applies"
@@ -590,10 +560,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="131"
             column="37"
-            startOffset="5236"
+            startOffset="5252"
             endLine="131"
             endColumn="42"
-            endOffset="5241"/>
+            endOffset="5257"/>
         <map>
             <entry
                 name="applies"
@@ -609,10 +579,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="132"
             column="30"
-            startOffset="5272"
+            startOffset="5288"
             endLine="132"
             endColumn="35"
-            endOffset="5277"/>
+            endOffset="5293"/>
         <map>
             <entry
                 name="applies"
@@ -628,10 +598,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="145"
             column="37"
-            startOffset="5827"
+            startOffset="5843"
             endLine="145"
             endColumn="42"
-            endOffset="5832"/>
+            endOffset="5848"/>
         <map>
             <entry
                 name="applies"
@@ -647,10 +617,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="158"
             column="37"
-            startOffset="6316"
+            startOffset="6332"
             endLine="158"
             endColumn="42"
-            endOffset="6321"/>
+            endOffset="6337"/>
         <map>
             <entry
                 name="applies"
@@ -666,10 +636,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="190"
             column="34"
-            startOffset="7576"
+            startOffset="7592"
             endLine="190"
             endColumn="46"
-            endOffset="7588"/>
+            endOffset="7604"/>
         <map>
             <entry
                 name="applies"
@@ -685,10 +655,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="202"
             column="42"
-            startOffset="8107"
+            startOffset="8123"
             endLine="202"
             endColumn="47"
-            endOffset="8112"/>
+            endOffset="8128"/>
         <map>
             <entry
                 name="applies"
@@ -704,10 +674,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="203"
             column="38"
-            startOffset="8313"
+            startOffset="8329"
             endLine="203"
             endColumn="42"
-            endOffset="8317"/>
+            endOffset="8333"/>
         <map>
             <entry
                 name="applies"
@@ -723,10 +693,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="216"
             column="42"
-            startOffset="8786"
+            startOffset="8802"
             endLine="216"
             endColumn="47"
-            endOffset="8791"/>
+            endOffset="8807"/>
         <map>
             <entry
                 name="applies"
@@ -742,10 +712,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="232"
             column="46"
-            startOffset="9666"
+            startOffset="9682"
             endLine="232"
             endColumn="51"
-            endOffset="9671"/>
+            endOffset="9687"/>
         <map>
             <entry
                 name="applies"
@@ -761,10 +731,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="280"
             column="46"
-            startOffset="11972"
+            startOffset="11988"
             endLine="280"
             endColumn="50"
-            endOffset="11976"/>
+            endOffset="11992"/>
         <map>
             <entry
                 name="applies"
@@ -780,10 +750,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="294"
             column="46"
-            startOffset="12702"
+            startOffset="12718"
             endLine="294"
             endColumn="50"
-            endOffset="12706"/>
+            endOffset="12722"/>
         <map>
             <entry
                 name="applies"
@@ -799,10 +769,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="312"
             column="46"
-            startOffset="13761"
+            startOffset="13777"
             endLine="312"
             endColumn="50"
-            endOffset="13765"/>
+            endOffset="13781"/>
         <map>
             <entry
                 name="applies"
@@ -818,10 +788,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
             line="325"
             column="34"
-            startOffset="14337"
+            startOffset="14353"
             endLine="325"
             endColumn="39"
-            endOffset="14342"/>
+            endOffset="14358"/>
         <map>
             <entry
                 name="applies"
@@ -837,10 +807,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="336"
             column="34"
-            startOffset="14932"
+            startOffset="14948"
             endLine="336"
             endColumn="38"
-            endOffset="14936"/>
+            endOffset="14952"/>
         <map>
             <entry
                 name="applies"

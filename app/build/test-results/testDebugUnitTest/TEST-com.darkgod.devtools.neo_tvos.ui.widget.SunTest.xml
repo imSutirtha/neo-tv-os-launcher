@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.468Z" hostname="DIVA" time="0.001">
+  <properties/>
+  <testcase name="noSunriseOrSunsetAtThePoles" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.0"/>
+  <testcase name="theReferenceDayMapsOntoItself" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.0"/>
+  <testcase name="skyGlowsLandOnTheRealSunriseAndSunset" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.001"/>
+  <testcase name="vilniusWinterDayIsShortAndLate" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.0"/>
+  <testcase name="nonsenseSunTimesFallBackToTheReferenceDay" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.0"/>
+  <testcase name="vilniusSummerDayIsLongInLocalSummerTime" classname="com.darkgod.devtools.neo_tvos.ui.widget.SunTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

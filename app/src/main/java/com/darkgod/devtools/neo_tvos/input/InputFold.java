@@ -1,0 +1,33 @@
+package com.darkgod.devtools.neo_tvos.input;
+
+import com.darkgod.devtools.neo_tvos.R;
+import com.darkgod.devtools.neo_tvos.card.*;
+import com.darkgod.devtools.neo_tvos.config.*;
+import com.darkgod.devtools.neo_tvos.data.app.*;
+import com.darkgod.devtools.neo_tvos.data.weather.*;
+import com.darkgod.devtools.neo_tvos.input.*;
+import com.darkgod.devtools.neo_tvos.service.*;
+import com.darkgod.devtools.neo_tvos.theme.*;
+import com.darkgod.devtools.neo_tvos.ui.*;
+import com.darkgod.devtools.neo_tvos.ui.decor.*;
+import com.darkgod.devtools.neo_tvos.ui.widget.*;
+import com.darkgod.devtools.neo_tvos.util.*;
+
+
+import android.media.tv.TvInputManager;
+
+/** Which Inputs menu rows inputs_connected_only folds behind "More inputs". */
+public final class InputFold {
+    private InputFold() {}
+
+    /**
+     * state is the row's TvInputManager input state, or -1 when it has none to show (the AV jacks, or an HDMI state
+     * that cannot be trusted). An AV jack has no hotplug detection, so it always folds. An HDMI port or CEC device
+     * stays only while it reports INPUT_STATE_CONNECTED: a port with nothing on it can report
+     * CONNECTED_STANDBY (TCL), and so does a device asleep in standby, so both fold. A state of -1 keeps the row.
+     */
+    public static boolean folds(boolean hdmi, int state) {
+        if (!hdmi) return true;
+        return state != -1 && state != TvInputManager.INPUT_STATE_CONNECTED;
+    }
+}

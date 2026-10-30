@@ -1,0 +1,43 @@
+package com.darkgod.devtools.neo_tvos.ui;
+
+import com.darkgod.devtools.neo_tvos.R;
+import com.darkgod.devtools.neo_tvos.card.*;
+import com.darkgod.devtools.neo_tvos.config.*;
+import com.darkgod.devtools.neo_tvos.data.app.*;
+import com.darkgod.devtools.neo_tvos.data.weather.*;
+import com.darkgod.devtools.neo_tvos.input.*;
+import com.darkgod.devtools.neo_tvos.service.*;
+import com.darkgod.devtools.neo_tvos.theme.*;
+import com.darkgod.devtools.neo_tvos.ui.*;
+import com.darkgod.devtools.neo_tvos.ui.decor.*;
+import com.darkgod.devtools.neo_tvos.ui.widget.*;
+import com.darkgod.devtools.neo_tvos.util.*;
+
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+/** glass_style from config.xml or a theme: rim or halo by name, glass for anything else. */
+public class GlassStyleTest {
+
+    @Test
+    public void rimByNameAnyCase() {
+        assertEquals(Config.GLASS_RIM, Config.glassStyle("rim"));
+        assertEquals(Config.GLASS_RIM, Config.glassStyle(" Rim "));
+    }
+
+    @Test
+    public void haloByNameAnyCase() {
+        assertEquals(Config.GLASS_HALO, Config.glassStyle("halo"));
+        assertEquals(Config.GLASS_HALO, Config.glassStyle("HALO "));
+    }
+
+    @Test
+    public void anythingElseIsGlass() {
+        assertEquals(Config.GLASS_DEFAULT, Config.glassStyle("glass"));
+        assertEquals(Config.GLASS_DEFAULT, Config.glassStyle(""));
+        assertEquals(Config.GLASS_DEFAULT, Config.glassStyle(null));
+        assertEquals(Config.GLASS_DEFAULT, Config.glassStyle("frosted"));
+    }
+}

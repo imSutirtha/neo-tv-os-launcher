@@ -14,6 +14,13 @@
     <string name="animations_state">الرسوم المتحركة: %1$s</string>
     <string name="app_library">مكتبة التطبيقات</string>
     <string name="app_name">الرئيسية</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"ردّ"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"فيديو"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"رفض"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"قطع الاتصال"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"مكالمة واردة"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"مكالمة جارية"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"يتم فحص المكالمة الواردة"</string>
     <string name="cant_open">تعذّر فتح %1$s</string>
     <string name="card_app_name">التطبيق: %1$s</string>
     <string name="card_keep_hidden">إبقاؤها مخفية</string>

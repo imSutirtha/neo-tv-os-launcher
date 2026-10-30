@@ -1,0 +1,661 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.darkgod.devtools.neo_tvos"
+4    android:versionCode="280010000"
+5    android:versionName="1.0.0-BETA" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="28"
+8-->INJECTED
+9        android:targetSdkVersion="37" />
+9-->INJECTED
+10
+11    <uses-feature
+11-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:5:5-87
+12        android:name="android.software.leanback"
+12-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:5:19-59
+13        android:required="false" />
+13-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:5:60-84
+14    <uses-feature
+14-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:6:5-90
+15        android:name="android.hardware.touchscreen"
+15-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:6:19-62
+16        android:required="false" />
+16-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:6:63-87
+17    <uses-feature
+17-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:7:5-83
+18        android:name="android.hardware.wifi"
+18-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:7:19-55
+19        android:required="false" />
+19-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:7:56-80
+20    <uses-feature
+20-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:8:5-91
+21        android:name="android.hardware.location.gps"
+21-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:8:19-63
+22        android:required="false" />
+22-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:8:64-88
+23
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:10:5-79
+24-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:10:22-76
+25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+25-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:11:5-76
+25-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:11:22-73
+26    <!-- Opt-in weather refreshes only while Home is visible; no account credentials are used. -->
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:13:5-67
+27-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:13:22-64
+28    <!--
+29         Needed since Android 10 to read the Wi-Fi network name for the network pill. Never requested at
+30         runtime: build-and-install grants it with pm grant, so lint's Android 12 "ask for COARSE with
+31         FINE" rule does not apply here.
+32    -->
+33    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+33-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:17:5-18:45
+33-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:17:22-76
+34    <!--
+35         Puts the remote's accessibility helpers back after a force stop of this app took them off the enabled
+36         list (ServiceRepair). Granted with pm grant by build-and-install when a helper is enabled.
+37    -->
+38    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+38-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:21:5-22:47
+38-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:21:22-77
+39    <!--
+40         YaOS (Yandex TV OS): HDMI, AV and the tuner all play in com.yandex.tv.live, whose activities require
+41         this permission (protection level normal, so it is granted at install). Ignored on other TVs.
+42    -->
+43    <uses-permission android:name="yandex.tv.permission.ACCESS_TV_SOURCE" />
+43-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:25:5-77
+43-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:25:22-74
+44
+45    <!--
+46         Android 11+ package visibility: lets the launcher list the TV apps it shows as tiles, and the
+47         apps that declare a module card (docs/specs/card.md).
+48    -->
+49    <queries>
+49-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:29:5-73:15
+50
+51        <!-- The standard settings handlers, so package visibility doesn't hide them and send the pills to a vendor fallback by mistake. -->
+52        <intent>
+52-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:31:9-33:18
+53            <action android:name="android.settings.SETTINGS" />
+53-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:32:13-64
+53-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:32:21-61
+54        </intent>
+55        <intent>
+55-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:34:9-36:18
+56            <action android:name="android.settings.WIFI_SETTINGS" />
+56-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:35:13-69
+56-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:35:21-66
+57        </intent>
+58        <intent>
+58-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:37:9-39:18
+59            <action android:name="android.settings.DISPLAY_SETTINGS" />
+59-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:38:13-72
+59-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:38:21-69
+60        </intent>
+61        <intent>
+61-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:40:9-42:18
+62            <action android:name="android.settings.MANAGE_APPLICATIONS_SETTINGS" />
+62-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:41:13-84
+62-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:41:21-81
+63        </intent>
+64        <!-- The tile menu and the app library offer App info only where this resolves (SystemSettings.appInfo). -->
+65        <intent>
+65-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:44:9-47:18
+66            <action android:name="android.settings.APPLICATION_DETAILS_SETTINGS" />
+66-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:45:13-84
+66-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:45:21-81
+67
+68            <data android:scheme="package" />
+68-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:46:13-46
+68-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:46:19-43
+69        </intent>
+70        <intent>
+70-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:48:9-51:18
+71            <action android:name="android.intent.action.MAIN" />
+71-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+71-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+72
+73            <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:50:13-73
+73-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:50:23-70
+74        </intent>
+75        <intent>
+75-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:52:9-55:18
+76            <action android:name="android.intent.action.MAIN" />
+76-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+76-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+77
+78            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+78-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:54:13-82
+78-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:54:23-79
+79        </intent>
+80        <intent>
+80-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:56:9-59:18
+81            <action android:name="android.intent.action.MAIN" />
+81-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+81-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+82
+83            <category android:name="com.darkgod.devtools.neo_tvos.category.DOCK_CARD" />
+83-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:58:13-89
+83-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:58:23-86
+84        </intent>
+85        <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
+86        <intent>
+86-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:61:9-64:18
+87            <action android:name="android.intent.action.MAIN" />
+87-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+87-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+88
+89            <category android:name="android.intent.category.HOME" />
+89-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:63:13-69
+89-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:63:23-66
+90        </intent>
+91        <!--
+92             China-market MIUI TV firmware: the Settings and Wi-Fi pills fall back to Xiaomi's settings app.
+93             Fire TV: the real settings menu lives in the stock launcher (see settings_fallback_components).
+94        -->
+95        <package android:name="com.xiaomi.mitv.settings" />
+95-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:67:9-60
+95-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:67:18-57
+96        <package android:name="com.tcl.settings" />
+96-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:68:9-52
+96-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:68:18-49
+97        <package android:name="com.amazon.tv.launcher" />
+97-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:69:9-58
+97-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:69:18-55
+98        <!-- Coocaa OS sources for the Inputs menu (coocaa_sources); see CoocaaSources. -->
+99        <provider android:authorities="com.skyworth.tv.provider" />
+99-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:71:9-68
+99-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:71:19-65
+100        <provider android:authorities="com.skyworth.tv.sdk.provider" />
+100-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:72:9-72
+100-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:72:19-69
+101    </queries>
+102
+103    <permission
+103-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+104        android:name="com.darkgod.devtools.neo_tvos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+104-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+105        android:protectionLevel="signature" />
+105-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+106
+107    <uses-permission android:name="com.darkgod.devtools.neo_tvos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+107-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+107-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+108
+109    <application
+109-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:75:5-284:19
+110        android:allowBackup="false"
+110-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:80:9-36
+111        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+111-->[androidx.core:core:1.13.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\5183e23ab51afc823352a9f22b7164e5\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+112        android:banner="@drawable/banner"
+112-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:78:9-42
+113        android:extractNativeLibs="false"
+113-->INJECTED
+114        android:icon="@mipmap/ic_launcher"
+114-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:77:9-43
+115        android:label="@string/app_name"
+115-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:76:9-41
+116        android:localeConfig="@xml/locales_config"
+116-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:81:9-51
+117        android:theme="@style/Theme.TvHome" >
+117-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:79:9-44
+118        <activity
+118-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:83:9-106:20
+119            android:name="com.darkgod.devtools.neo_tvos.ui.MainActivity"
+119-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:84:13-44
+120            android:clearTaskOnLaunch="true"
+120-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:89:13-45
+121            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+121-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:90:13-90
+122            android:excludeFromRecents="true"
+122-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:88:13-46
+123            android:exported="true"
+123-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:85:13-36
+124            android:launchMode="singleTask"
+124-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:86:13-44
+125            android:screenOrientation="landscape"
+125-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:91:13-50
+126            android:stateNotNeeded="true" >
+126-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:87:13-42
+127
+128            <!--
+129                 CVTE firmware (ro.CVT_EN_COMMON_HOME_INTENT=1) sends the Home key and boot as MAIN + HOME +
+130                 COMMON_HOME, which only matches a filter that lists both (#1201). In this one filter, not a second
+131                 one: a plain HOME intent still matches it, and a second filter could list this activity twice.
+132            -->
+133            <intent-filter android:priority="3" >
+133-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:95:13-100:29
+133-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:95:28-48
+134                <action android:name="android.intent.action.MAIN" />
+134-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+134-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+135
+136                <category android:name="android.intent.category.HOME" />
+136-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:63:13-69
+136-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:63:23-66
+137                <category android:name="android.intent.category.COMMON_HOME" />
+137-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:98:17-80
+137-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:98:27-77
+138                <category android:name="android.intent.category.DEFAULT" />
+138-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+138-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+139            </intent-filter>
+140            <!-- Listed in the TV's own app list, so it can be opened from the stock home screen too. -->
+141            <intent-filter>
+141-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:102:13-105:29
+142                <action android:name="android.intent.action.MAIN" />
+142-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+142-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+143
+144                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+144-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:54:13-82
+144-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:54:23-79
+145            </intent-filter>
+146        </activity>
+147
+148        <activity-alias
+148-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:108:9-115:26
+149            android:name="com.darkgod.devtools.neo_tvos.MainActivity"
+149-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:109:13-41
+150            android:exported="true"
+150-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:111:13-36
+151            android:targetActivity="com.darkgod.devtools.neo_tvos.ui.MainActivity" >
+151-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:110:13-54
+152            <intent-filter>
+152-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:112:13-114:29
+153                <action android:name="android.intent.action.MAIN" />
+153-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+153-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+154            </intent-filter>
+155        </activity-alias>
+156
+157        <activity
+157-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:117:9-123:86
+158            android:name="com.darkgod.devtools.neo_tvos.ui.LauncherSettingsActivity"
+158-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:118:13-56
+159            android:excludeFromRecents="true"
+159-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:122:13-46
+160            android:exported="true"
+160-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:119:13-36
+161            android:launchMode="singleTop"
+161-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:121:13-43
+162            android:taskAffinity=""
+162-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:120:13-36
+163            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+163-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:123:13-83
+164        <activity
+164-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:124:9-128:53
+165            android:name="com.darkgod.devtools.neo_tvos.ui.SetupActivity"
+165-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:125:13-45
+166            android:excludeFromRecents="true"
+166-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:127:13-46
+167            android:exported="false"
+167-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:126:13-37
+168            android:screenOrientation="landscape" />
+168-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:128:13-50
+169        <!--
+170             The system input switcher (com.android.tv.action.VIEW_INPUTS), which is what the remote's Input
+171             button becomes through the TV's Live TV app or InputKeyService. Disabled here and switched on by
+172             MainActivity only while handle_view_inputs is true (config.xml or a theme), for sets whose stock
+173             launcher was the only handler of the action (Hisense huangshan, Android TV 10): kept off, a TV with
+174             its own input picker never sees a second candidate and a chooser.
+175        -->
+176        <activity
+176-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:134:9-145:20
+177            android:name="com.darkgod.devtools.neo_tvos.ui.InputsRequestActivity"
+177-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:135:13-53
+178            android:enabled="false"
+178-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:137:13-36
+179            android:excludeFromRecents="true"
+179-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:138:13-46
+180            android:exported="true"
+180-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:136:13-36
+181            android:noHistory="true"
+181-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:139:13-37
+182            android:theme="@android:style/Theme.NoDisplay" >
+182-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:140:13-59
+183            <intent-filter>
+183-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:141:13-144:29
+184                <action android:name="com.android.tv.action.VIEW_INPUTS" />
+184-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:142:17-76
+184-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:142:25-73
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+186-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+187            </intent-filter>
+188        </activity>
+189        <!--
+190             Remote Settings button panel (settings_key_panel); own task so the app behind stays put.
+191             No screenOrientation: a translucent activity may not request one on Android 8.0 (API 26),
+192             which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway.
+193        -->
+194        <activity
+194-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:149:9-156:86
+195            android:name="com.darkgod.devtools.neo_tvos.ui.QuickSettingsActivity"
+195-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:150:13-53
+196            android:excludeFromRecents="true"
+196-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:154:13-46
+197            android:exported="false"
+197-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:151:13-37
+198            android:launchMode="singleTop"
+198-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:153:13-43
+199            android:noHistory="true"
+199-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:155:13-37
+200            android:taskAffinity=""
+200-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:152:13-36
+201            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+201-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:156:13-83
+202        <activity
+202-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:157:9-162:62
+203            android:name="com.darkgod.devtools.neo_tvos.ui.HomeSettingsActivity"
+203-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:158:13-52
+204            android:excludeFromRecents="true"
+204-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:161:13-46
+205            android:exported="false"
+205-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:159:13-37
+206            android:taskAffinity=""
+206-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:160:13-36
+207            android:theme="@android:style/Theme.NoDisplay" />
+207-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:162:13-59
+208        <!--
+209             Home button for remotes that send KEYCODE_ALL_APPS (Xiaomi). Opt-in: HOME_KEY_SERVICE=1
+210             build-and-install.sh; see HomeKeyService.
+211        -->
+212        <service
+212-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:165:9-177:19
+213            android:name="com.darkgod.devtools.neo_tvos.service.HomeKeyService"
+213-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:166:13-51
+214            android:directBootAware="true"
+214-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:168:13-43
+215            android:exported="true"
+215-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:169:13-36
+216            android:label="@string/home_key_name"
+216-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:167:13-50
+217            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+217-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:170:13-79
+218            <intent-filter>
+218-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:171:13-173:29
+219                <action android:name="android.accessibilityservice.AccessibilityService" />
+219-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:172:17-92
+219-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:172:25-89
+220            </intent-filter>
+221
+222            <meta-data
+222-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:174:13-176:60
+223                android:name="android.accessibilityservice"
+223-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:175:17-60
+224                android:resource="@xml/home_key_service" />
+224-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:176:17-57
+225        </service>
+226
+227        <!--
+228             market://launch?id=<package>: package-name app launches from the Android TV Remote service
+229             (Home Assistant android_tv_remote), normally served by the stock launcher.
+230        -->
+231        <activity
+231-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:181:9-193:20
+232            android:name="com.darkgod.devtools.neo_tvos.ui.AppLaunchActivity"
+232-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:182:13-49
+233            android:excludeFromRecents="true"
+233-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:184:13-46
+234            android:exported="true"
+234-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:183:13-36
+235            android:noHistory="true"
+235-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:185:13-37
+236            android:theme="@android:style/Theme.NoDisplay" >
+236-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:186:13-59
+237            <intent-filter>
+237-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:187:13-192:29
+238                <action android:name="android.intent.action.VIEW" />
+238-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:188:17-69
+238-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:188:25-66
+239
+240                <category android:name="android.intent.category.DEFAULT" />
+240-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+240-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+241                <category android:name="android.intent.category.BROWSABLE" />
+241-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:190:17-78
+241-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:190:27-75
+242
+243                <data
+243-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:46:13-46
+244                    android:host="launch"
+244-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:191:47-68
+245                    android:scheme="market" />
+245-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:46:19-43
+246            </intent-filter>
+247        </activity>
+248
+249        <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
+250        <activity
+250-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:196:9-201:80
+251            android:name="com.darkgod.devtools.neo_tvos.ui.ClockActivity"
+251-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:197:13-45
+252            android:excludeFromRecents="true"
+252-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:199:13-46
+253            android:exported="false"
+253-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:198:13-37
+254            android:noHistory="true"
+254-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:200:13-37
+255            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+255-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:201:13-77
+256
+257        <!--
+258             stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
+259             it sends a window event when it closes (HomeKeyService.probeAtBoot).
+260        -->
+261        <activity
+261-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:205:9-211:75
+262            android:name="com.darkgod.devtools.neo_tvos.ui.ProbeActivity"
+262-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:206:13-45
+263            android:excludeFromRecents="true"
+263-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:208:13-46
+264            android:exported="false"
+264-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:207:13-37
+265            android:noHistory="true"
+265-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:209:13-37
+266            android:taskAffinity=""
+266-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:210:13-36
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+267-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:211:13-72
+268
+269        <!--
+270             Screensaver: pick it in Settings, or `settings put secure screensaver_components
+271             com.darkgod.devtools.neo_tvos/.service.ClockDream` over adb.
+272        -->
+273        <service
+273-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:215:9-224:19
+274            android:name="com.darkgod.devtools.neo_tvos.service.ClockDream"
+274-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:216:13-47
+275            android:exported="true"
+275-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:218:13-36
+276            android:label="@string/dream_name"
+276-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:217:13-47
+277            android:permission="android.permission.BIND_DREAM_SERVICE" >
+277-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:219:13-71
+278            <intent-filter>
+278-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:220:13-223:29
+279                <action android:name="android.service.dreams.DreamService" />
+279-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:221:17-78
+279-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:221:25-75
+280
+281                <category android:name="android.intent.category.DEFAULT" />
+281-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+281-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+282            </intent-filter>
+283        </service>
+284
+285        <!--
+286             tools/theme.sh writes the theme through this where the shell can't reach Android/data;
+287             see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't.
+288        -->
+289        <provider
+289-->INJECTED
+290            android:name="com.darkgod.devtools.neo_tvos.theme.ThemeProvider"
+290-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:229:13-48
+291            android:authorities="com.darkgod.devtools.neo_tvos.theme"
+291-->INJECTED
+292            android:exported="true"
+292-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:231:13-36
+293            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+293-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:232:13-74
+294
+295        <!--
+296         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
+297         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
+298        -->
+299        <!--
+300             Bound again by the system after a force stop, which restarts Home on firmware that kills
+301             third-party apps (TCL tc8000_ay30a2). It reads no notification.
+302             cmd notification allow_listener com.darkgod.devtools.neo_tvos/.service.GuardRevival
+303        -->
+304        <service
+304-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:239:9-248:19
+305            android:name="com.darkgod.devtools.neo_tvos.service.GuardRevival"
+305-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:240:13-49
+306            android:directBootAware="true"
+306-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:241:13-43
+307            android:exported="true"
+307-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:242:13-36
+308            android:label="@string/home_key_name"
+308-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:243:13-50
+309            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+309-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:244:13-87
+310            <intent-filter>
+310-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:245:13-247:29
+311                <action android:name="android.service.notification.NotificationListenerService" />
+311-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:246:17-99
+311-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:246:25-96
+312            </intent-filter>
+313        </service>
+314
+315        <receiver
+315-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:249:9-256:20
+316            android:name="com.darkgod.devtools.neo_tvos.service.GuardConfig"
+316-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:250:13-48
+317            android:exported="true"
+317-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:251:13-36
+318            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
+318-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:252:13-74
+319            <intent-filter>
+319-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:253:13-255:29
+320                <action android:name="com.darkgod.devtools.neo_tvos.GUARD" />
+320-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:254:17-78
+320-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:254:25-75
+321            </intent-filter>
+322        </receiver>
+323
+324        <service
+324-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:258:9-269:19
+325            android:name="com.darkgod.devtools.neo_tvos.service.InputKeyService"
+325-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:259:13-52
+326            android:exported="false"
+326-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:260:13-37
+327            android:label="@string/app_name"
+327-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:261:13-45
+328            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+328-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:262:13-79
+329            <intent-filter>
+329-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:171:13-173:29
+330                <action android:name="android.accessibilityservice.AccessibilityService" />
+330-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:172:17-92
+330-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:172:25-89
+331            </intent-filter>
+332
+333            <meta-data
+333-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:174:13-176:60
+334                android:name="android.accessibilityservice"
+334-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:175:17-60
+335                android:resource="@xml/input_key_service" />
+335-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:176:17-57
+336        </service>
+337
+338        <receiver
+338-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:271:9-283:20
+339            android:name="com.darkgod.devtools.neo_tvos.receiver.NeoAdminReceiver"
+339-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:272:13-54
+340            android:description="@string/admin_description"
+340-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:274:13-60
+341            android:exported="true"
+341-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:276:13-36
+342            android:label="@string/app_name"
+342-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:273:13-45
+343            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+343-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:275:13-70
+344            <meta-data
+344-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:277:13-279:56
+345                android:name="android.app.device_admin"
+345-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:278:17-56
+346                android:resource="@xml/device_admin" />
+346-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:279:17-53
+347
+348            <intent-filter>
+348-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:280:13-282:29
+349                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+349-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:281:17-82
+349-->C:\MyFiles\Developments\tv-custom-launcher\app\src\main\AndroidManifest.xml:281:25-79
+350            </intent-filter>
+351        </receiver>
+352
+353        <provider
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+354            android:name="androidx.startup.InitializationProvider"
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:25:13-67
+355            android:authorities="com.darkgod.devtools.neo_tvos.androidx-startup"
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:26:13-68
+356            android:exported="false" >
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:27:13-37
+357            <meta-data
+357-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+358                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+359                android:value="androidx.startup" />
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+360        </provider>
+361
+362        <receiver
+362-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+363            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+364            android:directBootAware="false"
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+365            android:enabled="true"
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+366            android:exported="true"
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+367            android:permission="android.permission.DUMP" >
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+368            <intent-filter>
+368-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+369                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+369-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+369-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+370            </intent-filter>
+371            <intent-filter>
+371-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+372                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+372-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+372-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+373            </intent-filter>
+374            <intent-filter>
+374-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+375                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+375-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+375-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+376            </intent-filter>
+377            <intent-filter>
+377-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+378                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+378-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+378-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\044edfbfc04dfe62efda029326fa0292\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+379            </intent-filter>
+380        </receiver>
+381    </application>
+382
+383</manifest>

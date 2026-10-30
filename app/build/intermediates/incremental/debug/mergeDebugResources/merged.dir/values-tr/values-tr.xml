@@ -10,6 +10,13 @@
     <string name="animations_state">Animasyonlar: %1$s</string>
     <string name="app_library">Uygulama kitaplığı</string>
     <string name="app_name">Ana Ekran</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Yanıtla"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Reddet"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Kapat"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Gelen arama"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Devam eden arama"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Gelen arama süzülüyor"</string>
     <string name="cant_open">%1$s açılamıyor</string>
     <string name="card_app_name">Uygulama: %1$s</string>
     <string name="card_keep_hidden">Gizli tut</string>

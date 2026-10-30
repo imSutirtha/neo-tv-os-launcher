@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.129Z" hostname="DIVA" time="0.012">
+  <properties/>
+  <testcase name="findMatchesByName" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.001"/>
+  <testcase name="anOnTvPickReplacesTheRotation" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.0"/>
+  <testcase name="imagesKeepsPicturesOnlySortedByName" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.007"/>
+  <testcase name="pickUsesTheRequestedOrder" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.001"/>
+  <testcase name="dueOnlyWithRotationOnAndTheIntervalPassed" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.0"/>
+  <testcase name="pickAvoidsThePreviousPictureWhenThereIsAnother" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.0"/>
+  <testcase name="findsTheFirstPictureWhenThePreviousOneIsGone" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.0"/>
+  <testcase name="homeRebuildsWhenTheSettingsRevisionMoved" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.003"/>
+  <testcase name="sequentialAdvancesInSortedOrderAndWraps" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperRotationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

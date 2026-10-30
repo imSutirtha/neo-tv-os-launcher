@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.theme.WallpaperMoodTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.120Z" hostname="DIVA" time="0.008">
+  <properties/>
+  <testcase name="timeOfDayFollowsSunriseNoonAndDusk" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperMoodTest" time="0.001"/>
+  <testcase name="selectKeepsTheCollectionsOrderAndFallsBackToAll" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperMoodTest" time="0.0"/>
+  <testcase name="sunComesFromTheConfiguredPlaceOrTheDefaults" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperMoodTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

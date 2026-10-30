@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.475Z" hostname="DIVA" time="0.002">
+  <properties/>
+  <testcase name="horizontalEdgesMatchExplicitRowsAcrossColumnCountsAndDirections" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.002"/>
+  <testcase name="sparseDockRedirectsEmptySlotsAndKeepsGridRowBoundary" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.0"/>
+  <testcase name="singleColumnHasBothHorizontalEdges" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.0"/>
+  <testcase name="incompleteHebrewLastRowDoesNotWrapIntoEmptySpace" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.0"/>
+  <testcase name="hebrewDockStartsOnTheRightAndStopsAtTheLeft" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.0"/>
+  <testcase name="originalLeftToRightBoundariesArePreserved" classname="com.darkgod.devtools.neo_tvos.util.GridNavigationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.util.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.482Z" hostname="DIVA" time="0.001">
+  <properties/>
+  <testcase name="ordinaryBackgroundTransitionKeepsWarmResources" classname="com.darkgod.devtools.neo_tvos.util.MemoryTrimPolicyTest" time="0.001"/>
+  <testcase name="backgroundPressureReleasesResourcesOnlyWhenHomeIsStopped" classname="com.darkgod.devtools.neo_tvos.util.MemoryTrimPolicyTest" time="0.0"/>
+  <testcase name="lowMemorySignalsReleaseResourcesWhenHomeIsStopped" classname="com.darkgod.devtools.neo_tvos.util.MemoryTrimPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

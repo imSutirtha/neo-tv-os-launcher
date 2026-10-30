@@ -9,6 +9,13 @@
     <string name="animations_state">Animationer: %1$s</string>
     <string name="app_library">App-bibliotek</string>
     <string name="app_name">Hjem</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Besvar"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Afvis"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Læg på"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Indgående opkald"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Igangværende opkald"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Et indgående opkald screenes"</string>
     <string name="cant_open">Kan ikke åbne %1$s</string>
     <string name="card_keep_hidden">Skjul</string>
     <string name="card_show">Vis kort</string>

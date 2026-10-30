@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DarkGoD\'s TVOS</string>
+    <string name="app_name">Neo tvOS</string>
+    <string name="welcome_title">Welcome to %1$s</string>
     <string name="inputs">Inputs</string>
     <string name="wifi">Wi-Fi</string>
     <string name="settings">Settings</string>
@@ -46,12 +47,16 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">VPN off</string>
     <string name="home_settings">Choose default home</string>
-    <string name="home_settings_help">Select your original home to stop using CleanYourTV as Home, or CleanYourTV to switch back. The original launcher must be enabled and your TV must provide a home picker; use the restore script first if it was disabled.</string>
+    <string name="home_settings_help">Select your original home to stop using Neo tvOS as Home, or Neo tvOS to switch back. The original launcher must be enabled and your TV must provide a home picker; use the restore script first if it was disabled.</string>
     <string name="launcher_settings">Launcher settings</string>
     <string name="native_settings">Native settings</string>
     <string name="columns_label">Apps per row</string>
     <string name="rows_below_dock_label">Rows below dock</string>
     <string name="dock_opacity_label">Dock band opacity</string>
+    <string name="clock_format_label">Time format</string>
+    <string name="clock_format_auto">Auto</string>
+    <string name="clock_format_12h">12-hour</string>
+    <string name="clock_format_24h">24-hour</string>
     <string name="wallpaper_label">Wallpaper</string>
     <string name="wallpaper_state">Wallpaper: %1$s</string>
     <string name="wallpaper_none">None</string>
@@ -101,6 +106,7 @@
     <string name="dock_edit_hint">Choose the dock place to change and press OK. Back to finish.</string>
     <string name="dock_edit_pick_app">Now choose the app to put there and press OK. Back to choose another place.</string>
     <string name="tile_add_to_dock">Add to dock</string>
+    <string name="remove_from_dock">Remove %1$s from dock</string>
     <string name="tile_replace_in_dock">Replace with another app</string>
     <string name="dock_edit_pick_place">Choose the dock place for this app and press OK. Back to cancel.</string>
     <string name="reorder">Reorder apps</string>
@@ -154,4 +160,6 @@
     <string name="last_opened">Last opened %1$s</string>
     <!-- game_day: a game on now, in the race panel. -->
     <string name="game_live">Live now</string>
+    <string name="admin_description">Neo tvOS System Launcher and Device Controller</string>
+    <string name="admin_warning">Neo tvOS is configured as your primary launcher. Deactivating administrator will expose the launcher to uninstallation.</string>
 </resources>

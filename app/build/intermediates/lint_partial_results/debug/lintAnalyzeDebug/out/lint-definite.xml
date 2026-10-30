@@ -11,89 +11,13 @@
             replacement="apply"
             priority="0"/>
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/Config.java"
-            line="738"
-            column="62"
-            startOffset="49405"
-            endLine="738"
-            endColumn="70"
-            endOffset="49413"/>
-    </incident>
-
-    <incident
-        id="ApplySharedPref"
-        severity="warning"
-        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
-        <fix-replace
-            description="Replace commit() with apply()"
-            oldPattern="(commit)\s*\("
-            replacement="apply"
-            priority="0"/>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/Config.java"
-            line="742"
-            column="64"
-            startOffset="49720"
-            endLine="742"
-            endColumn="72"
-            endOffset="49728"/>
-    </incident>
-
-    <incident
-        id="ApplySharedPref"
-        severity="warning"
-        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
-        <fix-replace
-            description="Replace commit() with apply()"
-            oldPattern="(commit)\s*\("
-            replacement="apply"
-            priority="0"/>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/GuardKeep.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/GuardKeep.java"
             line="44"
             column="99"
-            startOffset="1754"
+            startOffset="1786"
             endLine="44"
             endColumn="107"
-            endOffset="1762"/>
-    </incident>
-
-    <incident
-        id="ApplySharedPref"
-        severity="warning"
-        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
-        <fix-replace
-            description="Replace commit() with apply()"
-            oldPattern="(commit)\s*\("
-            replacement="apply"
-            priority="0"/>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/LauncherSettingsActivity.java"
-            line="143"
-            column="78"
-            startOffset="6354"
-            endLine="143"
-            endColumn="86"
-            endOffset="6362"/>
-    </incident>
-
-    <incident
-        id="ApplySharedPref"
-        severity="warning"
-        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
-        <fix-replace
-            description="Replace commit() with apply()"
-            oldPattern="(commit)\s*\("
-            replacement="apply"
-            priority="0"/>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/OpenOnStart.java"
-            line="34"
-            column="103"
-            startOffset="1491"
-            endLine="34"
-            endColumn="111"
-            endOffset="1499"/>
+            endOffset="1794"/>
     </incident>
 
     <incident
@@ -104,10 +28,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="177"
             column="17"
-            startOffset="6971"
+            startOffset="6987"
             endLine="177"
             endColumn="48"
-            endOffset="7002"
+            endOffset="7018"
             message="Occurrence in layout"/>
     </incident>
 
@@ -119,10 +43,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="216"
             column="21"
-            startOffset="8876"
+            startOffset="8892"
             endLine="216"
             endColumn="46"
-            endOffset="8901"
+            endOffset="8917"
             message="Occurrence in layout"/>
     </incident>
 
@@ -137,12 +61,12 @@
             priority="0"/>
         <location
             file="${:app*projectDir}/build.gradle"
-            line="13"
+            line="36"
             column="9"
-            startOffset="381"
-            endLine="13"
+            startOffset="1034"
+            endLine="36"
             endColumn="21"
-            endOffset="393"/>
+            endOffset="1046"/>
     </incident>
 
     <incident
@@ -155,7 +79,7 @@
             replacement="9.8.2"
             priority="0"/>
         <location
-            file="$HOME/Downloads/CleanYourTV/tcl-custom-launcher/gradle/wrapper/gradle-wrapper.properties"
+            file="../gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"
             startOffset="81"
@@ -175,12 +99,12 @@
             priority="0"/>
         <location
             file="${:app*projectDir}/build.gradle"
-            line="7"
+            line="30"
             column="5"
-            startOffset="94"
-            endLine="7"
+            startOffset="718"
+            endLine="30"
             endColumn="18"
-            endOffset="107"/>
+            endOffset="731"/>
     </incident>
 
     <incident
@@ -195,12 +119,12 @@
             priority="0"/>
         <location
             file="${:app*projectDir}/build.gradle"
-            line="44"
+            line="67"
             column="20"
-            startOffset="1461"
-            endLine="44"
+            startOffset="2148"
+            endLine="67"
             endColumn="62"
-            endOffset="1503"/>
+            endOffset="2190"/>
     </incident>
 
     <incident
@@ -215,12 +139,12 @@
             priority="0"/>
         <location
             file="${:app*projectDir}/build.gradle"
-            line="45"
+            line="68"
             column="20"
-            startOffset="1523"
-            endLine="45"
+            startOffset="2210"
+            endLine="68"
             endColumn="70"
-            endOffset="1573"/>
+            endOffset="2260"/>
     </incident>
 
     <incident
@@ -234,10 +158,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
             line="91"
             column="13"
-            startOffset="4967"
+            startOffset="4983"
             endLine="91"
             endColumn="50"
-            endOffset="5004"/>
+            endOffset="5020"/>
     </incident>
 
     <incident
@@ -251,10 +175,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
             line="112"
             column="13"
-            startOffset="6228"
+            startOffset="6244"
             endLine="112"
             endColumn="50"
-            endOffset="6265"/>
+            endOffset="6281"/>
     </incident>
 
     <incident
@@ -268,10 +192,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
             line="117"
             column="13"
-            startOffset="6424"
+            startOffset="6440"
             endLine="117"
             endColumn="50"
-            endOffset="6461"/>
+            endOffset="6477"/>
     </incident>
 
     <incident
@@ -279,13 +203,13 @@
         severity="warning"
         message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppAdapter.java"
             line="385"
             column="37"
-            startOffset="20691"
+            startOffset="20694"
             endLine="385"
             endColumn="50"
-            endOffset="20704"/>
+            endOffset="20707"/>
     </incident>
 
     <incident
@@ -811,7 +735,7 @@
     <incident
         id="MissingTranslation"
         severity="informational"
-        message="&quot;wallpaper_label&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        message="&quot;clock_format_label&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;it&quot; (Italian), &quot;es&quot; (Spanish), &quot;iw&quot; (Hebrew), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
         <fix-attribute
             description="Mark non-translatable"
             attribute="translatable"
@@ -822,8 +746,80 @@
             column="13"
             startOffset="3146"
             endLine="55"
+            endColumn="38"
+            endOffset="3171"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;clock_format_auto&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;it&quot; (Italian), &quot;es&quot; (Spanish), &quot;iw&quot; (Hebrew), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="56"
+            column="13"
+            startOffset="3205"
+            endLine="56"
+            endColumn="37"
+            endOffset="3229"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;clock_format_12h&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;it&quot; (Italian), &quot;es&quot; (Spanish), &quot;iw&quot; (Hebrew), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="57"
+            column="13"
+            startOffset="3256"
+            endLine="57"
+            endColumn="36"
+            endOffset="3279"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;clock_format_24h&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;it&quot; (Italian), &quot;es&quot; (Spanish), &quot;iw&quot; (Hebrew), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="58"
+            column="13"
+            startOffset="3309"
+            endLine="58"
+            endColumn="36"
+            endOffset="3332"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_label&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="59"
+            column="13"
+            startOffset="3362"
+            endLine="59"
             endColumn="35"
-            endOffset="3168"/>
+            endOffset="3384"/>
     </incident>
 
     <incident
@@ -836,12 +832,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="56"
+            line="60"
             column="13"
-            startOffset="3200"
-            endLine="56"
+            startOffset="3416"
+            endLine="60"
             endColumn="35"
-            endOffset="3222"/>
+            endOffset="3438"/>
     </incident>
 
     <incident
@@ -854,12 +850,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="57"
+            line="61"
             column="13"
-            startOffset="3260"
-            endLine="57"
+            startOffset="3476"
+            endLine="61"
             endColumn="34"
-            endOffset="3281"/>
+            endOffset="3497"/>
     </incident>
 
     <incident
@@ -872,12 +868,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="58"
+            line="62"
             column="13"
-            startOffset="3308"
-            endLine="58"
+            startOffset="3524"
+            endLine="62"
             endColumn="37"
-            endOffset="3332"/>
+            endOffset="3548"/>
     </incident>
 
     <incident
@@ -890,12 +886,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="59"
+            line="63"
             column="13"
-            startOffset="3372"
-            endLine="59"
+            startOffset="3588"
+            endLine="63"
             endColumn="43"
-            endOffset="3402"/>
+            endOffset="3618"/>
     </incident>
 
     <incident
@@ -908,12 +904,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="63"
+            line="67"
             column="13"
-            startOffset="3636"
-            endLine="63"
+            startOffset="3852"
+            endLine="67"
             endColumn="39"
-            endOffset="3662"/>
+            endOffset="3878"/>
     </incident>
 
     <incident
@@ -926,12 +922,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="64"
+            line="68"
             column="13"
-            startOffset="3698"
-            endLine="64"
+            startOffset="3914"
+            endLine="68"
             endColumn="39"
-            endOffset="3724"/>
+            endOffset="3940"/>
     </incident>
 
     <incident
@@ -944,12 +940,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="65"
+            line="69"
             column="13"
-            startOffset="3766"
-            endLine="65"
+            startOffset="3982"
+            endLine="69"
             endColumn="44"
-            endOffset="3797"/>
+            endOffset="4013"/>
     </incident>
 
     <incident
@@ -962,12 +958,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="67"
+            line="71"
             column="13"
-            startOffset="4023"
-            endLine="67"
+            startOffset="4239"
+            endLine="71"
             endColumn="37"
-            endOffset="4047"/>
+            endOffset="4263"/>
     </incident>
 
     <incident
@@ -980,12 +976,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="69"
+            line="73"
             column="13"
-            startOffset="4252"
-            endLine="69"
+            startOffset="4468"
+            endLine="73"
             endColumn="33"
-            endOffset="4272"/>
+            endOffset="4488"/>
     </incident>
 
     <incident
@@ -998,12 +994,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="70"
+            line="74"
             column="13"
-            startOffset="4302"
-            endLine="70"
+            startOffset="4518"
+            endLine="74"
             endColumn="33"
-            endOffset="4322"/>
+            endOffset="4538"/>
     </incident>
 
     <incident
@@ -1016,12 +1012,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="71"
+            line="75"
             column="13"
-            startOffset="4352"
-            endLine="71"
+            startOffset="4568"
+            endLine="75"
             endColumn="30"
-            endOffset="4369"/>
+            endOffset="4585"/>
     </incident>
 
     <incident
@@ -1034,12 +1030,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="72"
+            line="76"
             column="13"
-            startOffset="4396"
-            endLine="72"
+            startOffset="4612"
+            endLine="76"
             endColumn="35"
-            endOffset="4418"/>
+            endOffset="4634"/>
     </incident>
 
     <incident
@@ -1052,12 +1048,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="76"
+            line="80"
             column="13"
-            startOffset="4562"
-            endLine="76"
+            startOffset="4778"
+            endLine="80"
             endColumn="49"
-            endOffset="4598"/>
+            endOffset="4814"/>
     </incident>
 
     <incident
@@ -1070,12 +1066,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="77"
+            line="81"
             column="13"
-            startOffset="4689"
-            endLine="77"
+            startOffset="4905"
+            endLine="81"
             endColumn="33"
-            endOffset="4709"/>
+            endOffset="4925"/>
     </incident>
 
     <incident
@@ -1088,12 +1084,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="78"
+            line="82"
             column="13"
-            startOffset="4743"
-            endLine="78"
+            startOffset="4959"
+            endLine="82"
             endColumn="40"
-            endOffset="4770"/>
+            endOffset="4986"/>
     </incident>
 
     <incident
@@ -1106,12 +1102,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="79"
+            line="83"
             column="13"
-            startOffset="4844"
-            endLine="79"
+            startOffset="5060"
+            endLine="83"
             endColumn="37"
-            endOffset="4868"/>
+            endOffset="5084"/>
     </incident>
 
     <incident
@@ -1124,12 +1120,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="80"
+            line="84"
             column="13"
-            startOffset="4909"
-            endLine="80"
+            startOffset="5125"
+            endLine="84"
             endColumn="36"
-            endOffset="4932"/>
+            endOffset="5148"/>
     </incident>
 
     <incident
@@ -1142,12 +1138,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="81"
+            line="85"
             column="13"
-            startOffset="5054"
-            endLine="81"
+            startOffset="5270"
+            endLine="85"
             endColumn="37"
-            endOffset="5078"/>
+            endOffset="5294"/>
     </incident>
 
     <incident
@@ -1160,12 +1156,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="82"
+            line="86"
             column="13"
-            startOffset="5149"
-            endLine="82"
+            startOffset="5365"
+            endLine="86"
             endColumn="40"
-            endOffset="5176"/>
+            endOffset="5392"/>
     </incident>
 
     <incident
@@ -1178,12 +1174,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="83"
+            line="87"
             column="13"
-            startOffset="5314"
-            endLine="83"
+            startOffset="5530"
+            endLine="87"
             endColumn="42"
-            endOffset="5343"/>
+            endOffset="5559"/>
     </incident>
 
     <incident
@@ -1196,12 +1192,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="84"
+            line="88"
             column="13"
-            startOffset="5439"
-            endLine="84"
+            startOffset="5655"
+            endLine="88"
             endColumn="36"
-            endOffset="5462"/>
+            endOffset="5678"/>
     </incident>
 
     <incident
@@ -1214,12 +1210,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="85"
+            line="89"
             column="13"
-            startOffset="5558"
-            endLine="85"
+            startOffset="5774"
+            endLine="89"
             endColumn="40"
-            endOffset="5585"/>
+            endOffset="5801"/>
     </incident>
 
     <incident
@@ -1232,12 +1228,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="86"
+            line="90"
             column="13"
-            startOffset="5622"
-            endLine="86"
+            startOffset="5838"
+            endLine="90"
             endColumn="36"
-            endOffset="5645"/>
+            endOffset="5861"/>
     </incident>
 
     <incident
@@ -1250,12 +1246,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="87"
+            line="91"
             column="13"
-            startOffset="5679"
-            endLine="87"
+            startOffset="5895"
+            endLine="91"
             endColumn="29"
-            endOffset="5695"/>
+            endOffset="5911"/>
     </incident>
 
     <incident
@@ -1268,12 +1264,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="88"
+            line="92"
             column="13"
-            startOffset="5727"
-            endLine="88"
+            startOffset="5943"
+            endLine="92"
             endColumn="34"
-            endOffset="5748"/>
+            endOffset="5964"/>
     </incident>
 
     <incident
@@ -1286,12 +1282,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="89"
+            line="93"
             column="13"
-            startOffset="5796"
-            endLine="89"
+            startOffset="6012"
+            endLine="93"
             endColumn="32"
-            endOffset="5815"/>
+            endOffset="6031"/>
     </incident>
 
     <incident
@@ -1304,12 +1300,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="90"
+            line="94"
             column="13"
-            startOffset="5850"
-            endLine="90"
+            startOffset="6066"
+            endLine="94"
             endColumn="35"
-            endOffset="5872"/>
+            endOffset="6088"/>
     </incident>
 
     <incident
@@ -1322,12 +1318,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="91"
+            line="95"
             column="13"
-            startOffset="5920"
-            endLine="91"
+            startOffset="6136"
+            endLine="95"
             endColumn="33"
-            endOffset="5940"/>
+            endOffset="6156"/>
     </incident>
 
     <incident
@@ -1340,12 +1336,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="92"
+            line="96"
             column="13"
-            startOffset="5972"
-            endLine="92"
+            startOffset="6188"
+            endLine="96"
             endColumn="36"
-            endOffset="5995"/>
+            endOffset="6211"/>
     </incident>
 
     <incident
@@ -1358,12 +1354,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="93"
+            line="97"
             column="13"
-            startOffset="6023"
-            endLine="93"
+            startOffset="6239"
+            endLine="97"
             endColumn="41"
-            endOffset="6051"/>
+            endOffset="6267"/>
     </incident>
 
     <incident
@@ -1376,12 +1372,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="94"
+            line="98"
             column="13"
-            startOffset="6100"
-            endLine="94"
+            startOffset="6316"
+            endLine="98"
             endColumn="37"
-            endOffset="6124"/>
+            endOffset="6340"/>
     </incident>
 
     <incident
@@ -1394,12 +1390,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="95"
+            line="99"
             column="13"
-            startOffset="6153"
-            endLine="95"
+            startOffset="6369"
+            endLine="99"
             endColumn="34"
-            endOffset="6174"/>
+            endOffset="6390"/>
     </incident>
 
     <incident
@@ -1412,12 +1408,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="96"
+            line="100"
             column="13"
-            startOffset="6200"
-            endLine="96"
+            startOffset="6416"
+            endLine="100"
             endColumn="38"
-            endOffset="6225"/>
+            endOffset="6441"/>
     </incident>
 
     <incident
@@ -1430,12 +1426,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="97"
+            line="101"
             column="13"
-            startOffset="6255"
-            endLine="97"
+            startOffset="6471"
+            endLine="101"
             endColumn="40"
-            endOffset="6282"/>
+            endOffset="6498"/>
     </incident>
 
     <incident
@@ -1448,12 +1444,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="101"
+            line="105"
             column="13"
-            startOffset="6488"
-            endLine="101"
+            startOffset="6704"
+            endLine="105"
             endColumn="34"
-            endOffset="6509"/>
+            endOffset="6725"/>
     </incident>
 
     <incident
@@ -1466,12 +1462,30 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="102"
+            line="106"
             column="13"
-            startOffset="6593"
-            endLine="102"
+            startOffset="6809"
+            endLine="106"
             endColumn="38"
-            endOffset="6618"/>
+            endOffset="6834"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;remove_from_dock&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;it&quot; (Italian), &quot;es&quot; (Spanish), &quot;iw&quot; (Hebrew), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="108"
+            column="13"
+            startOffset="6989"
+            endLine="108"
+            endColumn="36"
+            endOffset="7012"/>
     </incident>
 
     <incident
@@ -1484,12 +1498,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="105"
+            line="110"
             column="13"
-            startOffset="6847"
-            endLine="105"
+            startOffset="7130"
+            endLine="110"
             endColumn="40"
-            endOffset="6874"/>
+            endOffset="7157"/>
     </incident>
 
     <incident
@@ -1502,12 +1516,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="108"
+            line="113"
             column="13"
-            startOffset="7053"
-            endLine="108"
+            startOffset="7336"
+            endLine="113"
             endColumn="32"
-            endOffset="7072"/>
+            endOffset="7355"/>
     </incident>
 
     <incident
@@ -1520,12 +1534,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="109"
+            line="114"
             column="13"
-            startOffset="7168"
-            endLine="109"
+            startOffset="7451"
+            endLine="114"
             endColumn="37"
-            endOffset="7192"/>
+            endOffset="7475"/>
     </incident>
 
     <incident
@@ -1538,12 +1552,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="117"
+            line="122"
             column="13"
-            startOffset="7640"
-            endLine="117"
+            startOffset="7923"
+            endLine="122"
             endColumn="39"
-            endOffset="7666"/>
+            endOffset="7949"/>
     </incident>
 
     <incident
@@ -1556,12 +1570,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="129"
+            line="134"
             column="13"
-            startOffset="8268"
-            endLine="129"
+            startOffset="8551"
+            endLine="134"
             endColumn="31"
-            endOffset="8286"/>
+            endOffset="8569"/>
     </incident>
 
     <incident
@@ -1574,12 +1588,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="130"
+            line="135"
             column="13"
-            startOffset="8333"
-            endLine="130"
+            startOffset="8616"
+            endLine="135"
             endColumn="40"
-            endOffset="8360"/>
+            endOffset="8643"/>
     </incident>
 
     <incident
@@ -1592,12 +1606,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="131"
+            line="136"
             column="13"
-            startOffset="8400"
-            endLine="131"
+            startOffset="8683"
+            endLine="136"
             endColumn="29"
-            endOffset="8416"/>
+            endOffset="8699"/>
     </incident>
 
     <incident
@@ -1610,12 +1624,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="132"
+            line="137"
             column="13"
-            startOffset="8451"
-            endLine="132"
+            startOffset="8734"
+            endLine="137"
             endColumn="35"
-            endOffset="8473"/>
+            endOffset="8756"/>
     </incident>
 
     <incident
@@ -1628,12 +1642,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="133"
+            line="138"
             column="13"
-            startOffset="8514"
-            endLine="133"
+            startOffset="8797"
+            endLine="138"
             endColumn="29"
-            endOffset="8530"/>
+            endOffset="8813"/>
     </incident>
 
     <incident
@@ -1646,12 +1660,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="134"
+            line="139"
             column="13"
-            startOffset="8564"
-            endLine="134"
+            startOffset="8847"
+            endLine="139"
             endColumn="33"
-            endOffset="8584"/>
+            endOffset="8867"/>
     </incident>
 
     <incident
@@ -1664,12 +1678,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="135"
+            line="140"
             column="13"
-            startOffset="8621"
-            endLine="135"
+            startOffset="8904"
+            endLine="140"
             endColumn="35"
-            endOffset="8643"/>
+            endOffset="8926"/>
     </incident>
 
     <incident
@@ -1682,12 +1696,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="136"
+            line="141"
             column="13"
-            startOffset="8676"
-            endLine="136"
+            startOffset="8959"
+            endLine="141"
             endColumn="35"
-            endOffset="8698"/>
+            endOffset="8981"/>
     </incident>
 
     <incident
@@ -1700,12 +1714,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="137"
+            line="142"
             column="13"
-            startOffset="8731"
-            endLine="137"
+            startOffset="9014"
+            endLine="142"
             endColumn="35"
-            endOffset="8753"/>
+            endOffset="9036"/>
     </incident>
 
     <incident
@@ -1718,12 +1732,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="138"
+            line="143"
             column="13"
-            startOffset="8786"
-            endLine="138"
+            startOffset="9069"
+            endLine="143"
             endColumn="42"
-            endOffset="8815"/>
+            endOffset="9098"/>
     </incident>
 
     <incident
@@ -1736,12 +1750,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="139"
+            line="144"
             column="13"
-            startOffset="8855"
-            endLine="139"
+            startOffset="9138"
+            endLine="144"
             endColumn="31"
-            endOffset="8873"/>
+            endOffset="9156"/>
     </incident>
 
     <incident
@@ -1754,12 +1768,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="140"
+            line="145"
             column="13"
-            startOffset="8902"
-            endLine="140"
+            startOffset="9185"
+            endLine="145"
             endColumn="35"
-            endOffset="8924"/>
+            endOffset="9207"/>
     </incident>
 
     <incident
@@ -1772,12 +1786,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="141"
+            line="146"
             column="13"
-            startOffset="8957"
-            endLine="141"
+            startOffset="9240"
+            endLine="146"
             endColumn="29"
-            endOffset="8973"/>
+            endOffset="9256"/>
     </incident>
 
     <incident
@@ -1790,12 +1804,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="142"
+            line="147"
             column="13"
-            startOffset="9000"
-            endLine="142"
+            startOffset="9283"
+            endLine="147"
             endColumn="41"
-            endOffset="9028"/>
+            endOffset="9311"/>
     </incident>
 
     <incident
@@ -1808,12 +1822,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="143"
+            line="148"
             column="13"
-            startOffset="9054"
-            endLine="143"
+            startOffset="9337"
+            endLine="148"
             endColumn="41"
-            endOffset="9082"/>
+            endOffset="9365"/>
     </incident>
 
     <incident
@@ -1826,12 +1840,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="144"
+            line="149"
             column="13"
-            startOffset="9108"
-            endLine="144"
+            startOffset="9391"
+            endLine="149"
             endColumn="41"
-            endOffset="9136"/>
+            endOffset="9419"/>
     </incident>
 
     <incident
@@ -1844,12 +1858,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="145"
+            line="150"
             column="13"
-            startOffset="9162"
-            endLine="145"
+            startOffset="9445"
+            endLine="150"
             endColumn="48"
-            endOffset="9197"/>
+            endOffset="9480"/>
     </incident>
 
     <incident
@@ -1862,12 +1876,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="146"
+            line="151"
             column="13"
-            startOffset="9222"
-            endLine="146"
+            startOffset="9505"
+            endLine="151"
             endColumn="37"
-            endOffset="9246"/>
+            endOffset="9529"/>
     </incident>
 
     <incident
@@ -1880,12 +1894,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="147"
+            line="152"
             column="13"
-            startOffset="9275"
-            endLine="147"
+            startOffset="9558"
+            endLine="152"
             endColumn="41"
-            endOffset="9303"/>
+            endOffset="9586"/>
     </incident>
 
     <incident
@@ -1898,12 +1912,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="148"
+            line="153"
             column="13"
-            startOffset="9331"
-            endLine="148"
+            startOffset="9614"
+            endLine="153"
             endColumn="35"
-            endOffset="9353"/>
+            endOffset="9636"/>
     </incident>
 
     <incident
@@ -1916,12 +1930,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="149"
+            line="154"
             column="13"
-            startOffset="9380"
-            endLine="149"
+            startOffset="9663"
+            endLine="154"
             endColumn="42"
-            endOffset="9409"/>
+            endOffset="9692"/>
     </incident>
 
     <incident
@@ -1934,12 +1948,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="150"
+            line="155"
             column="13"
-            startOffset="9440"
-            endLine="150"
+            startOffset="9723"
+            endLine="155"
             endColumn="40"
-            endOffset="9467"/>
+            endOffset="9750"/>
     </incident>
 
     <incident
@@ -1952,12 +1966,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="151"
+            line="156"
             column="13"
-            startOffset="9501"
-            endLine="151"
+            startOffset="9784"
+            endLine="156"
             endColumn="39"
-            endOffset="9527"/>
+            endOffset="9810"/>
     </incident>
 
     <incident
@@ -1970,12 +1984,12 @@
             value="false"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="154"
+            line="159"
             column="13"
-            startOffset="9744"
-            endLine="154"
+            startOffset="10027"
+            endLine="159"
             endColumn="31"
-            endOffset="9762"/>
+            endOffset="10045"/>
     </incident>
 
     <incident
@@ -2085,17 +2099,17 @@
             priority="0">
             <range
                 file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-                startOffset="9029"
-                endOffset="9032"/>
+                startOffset="9312"
+                endOffset="9315"/>
         </fix-replace>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
-            line="142"
+            line="147"
             column="42"
-            startOffset="9029"
-            endLine="142"
+            startOffset="9312"
+            endLine="147"
             endColumn="45"
-            endOffset="9032"/>
+            endOffset="9315"/>
     </incident>
 
     <incident
@@ -2475,13 +2489,13 @@
         severity="warning"
         message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppAdapter.java"
             line="368"
             column="9"
-            startOffset="19751"
+            startOffset="19754"
             endLine="368"
             endColumn="31"
-            endOffset="19773"/>
+            endOffset="19776"/>
     </incident>
 
     <incident
@@ -2489,13 +2503,22 @@
         severity="warning"
         message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/AppAdapter.java"
             line="418"
             column="9"
-            startOffset="22408"
+            startOffset="22411"
             endLine="418"
             endColumn="31"
-            endOffset="22430"/>
+            endOffset="22433"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 28. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <fix-data file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="28"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
     </incident>
 
     <incident
@@ -2597,14 +2620,6 @@
     </incident>
 
     <incident
-        id="IconLauncherShape"
-        severity="warning"
-        message="Launcher icons should not fill every pixel of their square region; see the design guide for details">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher.jpg"/>
-    </incident>
-
-    <incident
         id="SmallSp"
         severity="warning"
         message="Avoid using sizes smaller than `11sp`: `10sp`">
@@ -2623,27 +2638,13 @@
         severity="warning"
         message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="2600"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/MainActivity.java"
+            line="2599"
             column="29"
-            startOffset="128123"
-            endLine="2601"
-            endColumn="118"
-            endOffset="128308"/>
-    </incident>
-
-    <incident
-        id="SetTextI18n"
-        severity="warning"
-        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="3587"
-            column="59"
-            startOffset="183873"
-            endLine="3587"
-            endColumn="91"
-            endOffset="183905"/>
+            startOffset="128166"
+            endLine="2600"
+            endColumn="123"
+            endOffset="128365"/>
     </incident>
 
     <incident
@@ -2651,41 +2652,13 @@
         severity="warning"
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="3587"
-            column="59"
-            startOffset="183873"
-            endLine="3587"
-            endColumn="68"
-            endOffset="183882"/>
-    </incident>
-
-    <incident
-        id="SetTextI18n"
-        severity="warning"
-        message="String literal in `setText` can not be translated. Use Android resources instead.">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
-            line="3587"
-            column="79"
-            startOffset="183893"
-            endLine="3587"
-            endColumn="91"
-            endOffset="183905"/>
-    </incident>
-
-    <incident
-        id="SetTextI18n"
-        severity="warning"
-        message="String literal in `setText` can not be translated. Use Android resources instead.">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/SetupActivity.java"
             line="22"
             column="23"
-            startOffset="823"
+            startOffset="839"
             endLine="22"
             endColumn="50"
-            endOffset="850"/>
+            endOffset="866"/>
     </incident>
 
     <incident
@@ -2693,13 +2666,13 @@
         severity="warning"
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/SetupActivity.java"
             line="27"
             column="22"
-            startOffset="1018"
+            startOffset="1034"
             endLine="27"
             endColumn="107"
-            endOffset="1103"/>
+            endOffset="1119"/>
     </incident>
 
     <incident
@@ -2707,13 +2680,13 @@
         severity="warning"
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/darkgod/devtools/darkgod_tvos/SetupActivity.java"
             line="40"
             column="22"
-            startOffset="1770"
+            startOffset="1786"
             endLine="40"
             endColumn="32"
-            endOffset="1780"/>
+            endOffset="1796"/>
     </incident>
 
     <incident
@@ -2892,10 +2865,10 @@
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
             line="182"
             column="17"
-            startOffset="7223"
+            startOffset="7239"
             endLine="182"
             endColumn="61"
-            endOffset="7267"/>
+            endOffset="7283"/>
     </incident>
 
 </incidents>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.darkgod.devtools.neo_tvos.util.LauncherLocaleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.479Z" hostname="DIVA" time="0.002">
+  <properties/>
+  <testcase name="emptyOrMalformedTagsFollowTheTv" classname="com.darkgod.devtools.neo_tvos.util.LauncherLocaleTest" time="0.0"/>
+  <testcase name="plainTagsBecomeLocales" classname="com.darkgod.devtools.neo_tvos.util.LauncherLocaleTest" time="0.001"/>
+  <testcase name="tagsWithScriptsAndExtensionsBecomeLocales" classname="com.darkgod.devtools.neo_tvos.util.LauncherLocaleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

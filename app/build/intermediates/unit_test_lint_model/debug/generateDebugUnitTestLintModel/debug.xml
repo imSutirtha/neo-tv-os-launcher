@@ -1,7 +1,7 @@
 <variant
     name="debug"
-    package="com.gathin.tvhome"
-    minSdkVersion="26"
+    package="com.darkgod.devtools.darkgod_tvos"
+    minSdkVersion="28"
     targetSdkVersion="34"
     debuggable="true"
     mergedManifest="build\intermediates\merged_manifest\debug\processDebugMainManifest\AndroidManifest.xml"

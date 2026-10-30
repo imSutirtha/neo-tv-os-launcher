@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.gathin.tvhome.app-mergeDebugResources-8:/values-b+es+419/values-b+es+419.xml",
+            "outputFile": "com.darkgod.devtools.neo_tvos.app-mergeDebugResources-1:/values-b+es+419/values-b+es+419.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DarkGoD\\Downloads\\CleanYourTV\\tcl-custom-launcher\\app\\src\\main\\res\\values-b+es+419\\bools.xml",
+                    "source": "C:\\MyFiles\\Developments\\tv-custom-launcher\\app\\src\\main\\res\\values-b+es+419\\bools.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DarkGoD\\Downloads\\CleanYourTV\\tcl-custom-launcher\\app\\src\\main\\res\\values-b+es+419\\strings.xml",
+                    "source": "C:\\MyFiles\\Developments\\tv-custom-launcher\\app\\src\\main\\res\\values-b+es+419\\strings.xml",
                     "from": {
                         "startLines": "118,60,61,64,59,107,2,24,90,85,87,79,83,84,80,82,81,78,86,93,94,95,96,92,91,7,51,8,25,26,97,98,99,102,53,44,74,21,20,19,65,66,15,16,17,14,18,122,77,76,47,48,75,3,146,49,110,113,108,116,117,109,112,115,111,114,11,88,13,50,12,89,23,10,73,22,72,62,63,6,70,71,69,68,145,144,143,128,123,124,126,127,125,129,136,130,137,131,138,134,141,135,142,133,132,139,140,103,105,106,52,5,34,35,37,36,38,27,29,33,31,28,32,30,9,39,40,41,43,42,100,104,101,67,45,46,57,54,56,55,58,4",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

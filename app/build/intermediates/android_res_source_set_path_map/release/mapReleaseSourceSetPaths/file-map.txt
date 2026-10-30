@@ -1,0 +1,9 @@
+com.darkgod.devtools.neo_tvos.app-pngs-0 C:\MyFiles\Developments\tv-custom-launcher\app\build\generated\res\pngs\release
+com.darkgod.devtools.neo_tvos.app-updated_navigation_xml-1 C:\MyFiles\Developments\tv-custom-launcher\app\build\generated\updated_navigation_xml\release
+com.darkgod.devtools.neo_tvos.app-packageReleaseResources-2 C:\MyFiles\Developments\tv-custom-launcher\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.darkgod.devtools.neo_tvos.app-packageReleaseResources-3 C:\MyFiles\Developments\tv-custom-launcher\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.darkgod.devtools.neo_tvos.app-merged-not-compiled-resources-4 C:\MyFiles\Developments\tv-custom-launcher\app\build\intermediates\merged-not-compiled-resources\release
+com.darkgod.devtools.neo_tvos.app-release-5 C:\MyFiles\Developments\tv-custom-launcher\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.darkgod.devtools.neo_tvos.app-main-6 C:\MyFiles\Developments\tv-custom-launcher\app\src\main\res
+com.darkgod.devtools.neo_tvos.app-release-7 C:\MyFiles\Developments\tv-custom-launcher\app\src\release\res
+gradleHome-0 C:\Users\DarkGoD\.gradle
