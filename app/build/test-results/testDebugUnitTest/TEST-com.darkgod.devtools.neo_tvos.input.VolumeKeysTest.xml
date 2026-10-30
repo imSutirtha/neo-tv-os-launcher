@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.input.VolumeKeysTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.386Z" hostname="DIVA" time="0.001">
-  <properties/>
-  <testcase name="otherKeysPassThrough" classname="com.darkgod.devtools.neo_tvos.input.VolumeKeysTest" time="0.001"/>
-  <testcase name="onlyTheFirstDownAndTheUpChangeThePress" classname="com.darkgod.devtools.neo_tvos.input.VolumeKeysTest" time="0.0"/>
-  <testcase name="volumeUpAndDownAreHandled" classname="com.darkgod.devtools.neo_tvos.input.VolumeKeysTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

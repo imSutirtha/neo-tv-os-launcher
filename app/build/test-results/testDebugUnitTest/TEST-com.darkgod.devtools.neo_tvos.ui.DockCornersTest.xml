@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.ui.DockCornersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.430Z" hostname="DIVA" time="0.002">
-  <properties/>
-  <testcase name="evenPaddingIsTheGapBetweenTilesUnlessTheEdgeIsTighter" classname="com.darkgod.devtools.neo_tvos.ui.DockCornersTest" time="0.001"/>
-  <testcase name="evenPaddingStaysPositiveAndBelowTheCellFromFourToSevenColumns" classname="com.darkgod.devtools.neo_tvos.ui.DockCornersTest" time="0.001"/>
-  <testcase name="bandRadiusIsTileRadiusPlusPadding" classname="com.darkgod.devtools.neo_tvos.ui.DockCornersTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
