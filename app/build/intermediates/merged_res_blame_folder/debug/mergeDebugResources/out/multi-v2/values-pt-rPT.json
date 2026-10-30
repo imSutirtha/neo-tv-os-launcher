@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.gathin.tvhome.app-mergeDebugResources-8:/values-pt-rPT/values-pt-rPT.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\DarkGoD\\Downloads\\CleanYourTV\\tcl-custom-launcher\\app\\src\\main\\res\\values-pt-rPT\\strings.xml",
+                    "from": {
+                        "startLines": "4,6,7,10,12,11,5,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "218,320,429,691,866,812,270,555,617",
+                        "endColumns": "51,108,125,120,47,53,49,61,73",
+                        "endOffsets": "265,424,550,807,909,861,315,612,686"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,216,342,463,511,565,716,778",
+                        "endColumns": "51,108,125,120,47,53,49,61,73",
+                        "endOffsets": "102,211,337,458,506,560,610,773,847"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\DarkGoD\\.gradle\\caches\\9.6.0\\transforms\\7de9c922a25d21037d3de0c64a1cc93b\\transformed\\core-1.7.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "615",
+                        "endColumns": "100",
+                        "endOffsets": "711"
+                    }
+                }
+            ]
+        }
+    ]
+}

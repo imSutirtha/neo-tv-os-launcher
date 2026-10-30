@@ -1,0 +1,2901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.5.0" type="incidents">
+
+    <incident
+        id="ApplySharedPref"
+        severity="warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
+        <fix-replace
+            description="Replace commit() with apply()"
+            oldPattern="(commit)\s*\("
+            replacement="apply"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/Config.java"
+            line="738"
+            column="62"
+            startOffset="49405"
+            endLine="738"
+            endColumn="70"
+            endOffset="49413"/>
+    </incident>
+
+    <incident
+        id="ApplySharedPref"
+        severity="warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
+        <fix-replace
+            description="Replace commit() with apply()"
+            oldPattern="(commit)\s*\("
+            replacement="apply"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/Config.java"
+            line="742"
+            column="64"
+            startOffset="49720"
+            endLine="742"
+            endColumn="72"
+            endOffset="49728"/>
+    </incident>
+
+    <incident
+        id="ApplySharedPref"
+        severity="warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
+        <fix-replace
+            description="Replace commit() with apply()"
+            oldPattern="(commit)\s*\("
+            replacement="apply"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/GuardKeep.java"
+            line="44"
+            column="99"
+            startOffset="1754"
+            endLine="44"
+            endColumn="107"
+            endOffset="1762"/>
+    </incident>
+
+    <incident
+        id="ApplySharedPref"
+        severity="warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
+        <fix-replace
+            description="Replace commit() with apply()"
+            oldPattern="(commit)\s*\("
+            replacement="apply"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/LauncherSettingsActivity.java"
+            line="143"
+            column="78"
+            startOffset="6354"
+            endLine="143"
+            endColumn="86"
+            endOffset="6362"/>
+    </incident>
+
+    <incident
+        id="ApplySharedPref"
+        severity="warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background">
+        <fix-replace
+            description="Replace commit() with apply()"
+            oldPattern="(commit)\s*\("
+            replacement="apply"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/OpenOnStart.java"
+            line="34"
+            column="103"
+            startOffset="1491"
+            endLine="34"
+            endColumn="111"
+            endOffset="1499"/>
+    </incident>
+
+    <incident
+        id="InconsistentLayout"
+        severity="warning"
+        message="The id &quot;profileAvatar&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-iw (present in layout)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="177"
+            column="17"
+            startOffset="6971"
+            endLine="177"
+            endColumn="48"
+            endOffset="7002"
+            message="Occurrence in layout"/>
+    </incident>
+
+    <incident
+        id="InconsistentLayout"
+        severity="warning"
+        message="The id &quot;weather&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-iw (present in layout)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="216"
+            column="21"
+            startOffset="8876"
+            endLine="216"
+            endColumn="46"
+            endOffset="8901"
+            message="Occurrence in layout"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 37"
+            oldString="34"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="13"
+            column="9"
+            startOffset="381"
+            endLine="13"
+            endColumn="21"
+            endOffset="393"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of Gradle than 9.6.0 is available: 9.8.2">
+        <fix-replace
+            description="Update to 9.8.2"
+            oldString="9.6.0"
+            replacement="9.8.2"
+            priority="0"/>
+        <location
+            file="$HOME/Downloads/CleanYourTV/tcl-custom-launcher/gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"
+            startOffset="81"
+            endLine="3"
+            endColumn="80"
+            endOffset="144"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of `compileSdk` than 34 is available: 37">
+        <fix-replace
+            description="Set compileSdk to 37"
+            oldString="34"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="7"
+            column="5"
+            startOffset="94"
+            endLine="7"
+            endColumn="18"
+            endOffset="107"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0">
+        <fix-replace
+            description="Change to 1.4.0"
+            family="Update versions"
+            oldString="1.3.2"
+            replacement="1.4.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="44"
+            column="20"
+            startOffset="1461"
+            endLine="44"
+            endColumn="62"
+            endOffset="1503"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.dynamicanimation:dynamicanimation than 1.0.0 is available: 1.1.0">
+        <fix-replace
+            description="Change to 1.1.0"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.1.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="45"
+            column="20"
+            startOffset="1523"
+            endLine="45"
+            endColumn="70"
+            endOffset="1573"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios.">
+        <show-url
+            description="Show https://developer.android.com/adaptive-apps"
+            url="https://developer.android.com/adaptive-apps"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="91"
+            column="13"
+            startOffset="4967"
+            endLine="91"
+            endColumn="50"
+            endOffset="5004"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios.">
+        <show-url
+            description="Show https://developer.android.com/adaptive-apps"
+            url="https://developer.android.com/adaptive-apps"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="112"
+            column="13"
+            startOffset="6228"
+            endLine="112"
+            endColumn="50"
+            endOffset="6265"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios.">
+        <show-url
+            description="Show https://developer.android.com/adaptive-apps"
+            url="https://developer.android.com/adaptive-apps"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="117"
+            column="13"
+            startOffset="6424"
+            endLine="117"
+            endColumn="50"
+            endOffset="6461"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            line="385"
+            column="37"
+            startOffset="20691"
+            endLine="385"
+            endColumn="50"
+            endOffset="20704"/>
+    </incident>
+
+    <incident
+        id="MissingQuantity"
+        severity="warning"
+        message="For locale &quot;ca&quot; (Catalan) the following quantity should also be defined: `many`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-ca/strings.xml"
+            line="64"
+            column="5"
+            startOffset="4273"
+            endLine="67"
+            endColumn="15"
+            endOffset="4428"/>
+    </incident>
+
+    <incident
+        id="MissingQuantity"
+        severity="warning"
+        message="For locale &quot;es&quot; (Spanish) the following quantity should also be defined: `many`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+            line="82"
+            column="5"
+            startOffset="5207"
+            endLine="85"
+            endColumn="15"
+            endOffset="5364"/>
+    </incident>
+
+    <incident
+        id="MissingQuantity"
+        severity="warning"
+        message="For locale &quot;fr&quot; (French) the following quantity should also be defined: `many` (e.g. &quot;1000000 de jours&quot;)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-fr/strings.xml"
+            line="91"
+            column="5"
+            startOffset="6496"
+            endLine="94"
+            endColumn="15"
+            endOffset="6654"/>
+    </incident>
+
+    <incident
+        id="MissingQuantity"
+        severity="warning"
+        message="For locale &quot;it&quot; (Italian) the following quantity should also be defined: `many`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-it/strings.xml"
+            line="118"
+            column="5"
+            startOffset="8109"
+            endLine="121"
+            endColumn="15"
+            endOffset="8250"/>
+    </incident>
+
+    <incident
+        id="MissingQuantity"
+        severity="warning"
+        message="For locale &quot;es&quot; (Spanish) the following quantity should also be defined: `many`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-b+es+419/strings.xml"
+            line="119"
+            column="5"
+            startOffset="8573"
+            endLine="122"
+            endColumn="15"
+            endOffset="8730"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;good_forenoon&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;ru&quot; (Russian), &quot;pt&quot; (Portuguese), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;uk&quot; (Ukrainian), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;ko&quot; (Korean), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;zh&quot; (Chinese), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="17"
+            column="13"
+            startOffset="751"
+            endLine="17"
+            endColumn="33"
+            endOffset="771"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;festival_dussehra_greeting&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="19"
+            column="13"
+            startOffset="861"
+            endLine="19"
+            endColumn="46"
+            endOffset="894"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;festival_diwali_greeting&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="20"
+            column="13"
+            startOffset="931"
+            endLine="20"
+            endColumn="44"
+            endOffset="962"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;date_format&quot; is not translated in &quot;ca&quot; (Catalan) or &quot;in&quot; (Indonesian)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="25"
+            column="13"
+            startOffset="1209"
+            endLine="25"
+            endColumn="31"
+            endOffset="1227"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_farvardin&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="28"
+            column="13"
+            startOffset="1439"
+            endLine="28"
+            endColumn="42"
+            endOffset="1468"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_ordibehesht&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="29"
+            column="13"
+            startOffset="1500"
+            endLine="29"
+            endColumn="44"
+            endOffset="1531"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_khordad&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="30"
+            column="13"
+            startOffset="1565"
+            endLine="30"
+            endColumn="40"
+            endOffset="1592"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_tir&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="31"
+            column="13"
+            startOffset="1622"
+            endLine="31"
+            endColumn="36"
+            endOffset="1645"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_mordad&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="32"
+            column="13"
+            startOffset="1671"
+            endLine="32"
+            endColumn="39"
+            endOffset="1697"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_shahrivar&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="33"
+            column="13"
+            startOffset="1726"
+            endLine="33"
+            endColumn="42"
+            endOffset="1755"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_mehr&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="34"
+            column="13"
+            startOffset="1787"
+            endLine="34"
+            endColumn="37"
+            endOffset="1811"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_aban&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="35"
+            column="13"
+            startOffset="1838"
+            endLine="35"
+            endColumn="37"
+            endOffset="1862"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_azar&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="36"
+            column="13"
+            startOffset="1889"
+            endLine="36"
+            endColumn="37"
+            endOffset="1913"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_dey&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="37"
+            column="13"
+            startOffset="1940"
+            endLine="37"
+            endColumn="36"
+            endOffset="1963"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_bahman&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="38"
+            column="13"
+            startOffset="1989"
+            endLine="38"
+            endColumn="39"
+            endOffset="2015"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;shamsi_month_esfand&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="39"
+            column="13"
+            startOffset="2044"
+            endLine="39"
+            endColumn="39"
+            endOffset="2070"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;stats_cpu&quot; is not translated in &quot;vi&quot; (Vietnamese)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="40"
+            column="13"
+            startOffset="2099"
+            endLine="40"
+            endColumn="29"
+            endOffset="2115"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;storage_gb_whole&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="43"
+            column="13"
+            startOffset="2271"
+            endLine="43"
+            endColumn="36"
+            endOffset="2294"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;storage_gb_decimal&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="44"
+            column="13"
+            startOffset="2326"
+            endLine="44"
+            endColumn="38"
+            endOffset="2351"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;vpn&quot; is not translated in &quot;de&quot; (German), &quot;ca&quot; (Catalan), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="46"
+            column="13"
+            startOffset="2428"
+            endLine="46"
+            endColumn="23"
+            endOffset="2438"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;vpn_off&quot; is not translated in &quot;de&quot; (German) or &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="47"
+            column="13"
+            startOffset="2464"
+            endLine="47"
+            endColumn="27"
+            endOffset="2478"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;home_settings&quot; is not translated in &quot;de&quot; (German) or &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="48"
+            column="13"
+            startOffset="2508"
+            endLine="48"
+            endColumn="33"
+            endOffset="2528"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;home_settings_help&quot; is not translated in &quot;de&quot; (German), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="49"
+            column="13"
+            startOffset="2570"
+            endLine="49"
+            endColumn="38"
+            endOffset="2595"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;rows_below_dock_label&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="53"
+            column="13"
+            startOffset="3015"
+            endLine="53"
+            endColumn="41"
+            endOffset="3043"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;dock_opacity_label&quot; is not translated in &quot;uk&quot; (Ukrainian)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="54"
+            column="13"
+            startOffset="3081"
+            endLine="54"
+            endColumn="38"
+            endOffset="3106"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_label&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="55"
+            column="13"
+            startOffset="3146"
+            endLine="55"
+            endColumn="35"
+            endOffset="3168"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_state&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="56"
+            column="13"
+            startOffset="3200"
+            endLine="56"
+            endColumn="35"
+            endOffset="3222"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_none&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="57"
+            column="13"
+            startOffset="3260"
+            endLine="57"
+            endColumn="34"
+            endOffset="3281"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_applied&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="58"
+            column="13"
+            startOffset="3308"
+            endLine="58"
+            endColumn="37"
+            endOffset="3332"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;wallpaper_theme_default&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="59"
+            column="13"
+            startOffset="3372"
+            endLine="59"
+            endColumn="43"
+            endOffset="3402"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;open_on_start_label&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="63"
+            column="13"
+            startOffset="3636"
+            endLine="63"
+            endColumn="39"
+            endOffset="3662"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;open_on_start_state&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="64"
+            column="13"
+            startOffset="3698"
+            endLine="64"
+            endColumn="39"
+            endOffset="3724"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;advanced_effects_warning&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="65"
+            column="13"
+            startOffset="3766"
+            endLine="65"
+            endColumn="44"
+            endOffset="3797"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;follow_theme_hint&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="67"
+            column="13"
+            startOffset="4023"
+            endLine="67"
+            endColumn="37"
+            endOffset="4047"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;quick_picture&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="69"
+            column="13"
+            startOffset="4252"
+            endLine="69"
+            endColumn="33"
+            endOffset="4272"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;quick_network&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="70"
+            column="13"
+            startOffset="4302"
+            endLine="70"
+            endColumn="33"
+            endOffset="4322"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;quick_apps&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="71"
+            column="13"
+            startOffset="4352"
+            endLine="71"
+            endColumn="30"
+            endOffset="4369"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;quick_apps_hint&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="72"
+            column="13"
+            startOffset="4396"
+            endLine="72"
+            endColumn="35"
+            endOffset="4418"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;input_key_service_description&quot; is not translated in &quot;th&quot; (Thai) or &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="76"
+            column="13"
+            startOffset="4562"
+            endLine="76"
+            endColumn="49"
+            endOffset="4598"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;home_key_name&quot; is not translated in &quot;de&quot; (German) or &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="77"
+            column="13"
+            startOffset="4689"
+            endLine="77"
+            endColumn="33"
+            endOffset="4709"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;home_key_description&quot; is not translated in &quot;de&quot; (German) or &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="78"
+            column="13"
+            startOffset="4743"
+            endLine="78"
+            endColumn="40"
+            endOffset="4770"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_title&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="79"
+            column="13"
+            startOffset="4844"
+            endLine="79"
+            endColumn="37"
+            endOffset="4868"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_body&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="80"
+            column="13"
+            startOffset="4909"
+            endLine="80"
+            endColumn="36"
+            endOffset="4932"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_names&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="81"
+            column="13"
+            startOffset="5054"
+            endLine="81"
+            endColumn="37"
+            endOffset="5078"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_resigned&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="82"
+            column="13"
+            startOffset="5149"
+            endLine="82"
+            endColumn="40"
+            endOffset="5176"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_relabelled&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="83"
+            column="13"
+            startOffset="5314"
+            endLine="83"
+            endColumn="42"
+            endOffset="5343"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_hint&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="84"
+            column="13"
+            startOffset="5439"
+            endLine="84"
+            endColumn="36"
+            endOffset="5462"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_prompt_identity&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="85"
+            column="13"
+            startOffset="5558"
+            endLine="85"
+            endColumn="40"
+            endOffset="5585"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_keep_hidden&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="86"
+            column="13"
+            startOffset="5622"
+            endLine="86"
+            endColumn="36"
+            endOffset="5645"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_show&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="87"
+            column="13"
+            startOffset="5679"
+            endLine="87"
+            endColumn="29"
+            endOffset="5695"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_not_saved&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="88"
+            column="13"
+            startOffset="5727"
+            endLine="88"
+            endColumn="34"
+            endOffset="5748"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;module_cards&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="89"
+            column="13"
+            startOffset="5796"
+            endLine="89"
+            endColumn="32"
+            endOffset="5815"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;no_module_cards&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="90"
+            column="13"
+            startOffset="5850"
+            endLine="90"
+            endColumn="35"
+            endOffset="5872"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_app_name&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="91"
+            column="13"
+            startOffset="5920"
+            endLine="91"
+            endColumn="33"
+            endOffset="5940"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_shown&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="92"
+            column="13"
+            startOffset="5972"
+            endLine="92"
+            endColumn="36"
+            endOffset="5995"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_over_limit&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="93"
+            column="13"
+            startOffset="6023"
+            endLine="93"
+            endColumn="41"
+            endOffset="6051"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_hidden&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="94"
+            column="13"
+            startOffset="6100"
+            endLine="94"
+            endColumn="37"
+            endOffset="6124"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_new&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="95"
+            column="13"
+            startOffset="6153"
+            endLine="95"
+            endColumn="34"
+            endOffset="6174"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_new_key&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="96"
+            column="13"
+            startOffset="6200"
+            endLine="96"
+            endColumn="38"
+            endOffset="6225"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;card_state_new_label&quot; is not translated in &quot;de&quot; (German), &quot;sr&quot; (Serbian), &quot;th&quot; (Thai), &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="97"
+            column="13"
+            startOffset="6255"
+            endLine="97"
+            endColumn="40"
+            endOffset="6282"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;dock_edit_hint&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="101"
+            column="13"
+            startOffset="6488"
+            endLine="101"
+            endColumn="34"
+            endOffset="6509"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;dock_edit_pick_app&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="102"
+            column="13"
+            startOffset="6593"
+            endLine="102"
+            endColumn="38"
+            endOffset="6618"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;dock_edit_pick_place&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="105"
+            column="13"
+            startOffset="6847"
+            endLine="105"
+            endColumn="40"
+            endOffset="6874"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;reorder_hint&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="108"
+            column="13"
+            startOffset="7053"
+            endLine="108"
+            endColumn="32"
+            endOffset="7072"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;reorder_not_saved&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="109"
+            column="13"
+            startOffset="7168"
+            endLine="109"
+            endColumn="37"
+            endOffset="7192"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;library_save_failed&quot; is not translated in &quot;da&quot; (Danish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="117"
+            column="13"
+            startOffset="7640"
+            endLine="117"
+            endColumn="39"
+            endOffset="7666"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_kicker&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="129"
+            column="13"
+            startOffset="8268"
+            endLine="129"
+            endColumn="31"
+            endOffset="8286"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_kicker_no_place&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="130"
+            column="13"
+            startOffset="8333"
+            endLine="130"
+            endColumn="40"
+            endOffset="8360"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_next&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="131"
+            column="13"
+            startOffset="8400"
+            endLine="131"
+            endColumn="29"
+            endOffset="8416"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_lights_out&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="132"
+            column="13"
+            startOffset="8451"
+            endLine="132"
+            endColumn="35"
+            endOffset="8473"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_live&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="133"
+            column="13"
+            startOffset="8514"
+            endLine="133"
+            endColumn="29"
+            endOffset="8530"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_finished&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;sr&quot; (Serbian), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="134"
+            column="13"
+            startOffset="8564"
+            endLine="134"
+            endColumn="33"
+            endOffset="8584"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_1&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="135"
+            column="13"
+            startOffset="8621"
+            endLine="135"
+            endColumn="35"
+            endOffset="8643"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_2&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="136"
+            column="13"
+            startOffset="8676"
+            endLine="136"
+            endColumn="35"
+            endOffset="8698"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_3&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="137"
+            column="13"
+            startOffset="8731"
+            endLine="137"
+            endColumn="35"
+            endOffset="8753"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_sprint_qualifying&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="138"
+            column="13"
+            startOffset="8786"
+            endLine="138"
+            endColumn="42"
+            endOffset="8815"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_sprint&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="139"
+            column="13"
+            startOffset="8855"
+            endLine="139"
+            endColumn="31"
+            endOffset="8873"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_qualifying&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="140"
+            column="13"
+            startOffset="8902"
+            endLine="140"
+            endColumn="35"
+            endOffset="8924"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_race&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="141"
+            column="13"
+            startOffset="8957"
+            endLine="141"
+            endColumn="29"
+            endOffset="8973"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_1_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="142"
+            column="13"
+            startOffset="9000"
+            endLine="142"
+            endColumn="41"
+            endOffset="9028"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_2_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="143"
+            column="13"
+            startOffset="9054"
+            endLine="143"
+            endColumn="41"
+            endOffset="9082"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_practice_3_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="144"
+            column="13"
+            startOffset="9108"
+            endLine="144"
+            endColumn="41"
+            endOffset="9136"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_sprint_qualifying_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="145"
+            column="13"
+            startOffset="9162"
+            endLine="145"
+            endColumn="48"
+            endOffset="9197"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_sprint_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="146"
+            column="13"
+            startOffset="9222"
+            endLine="146"
+            endColumn="37"
+            endOffset="9246"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_qualifying_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="147"
+            column="13"
+            startOffset="9275"
+            endLine="147"
+            endColumn="41"
+            endOffset="9303"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_race_short&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;da&quot; (Danish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="148"
+            column="13"
+            startOffset="9331"
+            endLine="148"
+            endColumn="35"
+            endOffset="9353"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_countdown_minutes&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="149"
+            column="13"
+            startOffset="9380"
+            endLine="149"
+            endColumn="42"
+            endOffset="9409"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_countdown_hours&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="150"
+            column="13"
+            startOffset="9440"
+            endLine="150"
+            endColumn="40"
+            endOffset="9467"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;race_countdown_days&quot; is not translated in &quot;de&quot; (German), &quot;fi&quot; (Finnish), &quot;bn&quot; (Bangla), &quot;fr&quot; (French), &quot;ca&quot; (Catalan), &quot;sr&quot; (Serbian), &quot;sv&quot; (Swedish), &quot;in&quot; (Indonesian), &quot;uz&quot; (Uzbek), &quot;cs&quot; (Czech), &quot;ar&quot; (Arabic), &quot;nb&quot; (Norwegian Bokmål), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;nl&quot; (Dutch), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="151"
+            column="13"
+            startOffset="9501"
+            endLine="151"
+            endColumn="39"
+            endOffset="9527"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="informational"
+        message="&quot;last_opened&quot; is not translated in &quot;de&quot; (German), &quot;bn&quot; (Bangla), &quot;sr&quot; (Serbian), &quot;ar&quot; (Arabic), &quot;th&quot; (Thai), &quot;pl&quot; (Polish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="154"
+            column="13"
+            startOffset="9744"
+            endLine="154"
+            endColumn="31"
+            endOffset="9762"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;FP!&quot; instead of &quot;FP1&quot;?">
+        <fix-replace
+            description="Replace with &quot;FP!&quot;"
+            oldString="FP1"
+            replacement="FP!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+                startOffset="9094"
+                endOffset="9097"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+            line="136"
+            column="42"
+            startOffset="9094"
+            endLine="136"
+            endColumn="45"
+            endOffset="9097"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;PL!&quot; instead of &quot;PL1&quot;?">
+        <fix-replace
+            description="Replace with &quot;PL!&quot;"
+            oldString="PL1"
+            replacement="PL!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-it/strings.xml"
+                startOffset="9097"
+                endOffset="9100"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-it/strings.xml"
+            line="136"
+            column="42"
+            startOffset="9097"
+            endLine="136"
+            endColumn="45"
+            endOffset="9100"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;PL!&quot; instead of &quot;PL1&quot;?">
+        <fix-replace
+            description="Replace with &quot;PL!&quot;"
+            oldString="PL1"
+            replacement="PL!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-b+es+419/strings.xml"
+                startOffset="9573"
+                endOffset="9576"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-b+es+419/strings.xml"
+            line="137"
+            column="42"
+            startOffset="9573"
+            endLine="137"
+            endColumn="45"
+            endOffset="9576"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;TL!&quot; instead of &quot;TL1&quot;?">
+        <fix-replace
+            description="Replace with &quot;TL!&quot;"
+            oldString="TL1"
+            replacement="TL!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-pt/strings.xml"
+                startOffset="9213"
+                endOffset="9216"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-pt/strings.xml"
+            line="139"
+            column="42"
+            startOffset="9213"
+            endLine="139"
+            endColumn="45"
+            endOffset="9216"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;FP!&quot; instead of &quot;FP1&quot;?">
+        <fix-replace
+            description="Replace with &quot;FP!&quot;"
+            oldString="FP1"
+            replacement="FP!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+                startOffset="9029"
+                endOffset="9032"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="142"
+            column="42"
+            startOffset="9029"
+            endLine="142"
+            endColumn="45"
+            endOffset="9032"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;font_body&quot; is marked as translatable=&quot;false&quot;, but is translated to &quot;vi&quot; (Vietnamese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+                startOffset="171"
+                endOffset="236"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+            line="4"
+            column="30"
+            startOffset="196"
+            endLine="4"
+            endColumn="50"
+            endOffset="216"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;font_regular&quot; is marked as translatable=&quot;false&quot;, but is translated to &quot;vi&quot; (Vietnamese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+                startOffset="241"
+                endOffset="309"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+            line="5"
+            column="33"
+            startOffset="269"
+            endLine="5"
+            endColumn="53"
+            endOffset="289"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;font_light&quot; is marked as translatable=&quot;false&quot;, but is translated to &quot;vi&quot; (Vietnamese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+                startOffset="314"
+                endOffset="386"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+            line="6"
+            column="31"
+            startOffset="340"
+            endLine="6"
+            endColumn="51"
+            endOffset="360"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;font_extralight&quot; is marked as translatable=&quot;false&quot;, but is translated to &quot;vi&quot; (Vietnamese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+                startOffset="391"
+                endOffset="467"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+            line="7"
+            column="36"
+            startOffset="422"
+            endLine="7"
+            endColumn="56"
+            endOffset="442"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;font_medium&quot; is marked as translatable=&quot;false&quot;, but is translated to &quot;vi&quot; (Vietnamese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+                startOffset="472"
+                endOffset="546"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-vi/fonts.xml"
+            line="8"
+            column="32"
+            startOffset="499"
+            endLine="8"
+            endColumn="52"
+            endOffset="519"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;de&quot; (German) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-de/strings.xml"
+                startOffset="1173"
+                endOffset="1227"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-de/strings.xml"
+            line="24"
+            column="13"
+            startOffset="1181"
+            endLine="24"
+            endColumn="36"
+            endOffset="1204"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;es&quot; (Spanish) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+                startOffset="1230"
+                endOffset="1290"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+            line="25"
+            column="13"
+            startOffset="1238"
+            endLine="25"
+            endColumn="36"
+            endOffset="1261"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;ru&quot; (Russian) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-ru/strings.xml"
+                startOffset="1244"
+                endOffset="1297"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-ru/strings.xml"
+            line="25"
+            column="13"
+            startOffset="1252"
+            endLine="25"
+            endColumn="36"
+            endOffset="1275"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;uk&quot; (Ukrainian) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-uk/strings.xml"
+                startOffset="1241"
+                endOffset="1294"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-uk/strings.xml"
+            line="25"
+            column="13"
+            startOffset="1249"
+            endLine="25"
+            endColumn="36"
+            endOffset="1272"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;es&quot; (Spanish) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-b+es+419/strings.xml"
+                startOffset="1357"
+                endOffset="1417"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-b+es+419/strings.xml"
+            line="27"
+            column="13"
+            startOffset="1365"
+            endLine="27"
+            endColumn="36"
+            endOffset="1388"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;pt&quot; (Portuguese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-pt/strings.xml"
+                startOffset="1885"
+                endOffset="1945"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-pt/strings.xml"
+            line="37"
+            column="13"
+            startOffset="1893"
+            endLine="37"
+            endColumn="36"
+            endOffset="1916"/>
+    </incident>
+
+    <incident
+        id="Untranslatable"
+        severity="warning"
+        message="The resource string &quot;date_format_home&quot; has been marked as translatable=&quot;false&quot; elsewhere (usually in the `values` folder), but is translated to &quot;zh&quot; (Chinese) here">
+        <fix-replace
+            description="Remove translation"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-zh-rCN/strings.xml"
+                startOffset="2541"
+                endOffset="2591"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-zh-rCN/strings.xml"
+            line="52"
+            column="13"
+            startOffset="2549"
+            endLine="52"
+            endColumn="36"
+            endOffset="2572"/>
+    </incident>
+
+    <incident
+        id="StringFormatCount"
+        severity="warning"
+        message="Formatting string &apos;`lunar_year`&apos; is not referencing numbered arguments [1]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/lunar.xml"
+            line="7"
+            column="5"
+            startOffset="466"
+            endLine="7"
+            endColumn="56"
+            endOffset="517"/>
+    </incident>
+
+    <incident
+        id="StringFormatCount"
+        severity="warning"
+        message="Formatting string &apos;`lunar_year`&apos; is not referencing numbered arguments [1]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/lunar.xml"
+            line="7"
+            column="5"
+            startOffset="466"
+            endLine="7"
+            endColumn="56"
+            endOffset="517"/>
+    </incident>
+
+    <incident
+        id="StringFormatCount"
+        severity="warning"
+        message="Formatting string &apos;`lunar_year`&apos; is not referencing numbered arguments [1]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/lunar.xml"
+            line="7"
+            column="5"
+            startOffset="466"
+            endLine="7"
+            endColumn="56"
+            endOffset="517"/>
+    </incident>
+
+    <incident
+        id="StringFormatCount"
+        severity="warning"
+        message="Formatting string &apos;`lunar_year`&apos; is not referencing numbered arguments [1]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/lunar.xml"
+            line="7"
+            column="5"
+            startOffset="466"
+            endLine="7"
+            endColumn="56"
+            endOffset="517"/>
+    </incident>
+
+    <incident
+        id="StringFormatCount"
+        severity="warning"
+        message="Formatting string &apos;`lunar_year`&apos; is not referencing numbered arguments [1]">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/lunar.xml"
+            line="7"
+            column="5"
+            startOffset="466"
+            endLine="7"
+            endColumn="56"
+            endOffset="517"/>
+    </incident>
+
+    <incident
+        id="UnusedQuantity"
+        severity="warning"
+        message="For language &quot;in&quot; (Indonesian) the following quantities are not relevant: `one`">
+        <fix-replace
+            description="Remove unused quantity"
+            family="Remove unused quantities"
+            robot="true"
+            independent="true"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-in/strings.xml"
+                startOffset="7049"
+                endOffset="7090"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-in/strings.xml"
+            line="100"
+            column="5"
+            startOffset="7006"
+            endLine="103"
+            endColumn="15"
+            endOffset="7157"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            line="368"
+            column="9"
+            startOffset="19751"
+            endLine="368"
+            endColumn="31"
+            endOffset="19773"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/AppAdapter.java"
+            line="418"
+            column="9"
+            startOffset="22408"
+            endLine="418"
+            endColumn="31"
+            endOffset="22430"/>
+    </incident>
+
+    <incident
+        id="MergeRootFrame"
+        severity="warning"
+        message="This `&lt;FrameLayout>` can be replaced with a `&lt;merge>` tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_quick_settings.xml"
+            line="4"
+            column="1"
+            startOffset="230"
+            endLine="28"
+            endColumn="15"
+            endOffset="1096"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FF101419` with a theme that also paints a background (inferred theme is `@style/Theme.TvHome`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="5"
+            column="5"
+            startOffset="195"
+            endLine="5"
+            endColumn="35"
+            endOffset="225"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FF000000` with a theme that also paints a background (inferred theme is `@style/Theme.TvHome`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="6"
+            column="5"
+            startOffset="223"
+            endLine="6"
+            endColumn="35"
+            endOffset="253"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FF000000` with a theme that also paints a background (inferred theme is `@style/Theme.TvHome`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/activity_main.xml"
+            line="7"
+            column="5"
+            startOffset="310"
+            endLine="7"
+            endColumn="35"
+            endOffset="340"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FF000000` with a theme that also paints a background (inferred theme is `@android_style/Theme_Black_NoTitleBar_Fullscreen`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-iw/dream_clock.xml"
+            line="6"
+            column="5"
+            startOffset="285"
+            endLine="6"
+            endColumn="35"
+            endOffset="315"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FF000000` with a theme that also paints a background (inferred theme is `@android_style/Theme_Black_NoTitleBar_Fullscreen`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dream_clock.xml"
+            line="6"
+            column="5"
+            startOffset="301"
+            endLine="6"
+            endColumn="35"
+            endOffset="331"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_quick_settings.xml"
+            line="9"
+            column="6"
+            startOffset="418"
+            endLine="9"
+            endColumn="18"
+            endOffset="430"/>
+    </incident>
+
+    <incident
+        id="IconLauncherShape"
+        severity="warning"
+        message="Launcher icons should not fill every pixel of their square region; see the design guide for details">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher.jpg"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_card_row.xml"
+            line="75"
+            column="9"
+            startOffset="2738"
+            endLine="75"
+            endColumn="32"
+            endOffset="2761"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
+            line="2600"
+            column="29"
+            startOffset="128123"
+            endLine="2601"
+            endColumn="118"
+            endOffset="128308"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
+            line="3587"
+            column="59"
+            startOffset="183873"
+            endLine="3587"
+            endColumn="91"
+            endOffset="183905"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
+            line="3587"
+            column="59"
+            startOffset="183873"
+            endLine="3587"
+            endColumn="68"
+            endOffset="183882"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/MainActivity.java"
+            line="3587"
+            column="79"
+            startOffset="183893"
+            endLine="3587"
+            endColumn="91"
+            endOffset="183905"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            line="22"
+            column="23"
+            startOffset="823"
+            endLine="22"
+            endColumn="50"
+            endOffset="850"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            line="27"
+            column="22"
+            startOffset="1018"
+            endLine="27"
+            endColumn="107"
+            endOffset="1103"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/gathin/tvhome/SetupActivity.java"
+            line="40"
+            column="22"
+            startOffset="1770"
+            endLine="40"
+            endColumn="32"
+            endOffset="1780"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;4&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="45"
+            column="86"
+            startOffset="1614"
+            endLine="45"
+            endColumn="102"
+            endOffset="1630"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;5&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="46"
+            column="86"
+            startOffset="1719"
+            endLine="46"
+            endColumn="102"
+            endOffset="1735"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;6&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="47"
+            column="86"
+            startOffset="1824"
+            endLine="47"
+            endColumn="102"
+            endOffset="1840"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;7&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="48"
+            column="86"
+            startOffset="1929"
+            endLine="48"
+            endColumn="102"
+            endOffset="1945"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="65"
+            column="83"
+            startOffset="2564"
+            endLine="65"
+            endColumn="99"
+            endOffset="2580"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;1&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="66"
+            column="83"
+            startOffset="2666"
+            endLine="66"
+            endColumn="99"
+            endOffset="2682"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;2&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="67"
+            column="83"
+            startOffset="2768"
+            endLine="67"
+            endColumn="99"
+            endOffset="2784"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;3&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="68"
+            column="83"
+            startOffset="2870"
+            endLine="68"
+            endColumn="99"
+            endOffset="2886"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;100%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="85"
+            column="85"
+            startOffset="3504"
+            endLine="85"
+            endColumn="104"
+            endOffset="3523"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;70%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="86"
+            column="84"
+            startOffset="3610"
+            endLine="86"
+            endColumn="102"
+            endOffset="3628"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;50%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="87"
+            column="84"
+            startOffset="3715"
+            endLine="87"
+            endColumn="102"
+            endOffset="3733"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;30%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_launcher_settings.xml"
+            line="88"
+            column="84"
+            startOffset="3820"
+            endLine="88"
+            endColumn="102"
+            endOffset="3838"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile picture&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="182"
+            column="17"
+            startOffset="7223"
+            endLine="182"
+            endColumn="61"
+            endOffset="7267"/>
+    </incident>
+
+</incidents>

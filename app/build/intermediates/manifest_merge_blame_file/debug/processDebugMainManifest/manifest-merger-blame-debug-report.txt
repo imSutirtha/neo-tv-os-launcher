@@ -1,0 +1,549 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.darkgod.devtools.darkgod-tvos"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="26"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <uses-feature
+11-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:5:5-87
+12        android:name="android.software.leanback"
+12-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:5:19-59
+13        android:required="false" />
+13-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:5:60-84
+14    <uses-feature
+14-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:6:5-90
+15        android:name="android.hardware.touchscreen"
+15-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:6:19-62
+16        android:required="false" />
+16-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:6:63-87
+17    <uses-feature
+17-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:7:5-83
+18        android:name="android.hardware.wifi"
+18-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:7:19-55
+19        android:required="false" />
+19-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:7:56-80
+20    <uses-feature
+20-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:8:5-91
+21        android:name="android.hardware.location.gps"
+21-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:8:19-63
+22        android:required="false" />
+22-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:8:64-88
+23
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:10:5-79
+24-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:10:22-76
+25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+25-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:11:5-76
+25-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:11:22-73
+26    <!-- Opt-in weather refreshes only while Home is visible; no account credentials are used. -->
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:13:5-67
+27-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:13:22-64
+28    <!--
+29         Needed since Android 10 to read the Wi-Fi network name for the network pill. Never requested at
+30         runtime: build-and-install grants it with pm grant, so lint's Android 12 "ask for COARSE with
+31         FINE" rule does not apply here.
+32    -->
+33    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+33-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:17:5-18:45
+33-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:17:22-76
+34    <!--
+35         Puts the remote's accessibility helpers back after a force stop of this app took them off the enabled
+36         list (ServiceRepair). Granted with pm grant by build-and-install when a helper is enabled.
+37    -->
+38    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+38-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:21:5-22:47
+38-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:21:22-77
+39    <!--
+40         YaOS (Yandex TV OS): HDMI, AV and the tuner all play in com.yandex.tv.live, whose activities require
+41         this permission (protection level normal, so it is granted at install). Ignored on other TVs.
+42    -->
+43    <uses-permission android:name="yandex.tv.permission.ACCESS_TV_SOURCE" />
+43-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:25:5-77
+43-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:25:22-74
+44
+45    <!--
+46         Android 11+ package visibility: lets the launcher list the TV apps it shows as tiles, and the
+47         apps that declare a module card (docs/specs/card.md).
+48    -->
+49    <queries>
+49-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:29:5-73:15
+50
+51        <!-- The standard settings handlers, so package visibility doesn't hide them and send the pills to a vendor fallback by mistake. -->
+52        <intent>
+52-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:31:9-33:18
+53            <action android:name="android.settings.SETTINGS" />
+53-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:32:13-64
+53-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:32:21-61
+54        </intent>
+55        <intent>
+55-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:34:9-36:18
+56            <action android:name="android.settings.WIFI_SETTINGS" />
+56-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:35:13-69
+56-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:35:21-66
+57        </intent>
+58        <intent>
+58-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:37:9-39:18
+59            <action android:name="android.settings.DISPLAY_SETTINGS" />
+59-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:38:13-72
+59-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:38:21-69
+60        </intent>
+61        <intent>
+61-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:40:9-42:18
+62            <action android:name="android.settings.MANAGE_APPLICATIONS_SETTINGS" />
+62-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:41:13-84
+62-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:41:21-81
+63        </intent>
+64        <!-- The tile menu and the app library offer App info only where this resolves (SystemSettings.appInfo). -->
+65        <intent>
+65-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:44:9-47:18
+66            <action android:name="android.settings.APPLICATION_DETAILS_SETTINGS" />
+66-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:45:13-84
+66-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:45:21-81
+67
+68            <data android:scheme="package" />
+68-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:46:13-46
+68-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:46:19-43
+69        </intent>
+70        <intent>
+70-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:48:9-51:18
+71            <action android:name="android.intent.action.MAIN" />
+71-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+71-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+72
+73            <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:50:13-73
+73-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:50:23-70
+74        </intent>
+75        <intent>
+75-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:52:9-55:18
+76            <action android:name="android.intent.action.MAIN" />
+76-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+76-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+77
+78            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+78-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:54:13-82
+78-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:54:23-79
+79        </intent>
+80        <intent>
+80-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:56:9-59:18
+81            <action android:name="android.intent.action.MAIN" />
+81-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+81-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+82
+83            <category android:name="com.gathin.tvhome.category.DOCK_CARD" />
+83-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:58:13-77
+83-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:58:23-74
+84        </intent>
+85        <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
+86        <intent>
+86-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:61:9-64:18
+87            <action android:name="android.intent.action.MAIN" />
+87-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+87-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+88
+89            <category android:name="android.intent.category.HOME" />
+89-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:63:13-69
+89-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:63:23-66
+90        </intent>
+91        <!--
+92             China-market MIUI TV firmware: the Settings and Wi-Fi pills fall back to Xiaomi's settings app.
+93             Fire TV: the real settings menu lives in the stock launcher (see settings_fallback_components).
+94        -->
+95        <package android:name="com.xiaomi.mitv.settings" />
+95-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:67:9-60
+95-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:67:18-57
+96        <package android:name="com.tcl.settings" />
+96-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:68:9-52
+96-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:68:18-49
+97        <package android:name="com.amazon.tv.launcher" />
+97-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:69:9-58
+97-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:69:18-55
+98        <!-- Coocaa OS sources for the Inputs menu (coocaa_sources); see CoocaaSources. -->
+99        <provider android:authorities="com.skyworth.tv.provider" />
+99-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:71:9-68
+99-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:71:19-65
+100        <provider android:authorities="com.skyworth.tv.sdk.provider" />
+100-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:72:9-72
+100-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:72:19-69
+101    </queries>
+102
+103    <application
+103-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:75:5-259:19
+104        android:allowBackup="false"
+104-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:80:9-36
+105        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+105-->[androidx.core:core:1.7.0] C:\Users\DarkGoD\.gradle\caches\9.6.0\transforms\7de9c922a25d21037d3de0c64a1cc93b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+106        android:banner="@drawable/banner"
+106-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:78:9-42
+107        android:debuggable="true"
+108        android:extractNativeLibs="false"
+108-->INJECTED
+109        android:icon="@mipmap/ic_launcher"
+109-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:77:9-43
+110        android:label="@string/app_name"
+110-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:76:9-41
+111        android:localeConfig="@xml/locales_config"
+111-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:81:9-51
+112        android:theme="@style/Theme.TvHome" >
+112-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:79:9-44
+113        <activity
+113-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:83:9-106:20
+114            android:name="com.gathin.tvhome.MainActivity"
+114-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:84:13-41
+115            android:clearTaskOnLaunch="true"
+115-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:89:13-45
+116            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+116-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:90:13-90
+117            android:excludeFromRecents="true"
+117-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:88:13-46
+118            android:exported="true"
+118-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:85:13-36
+119            android:launchMode="singleTask"
+119-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:86:13-44
+120            android:screenOrientation="landscape"
+120-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:91:13-50
+121            android:stateNotNeeded="true" >
+121-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:87:13-42
+122
+123            <!--
+124                 CVTE firmware (ro.CVT_EN_COMMON_HOME_INTENT=1) sends the Home key and boot as MAIN + HOME +
+125                 COMMON_HOME, which only matches a filter that lists both (#1201). In this one filter, not a second
+126                 one: a plain HOME intent still matches it, and a second filter could list this activity twice.
+127            -->
+128            <intent-filter android:priority="3" >
+128-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:95:13-100:29
+128-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:95:28-48
+129                <action android:name="android.intent.action.MAIN" />
+129-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+129-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+130
+131                <category android:name="android.intent.category.HOME" />
+131-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:63:13-69
+131-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:63:23-66
+132                <category android:name="android.intent.category.COMMON_HOME" />
+132-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:98:17-80
+132-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:98:27-77
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+133-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+134            </intent-filter>
+135            <!-- Listed in the TV's own app list, so it can be opened from the stock home screen too. -->
+136            <intent-filter>
+136-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:102:13-105:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:13-65
+137-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:49:21-62
+138
+139                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+139-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:54:13-82
+139-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:54:23-79
+140            </intent-filter>
+141        </activity>
+142        <activity
+142-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:108:9-112:53
+143            android:name="com.gathin.tvhome.LauncherSettingsActivity"
+143-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:109:13-53
+144            android:excludeFromRecents="true"
+144-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:111:13-46
+145            android:exported="false"
+145-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:110:13-37
+146            android:screenOrientation="landscape" />
+146-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:112:13-50
+147        <activity
+147-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:113:9-117:53
+148            android:name="com.gathin.tvhome.SetupActivity"
+148-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:114:13-42
+149            android:excludeFromRecents="true"
+149-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:116:13-46
+150            android:exported="false"
+150-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:115:13-37
+151            android:screenOrientation="landscape" />
+151-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:117:13-50
+152        <!--
+153             The system input switcher (com.android.tv.action.VIEW_INPUTS), which is what the remote's Input
+154             button becomes through the TV's Live TV app or InputKeyService. Disabled here and switched on by
+155             MainActivity only while handle_view_inputs is true (config.xml or a theme), for sets whose stock
+156             launcher was the only handler of the action (Hisense huangshan, Android TV 10): kept off, a TV with
+157             its own input picker never sees a second candidate and a chooser.
+158        -->
+159        <activity
+159-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:123:9-134:20
+160            android:name="com.gathin.tvhome.InputsRequestActivity"
+160-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:124:13-50
+161            android:enabled="false"
+161-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:126:13-36
+162            android:excludeFromRecents="true"
+162-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:127:13-46
+163            android:exported="true"
+163-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:125:13-36
+164            android:noHistory="true"
+164-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:128:13-37
+165            android:theme="@android:style/Theme.NoDisplay" >
+165-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:129:13-59
+166            <intent-filter>
+166-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:130:13-133:29
+167                <action android:name="com.android.tv.action.VIEW_INPUTS" />
+167-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:131:17-76
+167-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:131:25-73
+168
+169                <category android:name="android.intent.category.DEFAULT" />
+169-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+169-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+170            </intent-filter>
+171        </activity>
+172        <!--
+173             Remote Settings button panel (settings_key_panel); own task so the app behind stays put.
+174             No screenOrientation: a translucent activity may not request one on Android 8.0 (API 26),
+175             which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway.
+176        -->
+177        <activity
+177-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:138:9-145:86
+178            android:name="com.gathin.tvhome.QuickSettingsActivity"
+178-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:139:13-50
+179            android:excludeFromRecents="true"
+179-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:143:13-46
+180            android:exported="false"
+180-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:140:13-37
+181            android:launchMode="singleTop"
+181-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:142:13-43
+182            android:noHistory="true"
+182-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:144:13-37
+183            android:taskAffinity=""
+183-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:141:13-36
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+184-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:145:13-83
+185        <activity
+185-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:146:9-151:62
+186            android:name="com.gathin.tvhome.HomeSettingsActivity"
+186-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:147:13-49
+187            android:excludeFromRecents="true"
+187-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:150:13-46
+188            android:exported="false"
+188-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:148:13-37
+189            android:taskAffinity=""
+189-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:149:13-36
+190            android:theme="@android:style/Theme.NoDisplay" />
+190-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:151:13-59
+191        <!--
+192             Home button for remotes that send KEYCODE_ALL_APPS (Xiaomi). Opt-in: HOME_KEY_SERVICE=1
+193             build-and-install.sh; see HomeKeyService.
+194        -->
+195        <service
+195-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:154:9-166:19
+196            android:name="com.gathin.tvhome.HomeKeyService"
+196-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:155:13-43
+197            android:directBootAware="true"
+197-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:157:13-43
+198            android:exported="true"
+198-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:158:13-36
+199            android:label="@string/home_key_name"
+199-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:156:13-50
+200            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+200-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:159:13-79
+201            <intent-filter>
+201-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:160:13-162:29
+202                <action android:name="android.accessibilityservice.AccessibilityService" />
+202-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:161:17-92
+202-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:161:25-89
+203            </intent-filter>
+204
+205            <meta-data
+205-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:163:13-165:60
+206                android:name="android.accessibilityservice"
+206-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:164:17-60
+207                android:resource="@xml/home_key_service" />
+207-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:165:17-57
+208        </service>
+209
+210        <!--
+211             market://launch?id=<package>: package-name app launches from the Android TV Remote service
+212             (Home Assistant android_tv_remote), normally served by the stock launcher.
+213        -->
+214        <activity
+214-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:170:9-182:20
+215            android:name="com.gathin.tvhome.AppLaunchActivity"
+215-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:171:13-46
+216            android:excludeFromRecents="true"
+216-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:173:13-46
+217            android:exported="true"
+217-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:172:13-36
+218            android:noHistory="true"
+218-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:174:13-37
+219            android:theme="@android:style/Theme.NoDisplay" >
+219-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:175:13-59
+220            <intent-filter>
+220-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:176:13-181:29
+221                <action android:name="android.intent.action.VIEW" />
+221-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:177:17-69
+221-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:177:25-66
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+223-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:179:17-78
+224-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:179:27-75
+225
+226                <data
+226-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:46:13-46
+227                    android:host="launch"
+227-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:180:47-68
+228                    android:scheme="market" />
+228-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:46:19-43
+229            </intent-filter>
+230        </activity>
+231
+232        <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
+233        <activity
+233-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:185:9-190:80
+234            android:name="com.gathin.tvhome.ClockActivity"
+234-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:186:13-42
+235            android:excludeFromRecents="true"
+235-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:188:13-46
+236            android:exported="false"
+236-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:187:13-37
+237            android:noHistory="true"
+237-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:189:13-37
+238            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+238-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:190:13-77
+239
+240        <!--
+241             stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
+242             it sends a window event when it closes (HomeKeyService.probeAtBoot).
+243        -->
+244        <activity
+244-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:194:9-200:75
+245            android:name="com.gathin.tvhome.ProbeActivity"
+245-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:195:13-42
+246            android:excludeFromRecents="true"
+246-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:197:13-46
+247            android:exported="false"
+247-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:196:13-37
+248            android:noHistory="true"
+248-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:198:13-37
+249            android:taskAffinity=""
+249-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:199:13-36
+250            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+250-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:200:13-72
+251
+252        <!--
+253             Screensaver: pick it in Settings, or `settings put secure screensaver_components
+254             com.gathin.tvhome/.ClockDream` over adb.
+255        -->
+256        <service
+256-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:204:9-213:19
+257            android:name="com.gathin.tvhome.ClockDream"
+257-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:205:13-39
+258            android:exported="true"
+258-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:207:13-36
+259            android:label="@string/dream_name"
+259-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:206:13-47
+260            android:permission="android.permission.BIND_DREAM_SERVICE" >
+260-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:208:13-71
+261            <intent-filter>
+261-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:209:13-212:29
+262                <action android:name="android.service.dreams.DreamService" />
+262-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:210:17-78
+262-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:210:25-75
+263
+264                <category android:name="android.intent.category.DEFAULT" />
+264-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:17-76
+264-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:99:27-73
+265            </intent-filter>
+266        </service>
+267
+268        <!--
+269             tools/theme.sh writes the theme through this where the shell can't reach Android/data;
+270             see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't.
+271        -->
+272        <provider
+272-->INJECTED
+273            android:name="com.gathin.tvhome.ThemeProvider"
+273-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:218:13-42
+274            android:authorities="com.darkgod.devtools.darkgod-tvos.theme"
+274-->INJECTED
+275            android:exported="true"
+275-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:220:13-36
+276            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+276-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:221:13-74
+277
+278        <!--
+279         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
+280         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
+281        -->
+282        <!--
+283             Bound again by the system after a force stop, which restarts Home on firmware that kills
+284             third-party apps (TCL tc8000_ay30a2). It reads no notification.
+285             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
+286        -->
+287        <service
+287-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:228:9-237:19
+288            android:name="com.gathin.tvhome.GuardRevival"
+288-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:229:13-41
+289            android:directBootAware="true"
+289-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:230:13-43
+290            android:exported="true"
+290-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:231:13-36
+291            android:label="@string/home_key_name"
+291-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:232:13-50
+292            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+292-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:233:13-87
+293            <intent-filter>
+293-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:234:13-236:29
+294                <action android:name="android.service.notification.NotificationListenerService" />
+294-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:235:17-99
+294-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:235:25-96
+295            </intent-filter>
+296        </service>
+297
+298        <receiver
+298-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:238:9-245:20
+299            android:name="com.gathin.tvhome.GuardConfig"
+299-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:239:13-40
+300            android:exported="true"
+300-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:240:13-36
+301            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
+301-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:241:13-74
+302            <intent-filter>
+302-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:242:13-244:29
+303                <action android:name="com.gathin.tvhome.GUARD" />
+303-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:243:17-66
+303-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:243:25-63
+304            </intent-filter>
+305        </receiver>
+306
+307        <service
+307-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:247:9-258:19
+308            android:name="com.gathin.tvhome.InputKeyService"
+308-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:248:13-44
+309            android:exported="false"
+309-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:249:13-37
+310            android:label="@string/app_name"
+310-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:250:13-45
+311            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+311-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:251:13-79
+312            <intent-filter>
+312-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:160:13-162:29
+313                <action android:name="android.accessibilityservice.AccessibilityService" />
+313-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:161:17-92
+313-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:161:25-89
+314            </intent-filter>
+315
+316            <meta-data
+316-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:163:13-165:60
+317                android:name="android.accessibilityservice"
+317-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:164:17-60
+318                android:resource="@xml/input_key_service" />
+318-->C:\Users\DarkGoD\Downloads\CleanYourTV\tcl-custom-launcher\app\src\main\AndroidManifest.xml:165:17-57
+319        </service>
+320    </application>
+321
+322</manifest>

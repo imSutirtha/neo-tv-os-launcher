@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gathin.tvhome.InputNamesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T08:34:03.759Z" hostname="DIVA" time="0.003">
+  <properties/>
+  <testcase name="anUnknownTypeLeavesTheNameAlone" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
+  <testcase name="aTypeWithNoNameIsJustItsEmoji" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
+  <testcase name="theTextNullAndBlanksAreNoName" classname="com.gathin.tvhome.InputNamesTest" time="0.0"/>
+  <testcase name="otherNamesAreKept" classname="com.gathin.tvhome.InputNamesTest" time="0.0"/>
+  <testcase name="philipsTypeBecomesAnEmoji" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

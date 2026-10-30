@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gathin.tvhome.DockOpacityTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T08:34:03.714Z" hostname="DIVA" time="0.002">
+  <properties/>
+  <testcase name="aChoiceMadeOnTheTvWinsOverTheTheme" classname="com.gathin.tvhome.DockOpacityTest" time="0.001"/>
+  <testcase name="anOutOfRangeChoiceIsIgnored" classname="com.gathin.tvhome.DockOpacityTest" time="0.001"/>
+  <testcase name="noChoiceKeepsTheThemeValue" classname="com.gathin.tvhome.DockOpacityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
