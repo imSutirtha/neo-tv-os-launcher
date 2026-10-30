@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.011Z" hostname="DIVA" time="0.005">
+<testsuite name="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.313Z" hostname="DIVA" time="0.004">
   <properties/>
   <testcase name="inputIdIsNullForEverythingElse" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.001"/>
   <testcase name="emptyConfigurationRetainsNormalEntryWithoutResolving" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
   <testcase name="emptyInputIdFallsBackToANormalLaunchInsteadOfAnEmptySwitch" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
-  <testcase name="configuredActionOverridesDefaultOnlyForItsPackage" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.001"/>
+  <testcase name="configuredActionOverridesDefaultOnlyForItsPackage" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
   <testcase name="viewPrefixGivesTheUri" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
-  <testcase name="unresolvedActionRetainsNormalEntry" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.001"/>
-  <testcase name="inputIdStripsThePrefixAndTrimsTheId" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
+  <testcase name="unresolvedActionRetainsNormalEntry" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
+  <testcase name="inputIdStripsThePrefixAndTrimsTheId" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.001"/>
   <testcase name="plainActionOrEmptyViewHasNoUri" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
-  <testcase name="unconfiguredPackageDoesNotTryOtherAppsAction" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.001"/>
+  <testcase name="unconfiguredPackageDoesNotTryOtherAppsAction" classname="com.darkgod.devtools.neo_tvos.data.app.LaunchActionsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

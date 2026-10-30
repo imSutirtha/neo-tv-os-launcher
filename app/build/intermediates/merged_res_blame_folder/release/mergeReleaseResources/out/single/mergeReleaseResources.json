@@ -276,8 +276,16 @@
         "source": "com.darkgod.devtools.neo_tvos.app-main-5:/color/settings_card_title_color.xml"
     },
     {
+        "merged": "com.darkgod.devtools.neo_tvos.app-release-4:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.darkgod.devtools.neo_tvos.app-main-5:/drawable/ic_arrow_back.xml"
+    },
+    {
         "merged": "com.darkgod.devtools.neo_tvos.app-release-4:/drawable_pill_text_mid.xml.flat",
         "source": "com.darkgod.devtools.neo_tvos.app-main-5:/drawable/pill_text_mid.xml"
+    },
+    {
+        "merged": "com.darkgod.devtools.neo_tvos.app-release-4:/drawable_ic_clock.xml.flat",
+        "source": "com.darkgod.devtools.neo_tvos.app-main-5:/drawable/ic_clock.xml"
     },
     {
         "merged": "com.darkgod.devtools.neo_tvos.app-release-4:/drawable_ic_launcher_background.xml.flat",

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.146Z" hostname="DIVA" time="0.005">
+<testsuite name="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.424Z" hostname="DIVA" time="0.005">
   <properties/>
   <testcase name="squareAndTallPicturesAreNotBanners" classname="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" time="0.004"/>
-  <testcase name="drawablesWithoutAnIntrinsicSizeStillFillTheTile" classname="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" time="0.001"/>
+  <testcase name="drawablesWithoutAnIntrinsicSizeStillFillTheTile" classname="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" time="0.0"/>
   <testcase name="wideBannersAreKept" classname="com.darkgod.devtools.neo_tvos.ui.BannerShapeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

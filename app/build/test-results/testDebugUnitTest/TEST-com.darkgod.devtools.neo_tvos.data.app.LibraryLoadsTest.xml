@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.039Z" hostname="DIVA" time="0.002">
+<testsuite name="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.338Z" hostname="DIVA" time="0.001">
   <properties/>
   <testcase name="aRefreshDuringTheOpeningStillRevealsOnce" classname="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" time="0.0"/>
   <testcase name="aRefreshOnItsOwnNeverReveals" classname="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" time="0.0"/>
   <testcase name="refreshesAfterTheRevealDoNotRevealAgain" classname="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" time="0.0"/>
-  <testcase name="anOpeningAfterARefreshRevealsWithItsOwnLoad" classname="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" time="0.001"/>
+  <testcase name="anOpeningAfterARefreshRevealsWithItsOwnLoad" classname="com.darkgod.devtools.neo_tvos.data.app.LibraryLoadsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

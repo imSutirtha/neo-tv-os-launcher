@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.theme.ThemeFilesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.113Z" hostname="DIVA" time="0.003">
+<testsuite name="com.darkgod.devtools.neo_tvos.theme.ThemeFilesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.394Z" hostname="DIVA" time="0.002">
   <properties/>
   <testcase name="onlyTheBareFolderIsTheCollection" classname="com.darkgod.devtools.neo_tvos.theme.ThemeFilesTest" time="0.001"/>
   <testcase name="anythingElseIsRefused" classname="com.darkgod.devtools.neo_tvos.theme.ThemeFilesTest" time="0.0"/>

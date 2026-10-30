@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.118Z" hostname="DIVA" time="0.001">
+<testsuite name="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.397Z" hostname="DIVA" time="0.001">
   <properties/>
-  <testcase name="missingFolderHasNoNames" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.0"/>
-  <testcase name="skipsCommentsBlankAndMalformedLines" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="missingFolderHasNoNames" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="skipsCommentsBlankAndMalformedLines" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.0"/>
   <testcase name="laterLineWinsForTheSameFile" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.0"/>
   <testcase name="cutsVeryLongNames" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.0"/>
   <testcase name="readsFilenameTabName" classname="com.darkgod.devtools.neo_tvos.theme.WallpaperCaptionsTest" time="0.0"/>

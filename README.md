@@ -80,12 +80,12 @@ Built from the ground up in high-performance native Java targeting Android API 3
   ┌────────────────────────────────────────────────────────────────────────┐
   │                            Neo tvOS Core                               │
   ├────────────────────────────────────────────────────────────────────────┤
-  │  🎯 Zero Telemetry       │ Completely offline-first; no tracking data   │
+  │  🎯 Zero Telemetry       │ Completely offline-first; no tracking data  │
   │  🚀 Sub-30ms Response    │ Hand-tuned RecyclerView & lightweight views │
   │  💎 Frosted Glass Focus  │ Smooth physics-driven focus highlight band  │
   │  🎨 Live Ambient Glow    │ Real-time dominant palette glow behind tiles│
-  │  🔌 Universal Inputs     │ 1-click HDMI 1/2/3, AV, and Live TV picker │
-  │  🛡️ Anti-Kill Guard     │ Built-in revival service survives OEM kills │
+  │  🔌 Universal Inputs     │ 1-click HDMI 1/2/3, AV, and Live TV picker  │
+  │  🛡️ Anti-Kill Guard      │ Built-in revival service survives OEM kills │
   │  🔒 System Protection    │ Active Device Administrator anti-uninstall  │
   │  📦 Modular Architecture │ Dynamic module card extensions              │
   └────────────────────────────────────────────────────────────────────────┘
@@ -118,7 +118,7 @@ Neo tvOS works best on a clean, debloated TV. Follow the [CleanYourTV](https://g
 ### 2. Build & Deploy Neo tvOS
 ```bash
 # Clone the repository
-git clone https://github.com/DarkGoD/neo-tvos.git
+git clone https://github.com/imSutirtha/neo-tv-os-launcher.git
 cd neo-tvos
 
 # Run comprehensive test suite (304 unit tests)
@@ -204,7 +204,7 @@ All automated checks and tests run with zero warnings and zero regressions:
 - **Namespace:** `com.darkgod.devtools.neo_tvos`
 - **Application ID:** `com.darkgod.devtools.neo_tvos`
 - **Version Name:** `1.0.0-BETA`
-- **Version Code:** `280010000` (`minSdk * 10000000 + major * 10000 + minor * 100 + patch`)
+- **Version Code:** `280010000`
 - **Target SDK:** Android API 37
 - **Compile SDK:** Android API 37
 - **Minimum SDK:** Android 9.0 Pie (API 28)

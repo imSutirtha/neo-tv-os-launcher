@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.util.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.487Z" hostname="DIVA" time="0.001">
+<testsuite name="com.darkgod.devtools.neo_tvos.util.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.750Z" hostname="DIVA" time="0.001">
   <properties/>
   <testcase name="theFadeGrowsInWithTheFirstPixelsOfScrolling" classname="com.darkgod.devtools.neo_tvos.util.TopFadeTest" time="0.001"/>
   <testcase name="theDockAtRestIsUntouched" classname="com.darkgod.devtools.neo_tvos.util.TopFadeTest" time="0.0"/>

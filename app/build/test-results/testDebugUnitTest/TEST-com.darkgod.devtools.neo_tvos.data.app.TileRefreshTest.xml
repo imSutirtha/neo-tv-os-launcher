@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.053Z" hostname="DIVA" time="0.003">
+<testsuite name="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.350Z" hostname="DIVA" time="0.002">
   <properties/>
-  <testcase name="homePressedInAnAppRefocusesWithoutRebuilding" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
+  <testcase name="homePressedInAnAppRefocusesWithoutRebuilding" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.001"/>
   <testcase name="anAppChangedInTheBackgroundRebuildsOnceOnReturn" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <testcase name="homeOnHomeGoesBackToTheFirstTileWithoutRebuilding" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <testcase name="firstResumeBuildsTheTiles" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <testcase name="backFromAnAppWithNothingChangedOnlyRefocuses" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.001"/>
   <testcase name="pauseWithoutStopChangesNothing" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
-  <testcase name="tilesDroppedForMemoryAreRebuiltOnReturn" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.001"/>
+  <testcase name="tilesDroppedForMemoryAreRebuiltOnReturn" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <testcase name="aMissedBroadcastStillRebuilds" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <testcase name="anAppChangedWhileHomeIsShownRebuildsAtOnce" classname="com.darkgod.devtools.neo_tvos.data.app.TileRefreshTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

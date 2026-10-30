@@ -96,51 +96,42 @@ bool:wifi_status_warnings:2130968640 reachable from from dex
 color:pill_icon_no_internet:2131034118 reachable from from dex
 color:pill_icon_offline:2131034119 reachable from from dex
 color:pill_icon_online:2131034120 reachable from from dex
-color:settings_card_title_color:2131034122 reachable from res/layout/activity_launcher_settings.xml
-color:settings_icon_tint:2131034123 reachable from res/layout/activity_launcher_settings.xml
-color:settings_pill_text_color:2131034124 reachable from res/layout/activity_launcher_settings.xml
 dimen:fastscroll_default_thickness:2131099655 reachable from from dex
 dimen:fastscroll_margin:2131099656 reachable from from dex
 dimen:fastscroll_minimum_range:2131099657 reachable from from dex
 drawable:avatar_frame:2131165184 reachable from res/layout/activity_main.xml
 drawable:banner:2131165185 reachable from AndroidManifest.xml
 drawable:banner_tv:2131165186 reachable from keep xml file
-drawable:glass_panel:2131165187 reachable from res/layout/activity_quick_settings.xml
-drawable:ic_animation:2131165188 reachable from res/layout/activity_launcher_settings.xml
+drawable:glass_panel:2131165187 reachable from res/layout/activity_launcher_settings.xml
+drawable:ic_animation:2131165188 reachable from from dex
 drawable:ic_apps:2131165189 reachable from res/layout-iw/activity_main.xml
 drawable:ic_apps_pill:2131165190 reachable from res/layout/activity_main.xml
-drawable:ic_av:2131165191 reachable from from dex
-drawable:ic_ethernet:2131165200 reachable from from dex
-drawable:ic_home_settings:2131165201 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_home_settings_pill:2131165202 reachable from from dex
-drawable:ic_input:2131165203 reachable from res/layout-iw/activity_main.xml
-drawable:ic_launcher_background:2131165204 reachable from res/mipmap-anydpi-v26/ic_launcher.xml
-drawable:ic_livetv:2131165205 reachable from res/drawable/banner_tv.xml
-drawable:ic_lock:2131165206 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_lock_open:2131165207 reachable from from dex
-drawable:ic_palette:2131165208 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_person:2131165209 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_picture:2131165210 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_power:2131165211 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_settings:2131165212 reachable from res/layout-iw/activity_main.xml
-drawable:ic_sparkle:2131165213 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_swap_vert:2131165214 reachable from res/layout-iw/activity_main.xml
-drawable:ic_wallpaper:2131165215 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_weather:2131165216 reachable from res/layout/activity_launcher_settings.xml
-drawable:ic_wifi:2131165217 reachable from res/layout-iw/activity_main.xml
-drawable:input_row_bg:2131165218 reachable from res/layout/item_input.xml
-drawable:library_check:2131165219 reachable from from dex
-drawable:pill_bg:2131165233 reachable from style:TopButtonBase:2131755017
-drawable:pill_text:2131165234 reachable from style:TopButtonBase:2131755017
-drawable:pill_text_dim:2131165235 reachable from res/layout/item_input.xml
-drawable:pill_text_mid:2131165236 reachable from res/layout/item_card_row.xml
-drawable:race_bar:2131165237 reachable from res/layout-iw/activity_main.xml
-drawable:settings_badge_bg:2131165238 reachable from res/layout/activity_launcher_settings.xml
-drawable:settings_card_bg:2131165239 reachable from res/layout/activity_launcher_settings.xml
-drawable:settings_flyout_panel_bg:2131165241 reachable from res/layout/activity_launcher_settings.xml
-drawable:settings_pill_btn_bg:2131165242 reachable from res/layout/activity_launcher_settings.xml
-drawable:status_dot:2131165243 reachable from res/layout/item_input.xml
-drawable:tile_bg:2131165244 reachable from res/layout/item_app.xml
+drawable:ic_av:2131165192 reachable from from dex
+drawable:ic_clock:2131165201 reachable from from dex
+drawable:ic_ethernet:2131165202 reachable from from dex
+drawable:ic_home_settings:2131165203 reachable from from dex
+drawable:ic_input:2131165205 reachable from res/layout-iw/activity_main.xml
+drawable:ic_launcher_background:2131165206 reachable from res/mipmap-anydpi-v26/ic_launcher.xml
+drawable:ic_livetv:2131165207 reachable from res/drawable/banner_tv.xml
+drawable:ic_lock:2131165208 reachable from from dex
+drawable:ic_lock_open:2131165209 reachable from from dex
+drawable:ic_person:2131165211 reachable from from dex
+drawable:ic_picture:2131165212 reachable from from dex
+drawable:ic_settings:2131165214 reachable from from dex
+drawable:ic_sparkle:2131165215 reachable from from dex
+drawable:ic_swap_vert:2131165216 reachable from int com.darkgod.devtools.neo_tvos.R$drawable.ic_swap_vert
+drawable:ic_wallpaper:2131165217 reachable from from dex
+drawable:ic_weather:2131165218 reachable from from dex
+drawable:ic_wifi:2131165219 reachable from res/layout-iw/activity_main.xml
+drawable:input_row_bg:2131165220 reachable from res/layout/item_input.xml
+drawable:library_check:2131165221 reachable from from dex
+drawable:pill_bg:2131165235 reachable from style:TopButtonBase:2131755017
+drawable:pill_text:2131165236 reachable from style:TopButtonBase:2131755017
+drawable:pill_text_dim:2131165237 reachable from res/layout/item_input.xml
+drawable:pill_text_mid:2131165238 reachable from res/layout/item_card_row.xml
+drawable:race_bar:2131165239 reachable from int com.darkgod.devtools.neo_tvos.R$drawable.race_bar
+drawable:status_dot:2131165245 reachable from res/layout/item_input.xml
+drawable:tile_bg:2131165246 reachable from res/layout/item_app.xml
 font:outfit:2131230720 reachable from res/font/outfit_extralight.xml
 font:outfit_extralight:2131230721 reachable from string:font_extralight:2131689528
 font:outfit_light:2131230722 reachable from string:font_light:2131689529
@@ -179,128 +170,80 @@ id:accessibility_custom_action_6:2131296285 reachable from int androidx.core.R$i
 id:accessibility_custom_action_7:2131296286 reachable from int androidx.core.R$id.accessibility_custom_action_7
 id:accessibility_custom_action_8:2131296287 reachable from int androidx.core.R$id.accessibility_custom_action_8
 id:accessibility_custom_action_9:2131296288 reachable from int androidx.core.R$id.accessibility_custom_action_9
-id:advancedChoice:2131296294 reachable from res/layout/activity_launcher_settings.xml
-id:ambient:2131296295 reachable from res/layout-iw/activity_main.xml
-id:ampm:2131296296 reachable from res/layout-iw/activity_main.xml
-id:animationsChoice:2131296297 reachable from res/layout/activity_launcher_settings.xml
-id:app:2131296298 reachable from res/layout/item_card_row.xml
-id:banner:2131296300 reachable from res/layout/item_app.xml
-id:body:2131296302 reachable from res/layout/dialog_card_prompt.xml
-id:btnClose:2131296303 reachable from res/layout/activity_launcher_settings.xml
-id:btnInputs:2131296304 reachable from res/layout-iw/activity_main.xml
-id:btnKeep:2131296305 reachable from from dex
-id:btnLibrary:2131296306 reachable from from dex
-id:btnLibraryTop:2131296307 reachable from res/layout-iw/activity_main.xml
-id:btnReorder:2131296308 reachable from res/layout-iw/activity_main.xml
-id:btnSettings:2131296309 reachable from res/layout-iw/activity_main.xml
-id:btnShow:2131296310 reachable from from dex
-id:btnVpn:2131296311 reachable from res/layout-iw/activity_main.xml
-id:btnWifi:2131296312 reachable from res/layout-iw/activity_main.xml
-id:card:2131296313 reachable from from dex
-id:cardDeviceAdmin:2131296314 reachable from res/layout/activity_launcher_settings.xml
-id:cardDockGlass:2131296315 reachable from res/layout/activity_launcher_settings.xml
-id:cardGreeting:2131296316 reachable from res/layout/activity_launcher_settings.xml
-id:cardWeatherCity:2131296317 reachable from res/layout/activity_launcher_settings.xml
-id:cardWeatherUnit:2131296318 reachable from res/layout/activity_launcher_settings.xml
-id:clock:2131296320 reachable from from dex
-id:clock12:2131296321 reachable from res/layout/activity_launcher_settings.xml
-id:clock24:2131296322 reachable from res/layout/activity_launcher_settings.xml
-id:clockAuto:2131296323 reachable from res/layout/activity_launcher_settings.xml
-id:clockDivider:2131296324 reachable from from dex
-id:columns4:2131296325 reachable from res/layout/activity_launcher_settings.xml
-id:columns5:2131296326 reachable from res/layout/activity_launcher_settings.xml
-id:columns6:2131296327 reachable from res/layout/activity_launcher_settings.xml
-id:columns7:2131296328 reachable from res/layout/activity_launcher_settings.xml
-id:date:2131296329 reachable from from dex
-id:defaultHomeChoice:2131296330 reachable from res/layout/activity_launcher_settings.xml
-id:digest:2131296332 reachable from res/layout/item_card_row.xml
-id:dock100:2131296333 reachable from res/layout/activity_launcher_settings.xml
-id:dock30:2131296334 reachable from res/layout/activity_launcher_settings.xml
-id:dock50:2131296335 reachable from res/layout/activity_launcher_settings.xml
-id:dock70:2131296336 reachable from res/layout/activity_launcher_settings.xml
-id:dot:2131296337 reachable from res/layout/item_input.xml
-id:dreamAmPm:2131296338 reachable from res/layout/dream_clock.xml
-id:dreamAmbient:2131296339 reachable from res/layout/dream_clock.xml
-id:dreamClock:2131296340 reachable from res/layout/dream_clock.xml
-id:dreamContent:2131296341 reachable from res/layout/dream_clock.xml
-id:dreamDate:2131296342 reachable from res/layout-iw/dream_clock.xml
-id:followThemeChoice:2131296344 reachable from res/layout/activity_launcher_settings.xml
-id:glass:2131296346 reachable from res/layout-iw/activity_main.xml
-id:greeting:2131296347 reachable from res/layout-iw/activity_main.xml
-id:grid:2131296348 reachable from res/layout-iw/activity_main.xml
-id:hero:2131296349 reachable from res/layout-iw/activity_main.xml
-id:heroArt:2131296350 reachable from res/layout-iw/activity_main.xml
-id:heroDots:2131296351 reachable from res/layout-iw/activity_main.xml
-id:heroMeta:2131296352 reachable from res/layout-iw/activity_main.xml
-id:heroName:2131296353 reachable from res/layout-iw/activity_main.xml
-id:heroScrim:2131296354 reachable from res/layout-iw/activity_main.xml
-id:hint:2131296356 reachable from res/layout/dialog_card_prompt.xml
-id:icon:2131296357 reachable from res/layout/item_input.xml
-id:iconAdmin:2131296358 reachable from res/layout/activity_launcher_settings.xml
-id:iconAdv:2131296359 reachable from res/layout/activity_launcher_settings.xml
-id:iconAnim:2131296360 reachable from res/layout/activity_launcher_settings.xml
-id:iconDockGlass:2131296361 reachable from res/layout/activity_launcher_settings.xml
-id:iconGreeting:2131296362 reachable from res/layout/activity_launcher_settings.xml
-id:iconHome:2131296363 reachable from res/layout/activity_launcher_settings.xml
-id:iconPalette:2131296364 reachable from res/layout/activity_launcher_settings.xml
-id:iconPower:2131296365 reachable from res/layout/activity_launcher_settings.xml
-id:iconWallpaper:2131296366 reachable from res/layout/activity_launcher_settings.xml
-id:iconWeather:2131296367 reachable from res/layout/activity_launcher_settings.xml
-id:iconWeatherUnit:2131296368 reachable from res/layout/activity_launcher_settings.xml
-id:identity:2131296370 reachable from res/layout/dialog_card_prompt.xml
-id:is_pooling_container_tag:2131296372 reachable from from dex
-id:label:2131296375 reachable from res/layout/item_app.xml
-id:leftBlock:2131296376 reachable from from dex
-id:lunarDate:2131296379 reachable from res/layout-iw/activity_main.xml
-id:name:2131296380 reachable from res/layout/item_app.xml
-id:names:2131296381 reachable from res/layout/dialog_card_prompt.xml
-id:openOnStartChoice:2131296386 reachable from res/layout/activity_launcher_settings.xml
-id:panel:2131296387 reachable from res/layout/activity_launcher_settings.xml
-id:pkg:2131296388 reachable from res/layout/item_card_row.xml
-id:pooling_container_listener_holder_tag:2131296389 reachable from from dex
-id:profileAvatar:2131296390 reachable from res/layout/activity_main.xml
-id:raceBar:2131296391 reachable from res/layout-iw/activity_main.xml
-id:raceHeadline:2131296392 reachable from res/layout-iw/activity_main.xml
-id:raceKicker:2131296393 reachable from res/layout-iw/activity_main.xml
-id:racePager:2131296394 reachable from res/layout-iw/activity_main.xml
-id:racePanel:2131296395 reachable from res/layout-iw/activity_main.xml
-id:raceSessions:2131296396 reachable from res/layout-iw/activity_main.xml
-id:root:2131296399 reachable from res/layout-iw/activity_main.xml
-id:rows:2131296400 reachable from res/layout/activity_quick_settings.xml
-id:rows0:2131296401 reachable from res/layout/activity_launcher_settings.xml
-id:rows1:2131296402 reachable from res/layout/activity_launcher_settings.xml
-id:rows2:2131296403 reachable from res/layout/activity_launcher_settings.xml
-id:rows3:2131296404 reachable from res/layout/activity_launcher_settings.xml
-id:scrim:2131296405 reachable from res/layout/activity_launcher_settings.xml
-id:shamsiDate:2131296406 reachable from res/layout-iw/activity_main.xml
-id:sky:2131296407 reachable from res/layout-iw/activity_main.xml
-id:state:2131296408 reachable from res/layout/item_card_row.xml
-id:stats:2131296409 reachable from res/layout-iw/activity_main.xml
-id:status:2131296410 reachable from res/layout/item_input.xml
-id:tag_accessibility_actions:2131296411 reachable from from dex
-id:tag_accessibility_clickable_spans:2131296412 reachable from from dex
-id:tag_accessibility_heading:2131296413 reachable from int androidx.core.R$id.tag_accessibility_heading
-id:tag_accessibility_pane_title:2131296414 reachable from int androidx.core.R$id.tag_accessibility_pane_title
-id:tag_on_apply_window_listener:2131296415 reachable from from dex
-id:tag_screen_reader_focusable:2131296418 reachable from int androidx.core.R$id.tag_screen_reader_focusable
-id:tag_state_description:2131296419 reachable from from dex
-id:tag_unhandled_key_listeners:2131296422 reachable from from dex
-id:tag_window_insets_animation_callback:2131296423 reachable from from dex
-id:title:2131296427 reachable from res/layout/item_input.xml
-id:topButtons:2131296428 reachable from from dex
-id:valAdvanced:2131296429 reachable from res/layout/activity_launcher_settings.xml
-id:valAnimations:2131296430 reachable from res/layout/activity_launcher_settings.xml
-id:valDefaultHome:2131296431 reachable from res/layout/activity_launcher_settings.xml
-id:valDeviceAdmin:2131296432 reachable from res/layout/activity_launcher_settings.xml
-id:valDockGlass:2131296433 reachable from res/layout/activity_launcher_settings.xml
-id:valFollowTheme:2131296434 reachable from res/layout/activity_launcher_settings.xml
-id:valGreeting:2131296435 reachable from res/layout/activity_launcher_settings.xml
-id:valOpenOnStart:2131296436 reachable from res/layout/activity_launcher_settings.xml
-id:valWallpaper:2131296437 reachable from res/layout/activity_launcher_settings.xml
-id:valWeatherCity:2131296438 reachable from res/layout/activity_launcher_settings.xml
-id:valWeatherUnit:2131296439 reachable from res/layout/activity_launcher_settings.xml
-id:wallpaperChoice:2131296441 reachable from res/layout/activity_launcher_settings.xml
-id:weather:2131296442 reachable from res/layout/activity_main.xml
+id:ambient:2131296294 reachable from res/layout-iw/activity_main.xml
+id:ampm:2131296295 reachable from int com.darkgod.devtools.neo_tvos.R$id.ampm
+id:app:2131296296 reachable from res/layout/item_card_row.xml
+id:banner:2131296298 reachable from res/layout/item_app.xml
+id:body:2131296300 reachable from res/layout/dialog_card_prompt.xml
+id:btnInputs:2131296301 reachable from res/layout-iw/activity_main.xml
+id:btnKeep:2131296302 reachable from from dex
+id:btnLibrary:2131296303 reachable from from dex
+id:btnLibraryTop:2131296304 reachable from res/layout-iw/activity_main.xml
+id:btnReorder:2131296305 reachable from res/layout-iw/activity_main.xml
+id:btnSettings:2131296306 reachable from res/layout-iw/activity_main.xml
+id:btnShow:2131296307 reachable from from dex
+id:btnVpn:2131296308 reachable from res/layout-iw/activity_main.xml
+id:btnWifi:2131296309 reachable from res/layout-iw/activity_main.xml
+id:card:2131296310 reachable from from dex
+id:clock:2131296312 reachable from from dex
+id:clockDivider:2131296313 reachable from from dex
+id:date:2131296314 reachable from from dex
+id:digest:2131296316 reachable from res/layout/item_card_row.xml
+id:dot:2131296317 reachable from res/layout/item_input.xml
+id:dreamAmPm:2131296318 reachable from res/layout/dream_clock.xml
+id:dreamAmbient:2131296319 reachable from res/layout/dream_clock.xml
+id:dreamClock:2131296320 reachable from res/layout/dream_clock.xml
+id:dreamContent:2131296321 reachable from res/layout/dream_clock.xml
+id:dreamDate:2131296322 reachable from res/layout-iw/dream_clock.xml
+id:glass:2131296325 reachable from res/layout-iw/activity_main.xml
+id:greeting:2131296326 reachable from res/layout-iw/activity_main.xml
+id:grid:2131296327 reachable from res/layout-iw/activity_main.xml
+id:hero:2131296328 reachable from res/layout-iw/activity_main.xml
+id:heroArt:2131296329 reachable from res/layout-iw/activity_main.xml
+id:heroDots:2131296330 reachable from res/layout-iw/activity_main.xml
+id:heroMeta:2131296331 reachable from res/layout-iw/activity_main.xml
+id:heroName:2131296332 reachable from res/layout-iw/activity_main.xml
+id:heroScrim:2131296333 reachable from res/layout-iw/activity_main.xml
+id:hint:2131296335 reachable from res/layout/dialog_card_prompt.xml
+id:icon:2131296336 reachable from res/layout/item_input.xml
+id:identity:2131296338 reachable from res/layout/dialog_card_prompt.xml
+id:is_pooling_container_tag:2131296340 reachable from from dex
+id:label:2131296343 reachable from res/layout/item_app.xml
+id:leftBlock:2131296344 reachable from from dex
+id:lunarDate:2131296347 reachable from res/layout-iw/activity_main.xml
+id:name:2131296348 reachable from res/layout/item_app.xml
+id:names:2131296349 reachable from res/layout/dialog_card_prompt.xml
+id:panel:2131296354 reachable from res/layout/activity_launcher_settings.xml
+id:pkg:2131296355 reachable from res/layout/item_card_row.xml
+id:pooling_container_listener_holder_tag:2131296356 reachable from from dex
+id:profileAvatar:2131296357 reachable from res/layout/activity_main.xml
+id:raceBar:2131296358 reachable from res/layout-iw/activity_main.xml
+id:raceHeadline:2131296359 reachable from res/layout-iw/activity_main.xml
+id:raceKicker:2131296360 reachable from res/layout-iw/activity_main.xml
+id:racePager:2131296361 reachable from res/layout-iw/activity_main.xml
+id:racePanel:2131296362 reachable from res/layout-iw/activity_main.xml
+id:raceSessions:2131296363 reachable from res/layout-iw/activity_main.xml
+id:root:2131296366 reachable from res/layout-iw/activity_main.xml
+id:rows:2131296367 reachable from res/layout/activity_launcher_settings.xml
+id:scrim:2131296368 reachable from res/layout/activity_launcher_settings.xml
+id:scrollContainer:2131296369 reachable from res/layout/activity_launcher_settings.xml
+id:shamsiDate:2131296370 reachable from res/layout-iw/activity_main.xml
+id:sky:2131296371 reachable from res/layout-iw/activity_main.xml
+id:state:2131296372 reachable from res/layout/item_card_row.xml
+id:stats:2131296373 reachable from res/layout-iw/activity_main.xml
+id:status:2131296374 reachable from res/layout/item_input.xml
+id:tag_accessibility_actions:2131296375 reachable from from dex
+id:tag_accessibility_clickable_spans:2131296376 reachable from from dex
+id:tag_accessibility_heading:2131296377 reachable from int androidx.core.R$id.tag_accessibility_heading
+id:tag_accessibility_pane_title:2131296378 reachable from int androidx.core.R$id.tag_accessibility_pane_title
+id:tag_on_apply_window_listener:2131296379 reachable from from dex
+id:tag_screen_reader_focusable:2131296382 reachable from int androidx.core.R$id.tag_screen_reader_focusable
+id:tag_state_description:2131296383 reachable from from dex
+id:tag_unhandled_key_listeners:2131296386 reachable from from dex
+id:tag_window_insets_animation_callback:2131296387 reachable from from dex
+id:title:2131296391 reachable from res/layout/item_input.xml
+id:topButtons:2131296392 reachable from from dex
+id:weather:2131296394 reachable from res/layout/activity_main.xml
 integer:cinematic_art:2131361792 reachable from from dex
 integer:cinematic_scrim:2131361793 reachable from from dex
 integer:clock_wallpaper_dim:2131361794 reachable from from dex
@@ -312,7 +255,6 @@ integer:sky_intensity:2131361799 reachable from from dex
 integer:wifi_label_width:2131361801 reachable from from dex
 layout:activity_launcher_settings:2131427328 reachable from from dex
 layout:activity_main:2131427329 reachable from from dex
-layout:activity_quick_settings:2131427330 reachable from from dex
 layout:dialog_card_prompt:2131427332 reachable from from dex
 layout:dream_clock:2131427333 reachable from from dex
 layout:item_app:2131427336 reachable from from dex
@@ -327,8 +269,6 @@ mipmap:ic_launcher_foreground:2131492865 reachable from res/mipmap-anydpi-v26/ic
 plurals:library_app_count:2131558400 reachable from from dex
 string:admin_description:2131689472 reachable from AndroidManifest.xml
 string:admin_warning:2131689473 reachable from from dex
-string:advanced_effects:2131689474 reachable from from dex
-string:advanced_effects_warning:2131689476 reachable from from dex
 string:androidx_startup:2131689477 reachable from from dex
 string:app_library:2131689479 reachable from res/layout-iw/activity_main.xml
 string:app_name:2131689480 reachable from AndroidManifest.xml
@@ -359,7 +299,6 @@ string:dock_edit_hint:2131689516 reachable from from dex
 string:dock_edit_pick_app:2131689517 reachable from from dex
 string:dock_edit_pick_place:2131689518 reachable from from dex
 string:dream_name:2131689520 reachable from AndroidManifest.xml
-string:enable:2131689521 reachable from from dex
 string:ethernet:2131689522 reachable from from dex
 string:festival_diwali_greeting:2131689523 reachable from from dex
 string:festival_dussehra_greeting:2131689524 reachable from from dex
@@ -415,9 +354,7 @@ string:no_inputs:2131689576 reachable from from dex
 string:no_module_cards:2131689577 reachable from from dex
 string:not_available:2131689578 reachable from from dex
 string:not_connected:2131689579 reachable from from dex
-string:off:2131689580 reachable from from dex
 string:offline:2131689581 reachable from from dex
-string:open_on_start_label:2131689583 reachable from from dex
 string:power_menu:2131689585 reachable from from dex
 string:race_countdown_days:2131689590 reachable from from dex
 string:race_countdown_hours:2131689591 reachable from from dex
@@ -442,10 +379,10 @@ string:race_sprint:2131689609 reachable from from dex
 string:race_sprint_qualifying:2131689610 reachable from from dex
 string:race_sprint_qualifying_short:2131689611 reachable from from dex
 string:race_sprint_short:2131689612 reachable from from dex
-string:reorder:2131689614 reachable from res/layout-iw/activity_main.xml
+string:reorder:2131689614 reachable from int com.darkgod.devtools.neo_tvos.R$string.reorder
 string:reorder_hint:2131689615 reachable from from dex
 string:reorder_not_saved:2131689616 reachable from from dex
-string:settings:2131689618 reachable from res/layout-iw/activity_main.xml
+string:settings:2131689618 reachable from from dex
 string:shamsi_month_aban:2131689619 reachable from from dex
 string:shamsi_month_azar:2131689620 reachable from from dex
 string:shamsi_month_bahman:2131689621 reachable from from dex
@@ -470,14 +407,11 @@ string:storage_gb_whole:2131689641 reachable from from dex
 string:tile_add_to_dock:2131689642 reachable from from dex
 string:tile_move:2131689643 reachable from from dex
 string:tile_replace_in_dock:2131689644 reachable from from dex
+string:tv_settings:2131689645 reachable from from dex
 string:vpn:2131689646 reachable from res/layout-iw/activity_main.xml
 string:vpn_app:2131689647 reachable from from dex
 string:vpn_off:2131689648 reachable from from dex
-string:wallpaper_applied:2131689649 reachable from from dex
-string:wallpaper_label:2131689650 reachable from from dex
 string:wallpaper_moods:2131689651 reachable from from dex
-string:wallpaper_none:2131689652 reachable from from dex
-string:wallpaper_theme_default:2131689654 reachable from from dex
 string:welcome_title:2131689655 reachable from from dex
 string:wifi:2131689656 reachable from res/layout-iw/activity_main.xml
 style:Theme_TvHome:2131755015 reachable from AndroidManifest.xml
@@ -512,6 +446,9 @@ color:call_notification_decline_color:2131034115 is not reachable.
 color:notification_action_color_filter:2131034116 is not reachable.
 color:notification_icon_bg_color:2131034117 is not reachable.
 color:settings_card_subtitle_color:2131034121 is not reachable.
+color:settings_card_title_color:2131034122 is not reachable.
+color:settings_icon_tint:2131034123 is not reachable.
+color:settings_pill_text_color:2131034124 is not reachable.
 dimen:compat_button_inset_horizontal_material:2131099648 is not reachable.
 dimen:compat_button_inset_vertical_material:2131099649 is not reachable.
 dimen:compat_button_padding_horizontal_material:2131099650 is not reachable.
@@ -537,29 +474,38 @@ dimen:notification_small_icon_size_as_large:2131099672 is not reachable.
 dimen:notification_subtext_size:2131099673 is not reachable.
 dimen:notification_top_pad:2131099674 is not reachable.
 dimen:notification_top_pad_large_text:2131099675 is not reachable.
-drawable:ic_call_answer:2131165192 is not reachable.
-drawable:ic_call_answer_low:2131165193 is not reachable.
-drawable:ic_call_answer_video:2131165194 is not reachable.
-drawable:ic_call_answer_video_low:2131165195 is not reachable.
-drawable:ic_call_decline:2131165196 is not reachable.
-drawable:ic_call_decline_low:2131165197 is not reachable.
-drawable:ic_check:2131165198 is not reachable.
-drawable:ic_chevron_right:2131165199 is not reachable.
-drawable:notification_action_background:2131165220 is not reachable.
-drawable:notification_bg:2131165221 is not reachable.
-drawable:notification_bg_low:2131165222 is not reachable.
-drawable:notification_bg_low_normal:2131165223 is not reachable.
-drawable:notification_bg_low_pressed:2131165224 is not reachable.
-drawable:notification_bg_normal:2131165225 is not reachable.
-drawable:notification_bg_normal_pressed:2131165226 is not reachable.
-drawable:notification_icon_background:2131165227 is not reachable.
-drawable:notification_oversize_large_icon_bg:2131165228 is not reachable.
-drawable:notification_template_icon_bg:2131165229 is not reachable.
-drawable:notification_template_icon_low_bg:2131165230 is not reachable.
-drawable:notification_tile_bg:2131165231 is not reachable.
-drawable:notify_panel_notification_icon_bg:2131165232 is not reachable.
-drawable:settings_choice_bg:2131165240 is not reachable.
+drawable:ic_arrow_back:2131165191 is not reachable.
+drawable:ic_call_answer:2131165193 is not reachable.
+drawable:ic_call_answer_low:2131165194 is not reachable.
+drawable:ic_call_answer_video:2131165195 is not reachable.
+drawable:ic_call_answer_video_low:2131165196 is not reachable.
+drawable:ic_call_decline:2131165197 is not reachable.
+drawable:ic_call_decline_low:2131165198 is not reachable.
+drawable:ic_check:2131165199 is not reachable.
+drawable:ic_chevron_right:2131165200 is not reachable.
+drawable:ic_home_settings_pill:2131165204 is not reachable.
+drawable:ic_palette:2131165210 is not reachable.
+drawable:ic_power:2131165213 is not reachable.
+drawable:notification_action_background:2131165222 is not reachable.
+drawable:notification_bg:2131165223 is not reachable.
+drawable:notification_bg_low:2131165224 is not reachable.
+drawable:notification_bg_low_normal:2131165225 is not reachable.
+drawable:notification_bg_low_pressed:2131165226 is not reachable.
+drawable:notification_bg_normal:2131165227 is not reachable.
+drawable:notification_bg_normal_pressed:2131165228 is not reachable.
+drawable:notification_icon_background:2131165229 is not reachable.
+drawable:notification_oversize_large_icon_bg:2131165230 is not reachable.
+drawable:notification_template_icon_bg:2131165231 is not reachable.
+drawable:notification_template_icon_low_bg:2131165232 is not reachable.
+drawable:notification_tile_bg:2131165233 is not reachable.
+drawable:notify_panel_notification_icon_bg:2131165234 is not reachable.
+drawable:settings_badge_bg:2131165240 is not reachable.
+drawable:settings_card_bg:2131165241 is not reachable.
+drawable:settings_choice_bg:2131165242 is not reachable.
+drawable:settings_flyout_panel_bg:2131165243 is not reachable.
+drawable:settings_pill_btn_bg:2131165244 is not reachable.
 integer:status_bar_notification_info_maxnum:2131361800 is not reachable.
+layout:activity_quick_settings:2131427330 is not reachable.
 layout:custom_dialog:2131427331 is not reachable.
 layout:ime_base_split_test_activity:2131427334 is not reachable.
 layout:ime_secondary_split_test_activity:2131427335 is not reachable.
@@ -571,7 +517,9 @@ layout:notification_template_part_chronometer:2131427343 is not reachable.
 layout:notification_template_part_time:2131427344 is not reachable.
 mipmap:ic_launcher_round:2131492866 is not reachable.
 raw:keep:2131623936 is not reachable.
+string:advanced_effects:2131689474 is not reachable.
 string:advanced_effects_state:2131689475 is not reachable.
+string:advanced_effects_warning:2131689476 is not reachable.
 string:animations_state:2131689478 is not reachable.
 string:call_notification_answer_action:2131689481 is not reachable.
 string:call_notification_answer_video_action:2131689482 is not reachable.
@@ -586,10 +534,13 @@ string:clock_format_auto:2131689509 is not reachable.
 string:clock_format_label:2131689510 is not reachable.
 string:columns_label:2131689511 is not reachable.
 string:dock_opacity_label:2131689519 is not reachable.
+string:enable:2131689521 is not reachable.
 string:follow_theme:2131689525 is not reachable.
 string:follow_theme_hint:2131689526 is not reachable.
 string:native_settings:2131689575 is not reachable.
+string:off:2131689580 is not reachable.
 string:on:2131689582 is not reachable.
+string:open_on_start_label:2131689583 is not reachable.
 string:open_on_start_state:2131689584 is not reachable.
 string:quick_apps:2131689586 is not reachable.
 string:quick_apps_hint:2131689587 is not reachable.
@@ -599,8 +550,11 @@ string:remove_from_dock:2131689613 is not reachable.
 string:rows_below_dock_label:2131689617 is not reachable.
 string:standby:2131689634 is not reachable.
 string:status_bar_notification_info_overflow:2131689638 is not reachable.
-string:tv_settings:2131689645 is not reachable.
+string:wallpaper_applied:2131689649 is not reachable.
+string:wallpaper_label:2131689650 is not reachable.
+string:wallpaper_none:2131689652 is not reachable.
 string:wallpaper_state:2131689653 is not reachable.
+string:wallpaper_theme_default:2131689654 is not reachable.
 style:SettingsColumnChoice:2131755008 is not reachable.
 style:SettingsRow:2131755009 is not reachable.
 style:TextAppearance_Compat_Notification:2131755010 is not reachable.

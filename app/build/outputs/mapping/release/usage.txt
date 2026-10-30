@@ -3278,17 +3278,14 @@ com.darkgod.devtools.neo_tvos.R$drawable:
     public static int avatar_frame
     public static int banner
     public static int banner_tv
-    public static int ic_animation
     public static int ic_apps_pill
+    public static int ic_arrow_back
     public static int ic_check
     public static int ic_chevron_right
+    public static int ic_home_settings_pill
     public static int ic_launcher_background
     public static int ic_palette
-    public static int ic_picture
     public static int ic_power
-    public static int ic_settings
-    public static int ic_swap_vert
-    public static int ic_weather
     public static int input_row_bg
     public static int pill_bg
     public static int pill_text
@@ -3307,22 +3304,12 @@ com.darkgod.devtools.neo_tvos.R$id:
     public static int dreamAmPm
     public static int dreamClock
     public static int hint
-    public static int iconAdmin
-    public static int iconAdv
-    public static int iconAnim
-    public static int iconDockGlass
-    public static int iconGreeting
-    public static int iconHome
-    public static int iconPalette
-    public static int iconPower
-    public static int iconWallpaper
-    public static int iconWeather
-    public static int iconWeatherUnit
-    public static int valDefaultHome
+    public static int scrollContainer
     private void <init>()
 com.darkgod.devtools.neo_tvos.R$integer:
     private void <init>()
 com.darkgod.devtools.neo_tvos.R$layout:
+    public static int activity_quick_settings
     private void <init>()
 com.darkgod.devtools.neo_tvos.R$mipmap
 com.darkgod.devtools.neo_tvos.R$plurals:
@@ -3330,7 +3317,9 @@ com.darkgod.devtools.neo_tvos.R$plurals:
 com.darkgod.devtools.neo_tvos.R$raw
 com.darkgod.devtools.neo_tvos.R$string:
     public static int admin_description
+    public static int advanced_effects
     public static int advanced_effects_state
+    public static int advanced_effects_warning
     public static int animations_state
     public static int card_keep_hidden
     public static int card_prompt_hint
@@ -3343,6 +3332,7 @@ com.darkgod.devtools.neo_tvos.R$string:
     public static int date_format
     public static int date_format_home
     public static int dock_opacity_label
+    public static int enable
     public static int follow_theme
     public static int follow_theme_hint
     public static int font_body
@@ -3352,18 +3342,22 @@ com.darkgod.devtools.neo_tvos.R$string:
     public static int home_key_name
     public static int input_key_service_description
     public static int native_settings
+    public static int off
     public static int on
+    public static int open_on_start_label
     public static int open_on_start_state
     public static int quick_apps
     public static int quick_apps_hint
     public static int quick_network
     public static int quick_picture
     public static int remove_from_dock
-    public static int reorder
     public static int rows_below_dock_label
     public static int standby
-    public static int tv_settings
+    public static int wallpaper_applied
+    public static int wallpaper_label
+    public static int wallpaper_none
     public static int wallpaper_state
+    public static int wallpaper_theme_default
     private void <init>()
 com.darkgod.devtools.neo_tvos.R$style
 com.darkgod.devtools.neo_tvos.R$xml
@@ -3436,6 +3430,7 @@ com.darkgod.devtools.neo_tvos.data.app.OpenOnStart:
     public static final java.lang.String BOOT_PREFS
     public static final java.lang.String KEY
     private void <init>()
+    public static void skipThisBoot(android.content.Context)
 com.darkgod.devtools.neo_tvos.data.app.Order:
     private static final java.lang.String DOCK
     private static final java.lang.String DOCKED
@@ -3550,7 +3545,7 @@ com.darkgod.devtools.neo_tvos.ui.AppAdapter:
     static final float TITLE_ROOM_DP
     static final float TOP_ROOM_DP
 com.darkgod.devtools.neo_tvos.ui.LauncherSettingsActivity:
-    static final java.lang.String EXTRA_REORDER
+    public static final java.lang.String EXTRA_REORDER
 com.darkgod.devtools.neo_tvos.ui.MainActivity:
     public static final java.lang.String ACTION_LAUNCHER_SETTINGS
     static final java.lang.String ACTION_REORDER_DOCK
@@ -3565,6 +3560,7 @@ com.darkgod.devtools.neo_tvos.ui.MainActivity:
     private boolean launcherSettingsButton
     private boolean settingsKeyPanel
     private boolean showInputsMenuRow
+    private void showTopMenu()
 com.darkgod.devtools.neo_tvos.ui.decor.BellDrawable:
     private static final float AMPLITUDE
     private static final float BOX
@@ -9965,7 +9961,7 @@ com.darkgod.devtools.neo_tvos.ui.AppLibraryDialog:
     public final void stopHighlight()
     public final android.graphics.drawable.GradientDrawable surface(int,int)
 com.darkgod.devtools.neo_tvos.ui.LauncherSettingsActivity:
-    public final void setAdvanced(boolean)
+    public final void finishAndDismiss()
 com.darkgod.devtools.neo_tvos.ui.MainActivity$10:
     public static void onChildViewAttachedToWindow()
     public static void onChildViewDetachedFromWindow()

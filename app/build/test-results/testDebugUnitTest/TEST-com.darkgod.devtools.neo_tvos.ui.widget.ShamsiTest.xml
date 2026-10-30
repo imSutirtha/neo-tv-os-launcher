@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.456Z" hostname="DIVA" time="0.002">
+<testsuite name="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.723Z" hostname="DIVA" time="0.001">
   <properties/>
-  <testcase name="nowruzIsTheFirstOfFarvardin" classname="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" time="0.002"/>
+  <testcase name="nowruzIsTheFirstOfFarvardin" classname="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" time="0.001"/>
   <testcase name="firstSixMonthsHave31DaysAndTheNextFiveHave30" classname="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" time="0.0"/>
   <testcase name="theDayBeforeNowruzClosesEsfand" classname="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" time="0.0"/>
   <testcase name="fixedReferenceDays" classname="com.darkgod.devtools.neo_tvos.ui.widget.ShamsiTest" time="0.0"/>

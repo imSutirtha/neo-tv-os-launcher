@@ -6,6 +6,7 @@ import com.darkgod.devtools.neo_tvos.config.*;
 import com.darkgod.devtools.neo_tvos.data.app.*;
 import com.darkgod.devtools.neo_tvos.data.weather.*;
 import com.darkgod.devtools.neo_tvos.input.*;
+import com.darkgod.devtools.neo_tvos.receiver.NeoAdminReceiver;
 import com.darkgod.devtools.neo_tvos.service.*;
 import com.darkgod.devtools.neo_tvos.theme.*;
 import com.darkgod.devtools.neo_tvos.ui.*;
@@ -535,6 +536,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             findViewById(R.id.clockDivider).setBackgroundColor(Color.WHITE);
         }
         applyClockFormat();
+        NeoAdminReceiver.lockUninstall(this);
         if (getResources().getBoolean(R.bool.rtl_menu_bar)) {
             // Center Hebrew greetings over the numeric time, independent of a visible AM/PM label. The clock's row
             // is watched too: date_below_clock can move the whole row right under a wider date.
@@ -805,8 +807,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             return true;
         });
         launcherSettingsButton = cfg.launcherSettingsButton;
-        ((TextView) btnSettings).setText(R.string.launcher_settings);
-        ((TextView) btnSettings).setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_home_settings_pill, 0, 0, 0);
+        ((TextView) btnSettings).setText(R.string.settings);
+        ((TextView) btnSettings).setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_settings, 0, 0, 0);
         btnSettings.setOnClickListener(v -> startActivityForResult(
                 new Intent(this, LauncherSettingsActivity.class), LAUNCHER_SETTINGS_REQUEST));
         btnReorder = findViewById(R.id.btnReorder);
@@ -837,9 +839,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             // Aurora keeps the three primary actions visible, just like the reference shelf: Inputs, Wi-Fi,
             // Settings. The gear carries the less-frequent actions only.
             showInputsMenuRow = false;
-            ((TextView) btnSettings).setText(R.string.launcher_settings);
-            ((TextView) btnSettings).setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_home_settings_pill, 0, 0, 0);
-            btnSettings.setOnClickListener(v -> showTopMenu());
+            ((TextView) btnSettings).setText(R.string.settings);
+            ((TextView) btnSettings).setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_settings, 0, 0, 0);
+            btnSettings.setOnClickListener(v -> startActivityForResult(
+                    new Intent(this, LauncherSettingsActivity.class), LAUNCHER_SETTINGS_REQUEST));
             // Keep the three pills vertically aligned as a single, calm control group.
             LinearLayout topButtons = findViewById(R.id.topButtons);
             RelativeLayout.LayoutParams tlp = (RelativeLayout.LayoutParams) topButtons.getLayoutParams();

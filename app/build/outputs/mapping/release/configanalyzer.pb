@@ -237,4 +237,4 @@ Z
     *** get*();
 }""*X"VֱֲֳִֵֶַָֹÊֻּֽ־ֿ׀ׁׂ׃װױײ׳״ÙÚÛÜÝÞßאבגדהוזחטיךכj¿'^-keepclassmembers,allowobfuscation class * {
   @androidx.annotation.DoNotInline <methods>;
-}"*׀"ֽלםמןנסעףפץצקרשתûü‎‏ÿ€‚ƒ !"#$%&'()*+,-./012456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[„…†‡ˆ‰‹‘’“”•–—˜™› ¡¢£₪¥¦§¯°±²¨©×«jM(7-keepnames class * extends androidx.startup.Initializer"*"r)-dontobfuscatezגƒM¦ז ֻ(ץ0û#‚R8 Configuration Analyzer
+}"*׀"ֽלםמןנסעףפץצקרשתûü‎‏ÿ€‚ƒ !"#$%&'()*+,-./012456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[„…†‡ˆ‰‹‘’“”•–—˜™› ¡¢£₪¥¦§¯°±²¨©×«jM(7-keepnames class * extends androidx.startup.Initializer"*"r)-dontobfuscatezֽ Lֹו ¶(˜0#‚R8 Configuration Analyzer

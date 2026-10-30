@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T12:52:57.464Z" hostname="DIVA" time="0.002">
+<testsuite name="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-30T13:39:22.728Z" hostname="DIVA" time="0.002">
   <properties/>
-  <testcase name="preservesUpstreamSpacedUsedTotalAsOneRun" classname="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" time="0.002"/>
+  <testcase name="preservesUpstreamSpacedUsedTotalAsOneRun" classname="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" time="0.001"/>
   <testcase name="isolatesUnitsAndPercentAsWholeMeasurements" classname="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" time="0.0"/>
   <testcase name="preservesEnglishExactly" classname="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" time="0.0"/>
   <testcase name="supportsAbsentCpuAndLargeValues" classname="com.darkgod.devtools.neo_tvos.ui.widget.StatsTextTest" time="0.0"/>
